@@ -1,0 +1,20 @@
+<div class="formText formFade">
+	<p class="formHeader">Use this form to save your about text to the site!</p><br /><br />
+	<div class="form">	
+		<%= form_for(@about) do |f| %>
+			<%= f.label :Upload_image, class: 'formField' %><br />
+			<%= f.file_field :avatar, class: 'formFieldT'  %><br />
+			<%= f.label :About_text, class: 'formField' %><br />
+			<%= f.text_area :text, class: 'formFieldT'  %><br />
+			<%= f.label :Facebook_URL, class: 'formField' %><br />
+			<%= f.text_field :facebook, class: 'formFieldT'  %><br />
+			<%= f.label :Linkedin_URL, class: 'formField' %><br />
+			<%= f.text_field :linkedin, class: 'formFieldT'  %><br />
+			<%= f.label :Twitter_URL, class: 'formField' %><br />
+			<%= f.text_field :twitter, class: 'formFieldT'  %><br />
+			<%= f.label :Get_in_touch_text, class: 'formField' %><br />
+    		<%= f.text_area :getintouchtext, class: 'formFieldBox'  %><br />
+    		<%= f.submit %>
+		<% end %>		
+	</div>
+</div>

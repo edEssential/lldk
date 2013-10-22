@@ -1,0 +1,31 @@
+<div class="formText formFade">
+	<p class="formHeader">Use this form to save your about text to the site!</p><br /><br />
+	<div class="form">	
+		<%= form_for(@contact) do |f| %>
+			<h1>Contact page text</h1><br />
+			<%= f.label :Proile_image, class: 'formField' %><br />
+			<%= f.file_field :avatar, class: 'formFieldT'  %><br />
+			<%= f.label :Author_description, class: 'formField' %><br />
+			<%= f.text_area :description, class: 'formFieldT'  %><br />
+			<%= f.label :Facebook_URL, class: 'formField' %><br />
+			<%= f.text_field :facebook, class: 'formFieldT'  %><br />
+			<%= f.label :Linkedin_URL, class: 'formField' %><br />
+			<%= f.text_field :linkedin, class: 'formFieldT'  %><br />
+			<%= f.label :Twitter_URL, class: 'formField' %><br />
+			<%= f.text_field :twitter, class: 'formFieldT'  %><br />
+			<%= f.label :Get_in_touch_text, class: 'formField' %><br />
+    		<%= f.text_area :contacttext, class: 'formFieldBox'  %><br />
+			
+			<h1><%= f.label :Thanks_page_text, class: 'formField' %><br /></h1>
+    		<%= f.text_area :thankstext, class: 'formFieldBox'  %><br />
+
+			<%= f.label :name, class: 'formField' %><br />
+			<%= f.text_field :name, class: 'formFieldT'  %><br />
+			<%= f.label :email, class: 'formField' %><br />
+			<%= f.text_field :email, class: 'formFieldT'  %><br />
+			
+			
+    		<%= f.submit %>
+		<% end %>		
+	</div>
+</div>

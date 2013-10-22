@@ -1,0 +1,47 @@
+<% if user_signed_in? %>
+	<%= link_to image_tag('edit2.png'), edit_about_path(@about), :class => "editAbout" %>
+<% end %>
+<div class="more">
+	<h1>About the author</h1><br/><br/>
+    <%= image_tag(@about.avatar) %><br/><br/>
+	<p><%= @about.text %></p><br/>
+</div><!--Closing more-->
+
+<div class="emailForm">
+
+	<div class="emailboxtext">
+    	<h1>Connect With Dominic</h1>
+        <div class="social">
+			<span class="social"><%= link_to "Facebook", (@about.facebook), :target => "_blank" %></span>
+			<span class="social"><%= link_to "LinkedIn", (@about.linkedin), :target => "_blank" %></span>
+			<span class="social"><%= link_to "Twitter", (@about.twitter), :target => "_blank" %></span>
+        </div><!--Closing social--><br/><br><br/><br/>
+        
+		<h1>Get in touch with Dominic:</h1>
+    	<p><%= @about.getintouchtext %></p>
+	</div>
+
+	<form method="post" name="myemailform" action="form-to-email.php">
+		<p>
+        	<span class="box"><label for='name'>Name: </label></span><br>
+			<input type="text" name="name">
+        </p>
+        <p>
+        	<span class="box"><label for='email'>Email Address:</label></span><br>
+			<input type="text" name="email">
+        </p>
+        <p>
+        	<span class="message"><label for='email'>Message:</label></span><br>
+			<textarea cols="40" rows="5" name="message">Please leave your message here</textarea>
+        </p>
+        <input type="submit" name='submit' value="submit">
+        </form>
+		
+		<script language="JavaScript">// Code for validating the form
+			var frmvalidator  = new Validator("myemailform");
+			frmvalidator.addValidation("name","req","Please provide your name");
+			frmvalidator.addValidation("email","req","Please provide your email");
+			frmvalidator.addValidation("email","email","Please enter a valid email address");
+       </script>
+       
+</div><!--Closing emailForm-->

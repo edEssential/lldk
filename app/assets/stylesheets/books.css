@@ -1,0 +1,52 @@
+.description {
+	display:block;
+	width:845px;
+	text-align:justify;
+	margin:80px 50px 80px 50px;
+	font-family:"palatino";
+	font-size: 1.1em;
+	color: #666;
+	line-height:1.5em;
+}
+.description p {
+	margin:1.5em 0em;
+}
+.links {
+	float:left;
+	width:303px;
+	margin:9px 0px 80px 0px;
+	border:1px dotted black;
+	padding:20px;
+}
+.links h1, .widgetRead h1 a {
+	margin:0px 0px 20px 0px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 1.1em;
+	color: #333;
+	line-height:1.3em;
+	font-weight:800;
+}	
+.links a, .widgetRead a {
+	display:block;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	text-decoration:none;
+	font-size: 1.1em;
+	color: #666;
+	line-height:1.3em;
+}
+.links a:hover, .widgetRead a:hover {
+	color:#333;
+}
+.widgetRead {
+	width:502px;
+	float:right;
+	margin:9px 0px 80px 0px;
+	border:1px dotted black;
+	padding:20px;
+}
+.widgetFrame {
+	width:500px;
+	color:#333;
+}
+
+

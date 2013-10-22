@@ -1,0 +1,20 @@
+<div class="blogholder">
+	<h1>Thoughts from the blog</h1>
+	<% @feed.each do |entry| %>
+  		<div>
+			<br/><br/><br /><h2><%= entry.name %></h2><br /><br />
+			<p><%= simple_format(entry.summary) %></p><br/><br /><hr />
+		</div>
+	<% end %>
+            
+	</div><!--Closing blogholder-->
+   
+	<div class="mowriting">
+   		<h1>More Writing</h1>
+   		<div class="icons">
+   			<div class="iconography"><%= link_to image_tag('bookIcon.png'), "http://www.goodreads.com/author/show/6507631.Dominic_H_King/blog", :target => '_blank' %>On writing</div>
+			<div class="iconography"><%= link_to image_tag('moneyIcon.png'), "http://www.gti.org/thinking/blog/", :target => '_blank' %>On economics</div>
+			<div class="iconography"><%= link_to image_tag('sportIcon.png'), "http://www.facebook.com/okhockey", :target => '_blank' %>On hockey</div>
+   		</div><!--Closing icons-->
+	</div>
+</div>

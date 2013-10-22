@@ -1,0 +1,27 @@
+<div class="formText formFade">
+	
+	<p class="formHeader">Edit User</p>
+
+	<div class="form">
+		<%= form_for(resource, :as => resource_name, :url => registration_path(resource_name), :html => { :method => :put }) do |f| %>
+  			<%= devise_error_messages! %>
+
+  			<%= f.label :email, class: 'formField' %>
+  			<%= f.email_field :email, :autofocus => true, class: 'formFieldT'  %>
+
+  			<%= f.label :password, class: 'formField' %> <i>(leave blank if you don't want to change it)</i>
+  			<%= f.password_field :password, :autocomplete => "off", class: 'formFieldT'  %>
+
+  			<%= f.label :password_confirmation, class: 'formField' %>
+  			<%= f.password_field :password_confirmation, class: 'formFieldT'  %>
+			
+  			<%= f.label :current_password, class: 'formField' %> <i>(we need your current password to confirm your changes)</i>
+  			<%= f.password_field :current_password, class: 'formFieldT'  %><br />
+
+  			<%= f.submit "Update" %>
+		<% end %>
+
+		<%= link_to "Back", :back %><br /><br />
+		
+	</div>
+</div>

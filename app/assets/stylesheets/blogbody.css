@@ -1,0 +1,58 @@
+.blogholder h1, .mowriting h1 {
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:1.4em;
+	font-weight:600;
+	color:#333;
+	line-height:3em;
+}
+
+.blogholder h1, {
+	margin:0px 0px 30px 0px;
+}
+
+.blogholder h2,{
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:1.2em;
+	font-weight:600;
+	color:#333;
+	line-height:1em;
+}
+
+.blogholder h3, .iconography a {
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:1.1em;
+	font-weight:200;
+	color:#999;
+	margin-bottom:2em;
+	text-decoration:none;
+}
+
+.blogholder {
+	width:720px;
+	margin:40px 0px 60px 0px;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:1em;
+	color:#333;
+	line-height:1.2em;
+	float:left;
+}
+
+.mowriting {
+	width:160px;
+	position:absolute;
+	margin:275px 0px 0px 788px;
+}
+
+.icons {
+	width:100px;
+	margin:20px 0px 0px 30px;
+	text-align:center;
+}
+
+.icons img {
+	max-width:100%;
+}
+
+.iconography {
+	margin:0px 0px 10px 0px;
+}

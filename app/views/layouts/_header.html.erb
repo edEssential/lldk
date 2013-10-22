@@ -1,0 +1,48 @@
+<div class="body">
+	<div class="header">
+
+	<%= link_to 'Dominic H. King', root_path, :class => "logowords" %>
+  
+  	<div class="headerIMG">
+		<div class="socialNavigationContainer">
+	    	<div class="socialNavigationGroup">
+	        	<%= link_to image_tag('facebook.png'), 'https://www.facebook.com/DominicHKing', :target => 'blank' %>
+				<%= link_to image_tag('twitter.png'), 'http://twitter.com/lldk120', :target => 'blank' %>
+				<%= link_to image_tag('linkedin.png'), 'http://uk.linkedin.com/pub/dominic-king/2a/8ab/445' %>
+				<%= link_to image_tag('email.png'), root_path, :target => 'blank' %>
+	    	</div>
+		</div>
+	</div>
+	
+	<div class="navigation" id="navigation">
+		<div class="navigationSub">
+			<div class="navigationButtons">
+				<ul>
+					<% @books.each do |b| %>
+						<li><%= link_to b.title, b %></li>
+					<% end %>
+					<li><%= link_to 'Other Writing', more_writing_path %></li>
+					<li><%= link_to 'More About The Author', contacts_path %></li>
+				</ul>
+			</div>
+		</div>
+		<% if user_signed_in? %>
+			<% if current_user.email.length > 23 %>
+				<div class="userInfo">
+					{ Logged in as <strong><%= current_user.email %></strong>
+					<span class="editLinkText2"><%= link_to 'Edit', edit_user_registration_path %></span>
+					<span class="editLinkText2"><%= link_to 'Logout', destroy_user_session_path, method: :delete %> }</span>
+				</div>
+			<% else %>
+				<div class="userInfo2">
+					{ Logged in as <strong><%= current_user.email %></strong>
+					<span class="editLinkText2"><%= link_to 'Edit', edit_user_registration_path %></span>
+					<span class="editLinkText2"><%= link_to 'Logout', destroy_user_session_path, method: :delete %> }</span>
+				</div>
+			<% end %>
+		<% end %>
+	</div>
+</div><!--Closing header-->
+</div>
+
+

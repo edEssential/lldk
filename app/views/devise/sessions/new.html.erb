@@ -1,0 +1,15 @@
+<div class="formText formFade">
+	<p class="formHeader pinkMe">Sign in</p>
+	
+	<div class="form">
+		<%= form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| %>
+  			<%= f.label :email, class: 'formField' %>
+  			<%= f.email_field :email, :autofocus => true, class: 'formFieldT' %><br />
+
+  			<%= f.label :password, class: 'formField' %>
+  			<%= f.password_field :password, class: 'formFieldT' %><br />
+
+  			<%= f.submit "Sign in" %>
+		<% end %>
+	</div>
+</div>

@@ -1,0 +1,46 @@
+<%= link_to image_tag(@book.cover), @book, :class => 'mainImg' %>
+	<% if @book.homepageintro? %>
+		<div class="introText">
+	    	<div class="introTextWords">
+	    		<p><span class="headings">The Twin Worlds trilogy </span><%= @book.homepageintro %></p>
+				<% if user_signed_in? %>
+					<%= link_to image_tag('edit2.png'), edit_book_path(@book), :class => "editRelease3" %>
+				<% end %>
+	    	</div>
+		</div>
+	<% end %>
+
+
+<div class="threeSections">
+	<div class="books">
+		<%= image_tag ('headerbox1.png') %>
+		<% @book_redux.each do |b| %>
+			<% if b.review1? || b.review2? || b.review3? %>
+				<br /><%= link_to image_tag(b.packshot), b, :class => 'packshot' %>
+        		<div class="textBlock2">
+					<em>"<%= b.review1 %>"</em><br /><br />
+					<em>"<%= b.review2 %>"</em><br /><br />
+					<em>"<%= b.review3 %>"</em><br /><br />
+				</div>	
+			<% end %>
+			<% if user_signed_in? %>
+				<%= link_to image_tag('edit2.png'), edit_book_path(b), :class => "editRelease3" %>
+			<% end %>
+		<% end %>
+    </div>
+    
+    <div class="tweets">
+		<%= image_tag('headerbox2.png') %><br /><br />
+		<%= link_to image_tag('more.png'), 'https://twitter.com/DominicHKing' %>
+	</div>
+    
+    <div class="thoughts">
+		<%= image_tag('headerbox3.png') %>
+        <div class="textBlock">
+			<%= simple_format(truncate (@feed.summary), length: 1125, :separator => '.') %>
+		</div>
+		<%= link_to image_tag('more.png'), more_writing_path, :class => 'readmore' %>
+    </div>
+</div>
+
+

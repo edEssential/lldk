@@ -1,0 +1,46 @@
+.more {
+	width:450px;
+	font-family:"palatino";
+	font-size:1em;
+	line-height:1.4em;
+	color:#333;
+	margin:50px 60px 0px 50px;
+	float:left;
+}
+.more p {
+	margin:1.5em 0em;
+}
+
+.social {
+	display:block;
+}
+
+.social a {
+	text-decoration:none;
+}
+
+.emailForm {
+	width:300px;
+	margin:56px 0px 0px 40px;
+	float:left;
+}
+.emailboxtext {
+	font-family:"palatino";
+	font-size:1em;
+	line-height:1.4em;
+	color:#333;
+}
+.emailboxtext p {
+	padding-bottom:35px;
+}
+
+.emailboxtext h1, .more h1 {
+	font-family:"palatino";
+	font-size:1em;
+	font-weight:600;
+	color:#333;
+	line-height:3em;
+}
+.thanks p {
+	margin:-1em 0em;
+}

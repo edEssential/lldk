@@ -1,0 +1,35 @@
+<div class="mainImg"><%= image_tag(@book.cover) %></div>
+<div class="introText">
+	<div class="introTextWords">
+		<p><span class="headings">Plot Synopsis</span></p>
+	</div>
+	<% if user_signed_in? %>
+		<%= link_to image_tag('edit2.png'), edit_book_path(@book), :class => "editRelease2" %>
+	<% end %>
+</div>
+
+<div class="description"><%= simple_format(@book.synopsis) %></div>
+
+<div class="links">
+	<% if @book.buylink1 || @book.buylink2 || @book.buylink3 %>
+		<h1>Places to buy <%= @book.title %> </h1>
+	    <%= link_to @book.link1title, @book.buylink1  %>
+		<%= link_to @book.link2title, @book.buylink2  %>
+		<%= link_to @book.link3title, @book.buylink3  %>
+	    <br /><br />
+	<% end %>
+
+	<% if @book.promotions1 || @book.promtions2 || @book.promotions3 %>
+   	 	<h1>Promotions</h1>
+	    <%= link_to @book.link4title, @book.promotions1 unless !@book.promotions1? %>
+		<%= link_to @book.link5title, @book.promotions2 unless !@book.promotions2? %>
+		<%= link_to @book.link6title, @book.promotions3 unless !@book.promotions3? %>
+	<% end %>
+</div>
+
+<div class="widgetRead">
+	<h1><a href="http://www.goodreads.com/book/show/15936755-the-chamber">Goodreads reviews for The Chamber</a></h1>
+	<iframe class="widgetFrame" src="http://www.goodreads.com/api/reviews_widget_iframe/6507631.Dominic_H_King?did=DEVELOPER_ID&format=html&header_text=Goodreads+reviews+for+The+Chamber&isbn=1479109193&links=660&min_rating=1&num_reviews=5&review_back=ffffff&stars=000000&stylesheet=&text=444" width="558" height="500" frameborder="0">
+	</iframe>
+</div><!--Closing WIDGET-->
+

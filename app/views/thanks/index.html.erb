@@ -1,0 +1,23 @@
+<% c = Contact.first %>
+<div class="more">
+	<h1>About the author</h1><br/>
+    <%= image_tag(c.avatar) %><br/><br/>
+	<p><%= simple_format(c.description) %></p><br/>
+</div><!--Closing more-->
+
+<div class="emailForm">
+
+	<div class="emailboxtext">
+    	<h1>Connect With Dominic</h1>
+        <div class="social">
+			<span class="social"><%= link_to "Facebook", (c.facebook), :target => "_blank" %></span>
+			<span class="social"><%= link_to "LinkedIn", (c.linkedin), :target => "_blank" %></span>
+			<span class="social"><%= link_to "Twitter", (c.twitter), :target => "_blank" %></span>
+        </div><!--Closing social--><br/><br>
+        
+		<h1>Hi <%= @contact_last.name.split(" ").first.titleize %>,</h1><span class="thanks"><%= simple_format(@contact_first.thankstext) %></span>
+		<% if user_signed_in? %>
+			<%= link_to image_tag('edit2.png'), edit_contact_path(@contact_first), :class => "editRelease" %>
+		<% end %>
+	</div>				
+</div><!--Closing emailForm-->

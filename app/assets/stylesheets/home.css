@@ -1,0 +1,38 @@
+.threeSections {
+	display:block;
+	float:left;
+	width:960px;
+	margin-bottom:150px;
+}
+.books, .tweets {
+	float:left;
+	width:300px;
+	margin:0px 20px 0px 0px;		
+}
+.thoughts {
+	float:left;
+	width:300px;
+	margin:0px 0px 0px 0px;
+}
+.textBlock, .textBlock2 {
+	width:280px;
+	margin:10px;
+	font-family:"palatino";
+	font-size:1em;
+	line-height:1.4em;
+	color:#333;
+}
+.textBlock2 {
+	border-bottom:1px dotted gray;
+}
+.packshot {
+	display:block;
+	width:100px;
+	float:right;
+	margin:20px 10px 0px 10px;
+}
+.readmore {
+	width:280px;
+	margin:10px;
+	float:right;
+}
