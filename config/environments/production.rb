@@ -25,12 +25,13 @@ DK::Application.configure do
   config.active_support.deprecation = :notify
 
   config.paperclip_defaults = {
-    :storage => :s3,
-    :s3_credentials => {
+      :storage => :s3,
+      :s3_protocol => 'http',
       :bucket => ENV['AWS_BUCKET'],
-      :access_key_id => ENV['AWS_ACCESS_KEY_ID'],
-      :secret_access_key => ENV['AWS_SECRET_ACCESS_KEY']
+      :s3_credentials => {
+        :access_key_id => ENV['AWS_ACCESS_KEY_ID'],
+        :secret_access_key => ENV['AWS_SECRET_ACCESS_KEY']
+      }
     }
-  }
   
 end
