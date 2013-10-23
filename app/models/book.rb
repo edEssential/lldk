@@ -7,7 +7,7 @@ class Book < ActiveRecord::Base
       rectangle: '915x194>'
     }
     has_attached_file :packshot, styles: {
-        thumb: '142X179>'
+      thumb: '142X179>'
     }
   
 end

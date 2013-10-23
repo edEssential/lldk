@@ -6,7 +6,6 @@ class BooksController < ApplicationController
   end
   
   def create
-
     @book = Book.create(params[:book])
     respond_to do |format|
       format.html { redirect_to root_path }
@@ -14,12 +13,10 @@ class BooksController < ApplicationController
   end
   
   def edit
-
     @book = Book.find(params[:id])
   end
 
   def update
-
     @book = Book.find(params[:id])
     if @book.update_attributes(params[:book])
       respond_to do |format|
@@ -31,7 +28,6 @@ class BooksController < ApplicationController
   end
   
   def destroy
-
     @book = Book.find(params[:id])
     @book.destroy
     respond_to do |format|
@@ -40,7 +36,6 @@ class BooksController < ApplicationController
   end
   
   def show
-
     @book = Book.find(params[:id])
   end
   
