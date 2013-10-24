@@ -13,7 +13,6 @@ class ContactsController < ApplicationController
   end
   
   def index
-
     @contact = Contact.new
     @contacts = Contact.order(:name)
     respond_to do |format|
@@ -24,6 +23,10 @@ class ContactsController < ApplicationController
   
   def edit
     @contact = Contact.find(params[:id])
+  end
+  
+  def new
+    @contact = Contact.new
   end
 
   def update   

@@ -10,6 +10,6 @@ DK::Application.routes.draw do
   root :to => 'home#index'
   match 'blog' => 'home#blog'
   match 'more_writing' => 'writings#index'
-  match 'the_black_gate' => 'books#show'
+  match 'the_black_gate' => 'books(10)#show'
  
 end
