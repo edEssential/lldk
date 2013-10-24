@@ -12,7 +12,7 @@
 .thoughts {
 	float:left;
 	width:300px;
-	margin:0px 0px 0px 0px;
+	margin:0px 0px 150px 0px;
 }
 .textBlock, .textBlock2 {
 	width:280px;
@@ -35,4 +35,26 @@
 	width:280px;
 	margin:10px;
 	float:right;
+}
+.twitterBox {
+	margin:-12px 0px 0px 0px;
+}
+.tweet {
+	border-bottom:1px dotted gray;
+	margin:10px;
+}
+.profile {
+	width:35px;
+}
+.profile img {
+	max-width:100%;
+	border:1px solid black;
+	-moz-border-radius:5px;
+	border-radius:5px;
+}
+.tweetText a {
+	color:#ff0000;
+}
+.tweetMore {
+	margin:b10px;
 }

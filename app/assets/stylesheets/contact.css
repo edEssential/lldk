@@ -1,10 +1,10 @@
 .more {
-	width:450px;
-	font-family:"palatino";
+	width:500px;
+	font-family:Georgia, "Times New Roman", Times, serif;
 	font-size:1em;
-	line-height:1.4em;
 	color:#333;
-	margin:50px 60px 0px 50px;
+	line-height:1.2em;
+	margin:66px 60px 0px 0px;
 	float:left;
 }
 .more p {
@@ -20,9 +20,9 @@
 }
 
 .emailForm {
-	width:300px;
-	margin:56px 0px 0px 40px;
-	float:left;
+	width:385px;
+	margin:67px 0px 150px 0px;
+	float:right;
 }
 .emailboxtext {
 	font-family:"palatino";
@@ -31,16 +31,17 @@
 	color:#333;
 }
 .emailboxtext p {
-	padding-bottom:35px;
+	padding-bottom:65px;
 }
 
 .emailboxtext h1, .more h1 {
-	font-family:"palatino";
-	font-size:1em;
+	font-size:1.2em;
 	font-weight:600;
 	color:#333;
-	line-height:3em;
 }
 .thanks p {
 	margin:-1em 0em;
+}
+.formContact {
+	margin:-20px 0px 0px 0px;
 }

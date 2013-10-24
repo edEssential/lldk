@@ -20,7 +20,7 @@ class BooksController < ApplicationController
     @book = Book.find(params[:id])
     if @book.update_attributes(params[:book])
       respond_to do |format|
-       format.html { redirect_to book_path }
+       format.html { redirect_to root_path }
       end
     else
       render :action => 'edit'
@@ -31,7 +31,7 @@ class BooksController < ApplicationController
     @book = Book.find(params[:id])
     @book.destroy
     respond_to do |format|
-      format.html { redirect_to book_path }
+      format.html { redirect_to root_path }
     end
   end
   

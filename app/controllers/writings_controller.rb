@@ -1,8 +1,7 @@
 class WritingsController < ApplicationController
   
   def index
-    @feed = Writing.all
+    @feeds = Writing.paginate(:page => params[:page], :per_page => 1)
   end
 
-  
 end

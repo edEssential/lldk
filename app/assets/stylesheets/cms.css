@@ -56,12 +56,12 @@ i {font-size:13px;}
 .editRelease, .deleteRelease, .editVideo, .deleteVideo, .editVideo2, .deleteVideo2, .editShow, .deleteShow, .newBook {float:right;max-width:22px;margin:-4px 0px 0px -2px}
 .editRelease img, .deleteRelease img, .editVideo img, .deleteVideo img, .editVideo2 img, .deleteVideo2 img, .editShow img, .deleteShow img, .newBook img, .editAbout img {width:100%;}
 
-.editRelease2 {float:left;max-width:22px;margin:-4px 0px 0px 15px;}
+.editRelease2 {float:left;max-width:22px;margin:-24px 0px 0px 165px;}
 
-.editAbout {position:absolute;max-width:22px;margin:313px 0px 0px -755px;}
+.editAbout {position:absolute;max-width:22px;margin:300px 0px 0px -755px;}
 .editRelease2 img, .editAbout img {width:100%;}
 
-.editRelease3 {float:right;max-width:22px;margin:-40px 0px 0px 45px;}
+.editRelease3 {float:left;max-width:22px;margin:-40px 0px 0px 273px;}
 .editRelease3 img {width:100%;}
 
 .fixer {margin-right:35px;}
