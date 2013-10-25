@@ -8,6 +8,7 @@ gem 'aws-sdk'
 gem 'twitter'
 gem 'feedzirra'
 gem 'will_paginate', '~> 3.0'
+gem 'newrelic_rpm'
 
 group :development, :test do
   gem 'sqlite3', '1.3.7'
