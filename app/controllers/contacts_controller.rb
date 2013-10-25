@@ -40,6 +40,7 @@ class ContactsController < ApplicationController
   
   def thanks
     @contact = Contact.first
+    @contact_last = Contact.last
   end
   
   

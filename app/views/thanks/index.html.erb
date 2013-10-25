@@ -15,9 +15,9 @@
 			<span class="social"><%= link_to "Twitter", (c.twitter), :target => "_blank" %></span>
         </div><!--Closing social--><br/><br>
         
-		<h1>Hi <%= @contact_last.name.split(" ").first.titleize %>,</h1><span class="thanks"><%= simple_format(@contact_first.thankstext) %></span>
+		<h1>Hi <%= @contact_last.name.split(" ").first.titleize %>,</h1><span class="thanks"><%= simple_format(c.thankstext) %></span>
 		<% if user_signed_in? %>
-			<%= link_to image_tag('edit2.png'), edit_contact_path(@contact_first), :class => "editRelease" %>
+			<%= link_to image_tag('edit2.png'), edit_contact_path(c), :class => "editRelease" %>
 		<% end %>
 	</div>				
 </div><!--Closing emailForm-->
