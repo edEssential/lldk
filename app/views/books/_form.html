@@ -1,9 +1,8 @@
 <div class="formText formFade">
 	<p class="formHeader">Use this form to save your book to the site!</p><br /><br />
 	<div class="form">	
+		<h1><%= @book.title %></h1><hr/><br/>
 		<%= form_for(@book) do |f| %>
-			<%= f.label :Title, class: 'formField' %><br />
-			<%= f.text_field :title, class: 'formFieldT'  %><br />
 			<%= f.label :Home_page_text, class: 'formField' %><br />
     		<%= f.text_area :homepageintro, class: 'formFieldBox'  %><br />
     		<%= f.label :Book_Synopsis, class: 'formField' %><br />
