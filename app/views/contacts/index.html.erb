@@ -2,7 +2,7 @@
 	<%= link_to image_tag('edit2.png'), edit_contact_path(1), :class => "editAbout" %>
 <% end %>
 
-<% c = Contact.first %>
+<% c = Contact.find_by_id(1) %>
 <div class="more">
 	<h1>About the author</h1><br/>
     <%= image_tag(c.avatar) %><br/><br/>
