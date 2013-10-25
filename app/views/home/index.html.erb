@@ -13,7 +13,7 @@
 		<%= image_tag ('headerbox1.png') %>
 		<% @book_redux.each do |b| %>
 			<% if b.review1? || b.review2? || b.review3? %>
-				<br /><%= link_to image_tag(b.packshot), b, :class => 'packshot' %>
+				<br /><%= link_to image_tag(b.packshot), "/books" + "/" + @book.title.downcase.gsub(/\s+/, '-').gsub(/[^a-z0-9_-]/, '').squeeze('-'), :class => 'packshot' %>
         		<div class="textBlock2">
 					<em>"<%= b.review1 %>"</em><br /><br />
 					<em>"<%= b.review2 %>"</em><br /><br />
@@ -21,7 +21,7 @@
 				</div>	
 			<% end %>
 			<% if user_signed_in? %>
-				<%= link_to image_tag('edit2.png'), edit_book_path(b), :class => "editRelease3" %>
+				<%= link_to image_tag('edit2.png'), edit_book_path(@book.title.downcase.gsub(/\s+/, '-').gsub(/[^a-z0-9_-]/, '').squeeze('-')), :class => "editRelease3" %>
 			<% end %>
 		<% end %>
     </div>
@@ -49,7 +49,7 @@
         <div class="textBlock">
 			<%= simple_format(truncate (@feed.summary), length: 1125, :separator => '.') %>
 		</div>
-		<%= link_to image_tag('more.png'), more_writing_path, :class => 'readmore' %>
+		<%= link_to image_tag('more.png'), other_writing_path, :class => 'readmore' %>
     </div>
 </div>
 

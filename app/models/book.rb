@@ -9,5 +9,12 @@ class Book < ActiveRecord::Base
     has_attached_file :packshot, styles: {
       thumb: '142X179>'
     }
-  
+    
+    extend FriendlyId
+    friendly_id :name, use: [:slugged, :history]
+    
+    def should_generate_new_friendly_id?
+      new_record? || slug.blank?
+    end
+
 end

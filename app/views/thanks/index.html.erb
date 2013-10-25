@@ -18,7 +18,7 @@
 		<h1>Hi <%= @contact_last.name.split(" ").first.titleize %>,</h1><br /><br />
 		<div class="thanks"><%= simple_format(c.thankstext) %></div>
 		<% if user_signed_in? %>
-			<%= link_to image_tag('edit2.png'), edit_contact_path(c), :class => "editRelease" %>
+			<%= link_to image_tag('edit2.png'), edit_contact_path(c), :class => "editAbout" %>
 		<% end %>
 	</div>				
 </div><!--Closing emailForm-->

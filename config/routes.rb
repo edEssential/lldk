@@ -9,7 +9,8 @@ DK::Application.routes.draw do
   
   root :to => 'home#index'
   match 'blog' => 'home#blog'
-  match 'more_writing' => 'writings#index'
-  match 'the_black_gate' => 'books(10)#show'
+  match 'other_writing' => 'writings#index'
+  match 'about_the_author' => 'contacts#index'
+  match "/:slug" => "books#show"
  
 end

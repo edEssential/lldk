@@ -9,6 +9,7 @@ gem 'twitter'
 gem 'feedzirra'
 gem 'will_paginate', '~> 3.0'
 gem 'newrelic_rpm'
+gem 'friendly_id'
 
 group :development, :test do
   gem 'sqlite3', '1.3.7'

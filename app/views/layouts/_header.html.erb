@@ -19,10 +19,10 @@
 			<div class="navigationButtons">
 				<ul>
 					<% @books.each do |b| %>
-						<li><%= link_to b.title, b %></li>
+						<li><%= link_to b.title, "/books" + "/" + b.title.downcase.gsub(/\s+/, '-').gsub(/[^a-z0-9_-]/, '').squeeze('-') %></li>
 					<% end %>
-					<li><%= link_to 'Other Writing', more_writing_path %></li>
-					<li><%= link_to 'More About The Author', contacts_path %></li>
+					<li><%= link_to 'Other Writing', other_writing_path %></li>
+					<li><%= link_to 'More About The Author', about_the_author_path %></li>
 				</ul>
 			</div>
 		</div>
