@@ -1,11 +1,16 @@
-<%= link_to image_tag(@book.cover), @book, :class => 'mainImg' %>
-	<% if @book.homepageintro? %>
-		<div class="introText">
-	    	<div class="introTextWords">
-	    		<p><span class="headings">The Twin Worlds trilogy </span><%= @book.homepageintro %></p>
-	    	</div>
-		</div>
+<div class="mainImg slides">
+	<% @books.each do |b| %>
+		<%= link_to image_tag(b.cover), b %>
 	<% end %>
+</div>
+
+<% if @book.homepageintro? %>
+	<div class="introText">
+	   	<div class="introTextWords">
+	   		<p><span class="headings">The Twin Worlds trilogy </span><%= @book.homepageintro %></p>
+	   	</div>
+	</div>
+<% end %>
 
 
 <div class="threeSections">

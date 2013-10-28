@@ -1,3 +1,9 @@
+.slides {
+	float:left;
+	clear:both;
+	margin-bottom:98px !important;
+	height:100px !important;
+}
 .threeSections {
 	display:block;
 	float:left;
