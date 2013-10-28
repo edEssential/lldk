@@ -38,7 +38,7 @@ DK::Application.configure do
     :port => 587,
     :enable_starttls_auto => true,
     :user_name => 'ed_hamilton@live.com',
-    :password => 'zCN1WSPoFLoJWHoypL7lOQ',
+    :password => 'L2721U_ThNJJwTqBeDpH5w',
     :authentication => 'login',
     :domain => 'domain.com',
     
