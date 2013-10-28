@@ -18,15 +18,12 @@
         
 </head>
 <body class="<%= params[:controller] %>_controller">
-	<div class="headerIMG">
-	
 	<div class="container">
-			
+		
 		<div id="header"><%= render 'layouts/header' %></div>	
 		<%= yield %>
-			
+		<%= render 'layouts/footer' %></div>
+		
 	</div>
-	</div>
-
 </body>
 </html>

@@ -1,4 +1,6 @@
-<div class="blogholder">
+<div class="container">
+	
+	<div class="blogholder">
 	<% @feeds.each do |entry| %>
   		<div class="blogBorder">
 			<br/><br/><h2><%= entry.name %></h2>
@@ -20,4 +22,5 @@
 			<div class="iconography"><%= link_to image_tag('sportIcon.png'), "http://www.facebook.com/okhockey", :target => '_blank' %>On hockey</div>
    		</div><!--Closing icons-->
 	</div>
+</div>
 </div>
