@@ -7,8 +7,8 @@
 			<div class="digg_pagination">
 				<%= will_paginate @feeds, :page_links => false %>
 			</div><br /><br />
-			<p><%= simple_format(entry.summary) %></p><br/><br />
-			<p><%= simple_format(entry.publishedat) rescue nil %></p><br/><br />
+			<p><%= simple_format(entry.content) %></p><br/><br />
+			<p><em><strong><%= (entry.publishedat) %></strong></em></p><br/><br />
 		</div>
 	<% end %>
 	

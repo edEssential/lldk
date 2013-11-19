@@ -8,9 +8,9 @@ class Writing < ActiveRecord::Base
           :name         => entry.title,
           :summary      => entry.summary,
           :url          => entry.url,
-          :publishedat  => entry.published,
+          :publishedat  => entry.published.strftime("%B %d, %Y"),
           :guid         => entry.id,
-          :content      => entry.content
+          :content      => entry.summary[0..-60]
         )
       end
     end

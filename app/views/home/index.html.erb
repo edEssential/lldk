@@ -20,9 +20,9 @@
 			<% if b.review1? || b.review2? || b.review3? %>
 				<br /><%= link_to image_tag(b.packshot), "/books" + "/" + @book.title.downcase.gsub(/\s+/, '-').gsub(/[^a-z0-9_-]/, '').squeeze('-'), :class => 'packshot' %>
         		<div class="textBlock2">
-					<em><% if b.review1? %>"<%= b.review1 %><% end %>"</em><br /><br />
-					<em><% if b.review2? %>"<%= b.review2 %><% end %>"</em><br /><br />
-					<em><% if b.review3? %>"<%= b.review3 %><% end %>"</em><br /><br />
+					<% if b.review1? %><em><%= '"' + b.review1 + '"' %></em><br /><br /><% end %>
+					<% if b.review2? %><em><%= '"' + b.review2 + '"' %></em><br /><br /><% end %>
+					<% if b.review3? %><em><%= '"' + b.review3 + '"' %></em><br /><br /><% end %>
 				</div>	
 			<% end %>
 			<% if user_signed_in? %>
@@ -40,9 +40,8 @@
 						<%= image_tag("https://pbs.twimg.com/profile_images/378800000537985980/79fdbf175c59ae29bd1a77e64dbbf9be.jpeg") %>
 					</div><br />
 					<div class="tweetText">
-						<em><%= raw(t.text) %></em>
+						<em><%= simple_format(t.text) %></em>
 					</div><br />
-					<%= t.created_at.to_date %><br /><br />
 				</div>
 			<% end %>
 		</div>
