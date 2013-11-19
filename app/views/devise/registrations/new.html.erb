@@ -1,23 +1,23 @@
-<!--<div class="formText">
+<div class="formText">
 	
 	<p class="formHeader">Sign Up</p></br />
 	<div class="form">
 
-		<%#= form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
+		<%= form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
   			<%= devise_error_messages! %>
 
-	  		<%#= f.label :email, class: 'formField'  %><br />
-			<%#= f.email_field :email, :autofocus => true, class: 'formFieldT'  %><br />
+	  		<%= f.label :email, class: 'formField'  %><br />
+			<%= f.email_field :email, :autofocus => true, class: 'formFieldT'  %><br />
 
-			<%#= f.label :password, class: 'formField'   %><br />
-			<%#= f.password_field :password, class: 'formFieldT'   %><br />
+			<%= f.label :password, class: 'formField'   %><br />
+			<%= f.password_field :password, class: 'formFieldT'   %><br />
 
-			<%#= f.label :password_confirmation, class: 'formField'   %><br />
-			<%#= f.password_field :password_confirmation, class: 'formFieldT'   %><br />
+			<%= f.label :password_confirmation, class: 'formField'   %><br />
+			<%= f.password_field :password_confirmation, class: 'formFieldT'   %><br />
 
-			<%#= f.submit "Sign up" %>
-		<%# end %>
+			<%= f.submit "Sign up" %>
+		<% end %>
 		
 	</div>
-</div>-->
+</div>
 
