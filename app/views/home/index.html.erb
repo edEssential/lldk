@@ -20,9 +20,9 @@
 			<% if b.review1? || b.review2? || b.review3? %>
 				<br /><%= link_to image_tag(b.packshot), "/books" + "/" + @book.title.downcase.gsub(/\s+/, '-').gsub(/[^a-z0-9_-]/, '').squeeze('-'), :class => 'packshot' %>
         		<div class="textBlock2">
-					<em>"<%= b.review1 %>"</em><br /><br />
-					<em>"<%= b.review2 %>"</em><br /><br />
-					<em>"<%= b.review3 %>"</em><br /><br />
+					<em><% if b.review1 %>"<%= b.review1 %><% end %>"</em><br /><br />
+					<em><% if b.review2 %>"<%= b.review2 %><% end %>"</em><br /><br />
+					<em><% if b.review1 %>"<%= b.review3 %><% end %>"</em><br /><br />
 				</div>	
 			<% end %>
 			<% if user_signed_in? %>
