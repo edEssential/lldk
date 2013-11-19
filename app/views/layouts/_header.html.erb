@@ -21,6 +21,7 @@
 					<% @books.each do |b| %>
 						<li><%= link_to b.title, "/books" + "/" + b.title.downcase.gsub(/\s+/, '-').gsub(/[^a-z0-9_-]/, '').squeeze('-') %></li>
 					<% end %>
+					<li><%= link_to 'The Reaper', reapers_path %></li>
 					<li><%= link_to 'Other Writing', other_writing_path %></li>
 					<li><%= link_to 'More About The Author', about_the_author_path %></li>
 				</ul>

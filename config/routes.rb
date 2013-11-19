@@ -6,6 +6,7 @@ DK::Application.routes.draw do
   resources :abouts
   resources :contacts
   resources :thanks
+  resources :reapers
   
   root :to => 'home#index'
   match 'blog' => 'home#blog'

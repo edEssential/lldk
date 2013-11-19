@@ -16,4 +16,8 @@ class HomeController < ApplicationController
     
   end
   
+  def the_reaper
+    
+  end
+  
 end
