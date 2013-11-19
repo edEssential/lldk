@@ -8,6 +8,7 @@
 				<%= will_paginate @feeds, :page_links => false %>
 			</div><br /><br />
 			<p><%= simple_format(entry.summary) %></p><br/><br />
+			<p><%= simple_format(entry.publishedat) rescue nil %></p><br/><br />
 		</div>
 	<% end %>
 	
@@ -20,6 +21,7 @@
    			<div class="iconography"><%= link_to image_tag('bookIcon.png'), "http://www.goodreads.com/author/show/6507631.Dominic_H_King/blog", :target => '_blank' %>On writing</div>
 			<div class="iconography"><%= link_to image_tag('moneyIcon.png'), "http://www.gti.org/thinking/blog/", :target => '_blank' %>On economics</div>
 			<div class="iconography"><%= link_to image_tag('sportIcon.png'), "http://www.facebook.com/okhockey", :target => '_blank' %>On hockey</div>
+			<div class="iconography"><%= link_to image_tag('luggage.png'), "http://ihatetinytrolleybags.tumblr.com/", :target => '_blank' %>On tiny trolley bags</div>
    		</div><!--Closing icons-->
 	</div>
 </div>

@@ -1,5 +1,5 @@
 class Writing < ActiveRecord::Base
-  attr_accessible :name, :summary, :url, :publishedat, :guid
+  attr_accessible :name, :summary, :url, :publishedat, :guid, :content
   def self.update_from_feed(feed_url)
     feed = Feedzirra::Feed.fetch_and_parse(feed_url)
     feed.entries.each do |entry|
@@ -9,7 +9,8 @@ class Writing < ActiveRecord::Base
           :summary      => entry.summary,
           :url          => entry.url,
           :publishedat  => entry.published,
-          :guid         => entry.id
+          :guid         => entry.id,
+          :content      => entry.content
         )
       end
     end
