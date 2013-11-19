@@ -1,5 +1,6 @@
 <% if user_signed_in? %>
 	<%= link_to image_tag('edit2.png'), edit_contact_path(1), :class => "editAbout" %>
+	<div class="downloadCSV3"><%= link_to image_tag('download.png'), contacts_path(format: "csv") %></div>
 <% end %>
 
 <% c = Contact.find_by_id(1) %>
