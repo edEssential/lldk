@@ -42,6 +42,5 @@ class ContactsController < ApplicationController
     @contact = Contact.first
     @contact_last = Contact.last
   end
-  
-  
+
 end

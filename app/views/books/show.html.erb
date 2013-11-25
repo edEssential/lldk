@@ -27,7 +27,14 @@
 
 <div class="widgetRead">
 	<h1><a href="http://www.goodreads.com/book/show/15936755-the-chamber">Goodreads reviews for <%= @book.title %></a></h1>
-	<iframe class="widgetFrame" src="http://www.goodreads.com/api/reviews_widget_iframe/6507631.Dominic_H_King?did=DEVELOPER_ID&format=html&header_text=Goodreads+reviews+for+The+Chamber&isbn=1479109193&links=660&min_rating=1&num_reviews=5&review_back=ffffff&stars=000000&stylesheet=&text=444" width="558" height="500" frameborder="0">
-	</iframe>
+	<% if @book.id == 1 || @book.id == 9 %>
+		<iframe class="widgetFrame" src="http://www.goodreads.com/api/reviews_widget_iframe/6507631.Dominic_H_King?did=DEVELOPER_ID&format=html&header_text=Goodreads+reviews+for+The+Chamber&isbn=1479109193&links=660&min_rating=1&num_reviews=5&review_back=ffffff&stars=000000&stylesheet=&text=444" width="558" height="500" frameborder="0">
+		</iframe>
+	<% else %>
+		<iframe class="widgetFrame" src="https://www.goodreads.com/api/reviews_widget_iframe/6507631.Dominic_H_King?did=DEVELOPER_ID&format=html&header_text=Goodreads+reviews+for+The+Black+Gate&isbn=B00GM6P41G&links=660&min_rating=&num_reviews=&review_back=ffffff&stars=000000&stylesheet=&text=444" width="558" height="500" frameborder="0">
+		</iframe>
+	<% end %>
 </div><!--Closing WIDGET-->
+
+  
 

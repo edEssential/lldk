@@ -43,10 +43,14 @@
 	margin:9px 0px 80px 0px;
 	border:1px dotted black;
 	padding:20px;
+	background-color: #f7f7f7 !important;
 }
 .widgetFrame {
 	width:500px;
 	color:#333;
+}
+iframe{
+    background-color: #f7f7f7 !important;
 }
 
 

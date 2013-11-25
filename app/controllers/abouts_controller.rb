@@ -14,7 +14,6 @@ class AboutsController < ApplicationController
   
   def edit
     @about = About.find(params[:id])
-    bring_in_books
   end
 
   def update   
@@ -35,7 +34,6 @@ class AboutsController < ApplicationController
       format.html { redirect_to abouts_path }
     end
   end
-  
   
   def index
     bring_in_the_first

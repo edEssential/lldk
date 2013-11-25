@@ -4,7 +4,7 @@ class ApplicationController < ActionController::Base
   before_filter :bring_in_books 
   
   def bring_in_books
-    @books = Book.select('title,id').order('id DESC')  
+    @books = Book.select('title,id').order('id ASC')  
   end
   
 end
