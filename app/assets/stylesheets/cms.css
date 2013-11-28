@@ -52,7 +52,7 @@ i {font-size:13px;}
 .showsAdder, .downloadCSV, .downloadCSV2, .downloadCSV3 {max-width:80px;margin:0px auto;margin-bottom:-70px}
 .showsAdder img, .downloadCSV img, .downloadCSV2 img, .downloadCSV3 img {width:100%;}
 .downloadCSV2 {margin-bottom:0px;}
-.downloadCSV3 {position:absolute;margin:286px 0px 0px 190px;}
+.downloadCSV3 {position:absolute;margin:301px 0px 0px 220px;}
 .editRelease, .deleteRelease, .editVideo, .deleteVideo, .editVideo2, .deleteVideo2, .editShow, .deleteShow, .newBook {float:right;max-width:22px;margin:-4px 0px 0px -2px}
 .editRelease img, .deleteRelease img, .editVideo img, .deleteVideo img, .editVideo2 img, .deleteVideo2 img, .editShow img, .deleteShow img, .newBook img, .editAbout img {width:100%;}
 

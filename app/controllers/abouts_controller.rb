@@ -43,5 +43,4 @@ class AboutsController < ApplicationController
     @about = About.first
   end
   
-  
 end
