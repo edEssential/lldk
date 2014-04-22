@@ -9,15 +9,14 @@
 	<div class="grid2 gutter">
 
 		<h2>About</h2>
-		<p>Dominic was born in Bath, UK in 1982.</p>
-
-		<p>He is the author of the Twin Worlds trilogy that follows Kal and Daine in their epic battle against the Reaper. The first two instalments - The Chamber (2012) and The Black Gate (2013) - are currently available. He cites writers such as Tolkien, Pullman, Martin and Bernard Cornwell and time spent in China, India, Nepal and Latin America as his major inspirations.</p>
+		<p><%= simple_format(truncate (@about.text), length: 465, :separator => '.') %></p>
 	
 	</div>
 	
 	<div class="grid4 gutter">
 		<h2>From the blog</h2>
 		<%= simple_format(truncate (@feed.summary), length: 1225, :separator => '.') %>
+		<div class="more"><%= link_to 'More', other_writing_path, :class => 'readmore' %></div>
 	</div>
 
 </div>

@@ -6,6 +6,7 @@ class HomeController < ApplicationController
     @feed = Writing.last
     @tweets = Twitter.user_timeline("DominicHKing", :count => 4)
     @books = Book.order('id ASC').all
+    @about = About.first
   end
   
   def bring_in_book
