@@ -10,11 +10,23 @@
 
 		<h2>About</h2>
 		<p><%= simple_format(truncate (@about.text), length: 465, :separator => '.') %></p>
+		<% @books.each do |b| %>
+			<div class="packshot">
+				<%= link_to image_tag(b.packshot), "/books" + "/" + b.title.downcase.gsub(/\s+/, '-').gsub(/[^a-z0-9_-]/, '').squeeze('-') %>
+			</div>
+		<% end %>
+		<div class="more"><%= link_to 'More', other_writing_path, :class => 'readmore' %></div>
 	
 	</div>
 	
 	<div class="grid4 gutter">
 		<h2>From the blog</h2>
+		<%= simple_format(truncate (@feed.summary), length: 1225, :separator => '.') %>
+		<div class="more"><%= link_to 'More', other_writing_path, :class => 'readmore' %></div>
+	</div>
+	
+	<div class="grid2">
+		<h2>Tweets</h2>
 		<%= simple_format(truncate (@feed.summary), length: 1225, :separator => '.') %>
 		<div class="more"><%= link_to 'More', other_writing_path, :class => 'readmore' %></div>
 	</div>
