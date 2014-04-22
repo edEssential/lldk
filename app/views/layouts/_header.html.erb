@@ -1,49 +1,16 @@
-<div class="body">
-	<div class="header">
+<div id="header">
 
-	<%= link_to 'Dominic H. King', root_path, :class => "logowords" %>
-  
-  	<div class="headerIMG">
-		<div class="socialNavigationContainer">
-	    	<div class="socialNavigationGroup">
-	        	<%= link_to image_tag('facebook.png'), 'https://www.facebook.com/DominicHKing', :target => 'blank' %>
-				<%= link_to image_tag('twitter.png'), 'http://twitter.com/DominicHKing', :target => 'blank' %>
-				<%= link_to image_tag('linkedin.png'), 'http://uk.linkedin.com/pub/dominic-king/2a/8ab/445' %>
-				<%= link_to image_tag('email.png'), about_the_author_path %>
-	    	</div>
-		</div>
-	</div>
+<div id="logoETC"><h1><span class="thick">|</span><%= link_to 'Dominic H. King', root_path, :class => "logowords" %></h1></div>
 	
-	<div class="navigation" id="navigation">
-		<div class="navigationSub">
-			<div class="navigationButtons">
-				<ul>
-					<% @books.each do |b| %>
-						<li><%= link_to b.title, "/books" + "/" + b.title.downcase.gsub(/\s+/, '-').gsub(/[^a-z0-9_-]/, '').squeeze('-') %></li>
-					<% end %>
-					<li><%= link_to 'The Reaper', reapers_path %></li>
-					<li><%= link_to 'Other Writing', other_writing_path %></li>
-					<li><%= link_to 'More About The Author', about_the_author_path %></li>
-				</ul>
-			</div>
-		</div>
-		<% if user_signed_in? %>
-			<% if current_user.email.length > 23 %>
-				<div class="userInfo">
-					{ Logged in as <strong><%= current_user.email %></strong>
-					<span class="editLinkText2"><%= link_to 'Edit', edit_user_registration_path %></span>
-					<span class="editLinkText2"><%= link_to 'Logout', destroy_user_session_path, method: :delete %> }</span>
-				</div>
-			<% else %>
-				<div class="userInfo2">
-					{ Logged in as <strong><%= current_user.email %></strong>
-					<span class="editLinkText2"><%= link_to 'Edit', edit_user_registration_path %></span>
-					<span class="editLinkText2"><%= link_to 'Logout', destroy_user_session_path, method: :delete %> }</span>
-				</div>
-			<% end %>
+<div class="navigation">
+	<ul class="navigationButtons">
+		<% @books.each do |b| %>
+			<li><%= link_to b.title, "/books" + "/" + b.title.downcase.gsub(/\s+/, '-').gsub(/[^a-z0-9_-]/, '').squeeze('-') %></li>
 		<% end %>
-	</div>
-</div><!--Closing header-->
+		<li><%= link_to 'The Reaper', reapers_path %></li>
+		<li><%= link_to 'More Writing', other_writing_path %></li>
+		<li><%= link_to 'About', about_the_author_path %></li>
+	</ul>
 </div>
 
-
+</div>

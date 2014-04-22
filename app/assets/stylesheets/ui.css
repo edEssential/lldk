@@ -1,0 +1,42 @@
+body {width:990px;margin:0px auto;}
+.container{float:left;background:url(../assets/grid.png);width:990px;height:1000px;}
+a {text-decoration:none;color:#333333;}
+p {margin-bottom:18px;}
+
+#header {margin-top:53px;}
+#logoETC {width:456px;float:left;}
+.thick {font-weight:900;margin-right:15px;}
+h1 {font-family: 'Raleway', 'sans-serif';font-weight:700;font-size:24px;line-height:36px;color:#333333;letter-spacing:0.5px;}
+h2 {font-family: "Palatino Linotype", "Book Antiqua", "URW Palladio L", serif;font-size:20px;line-height:18px;color:#000000;font-style:italic;letter-spacing:0.7px;border-bottom:1px solid #d9d9d9;padding-bottom:14px;}
+.navigation {width:534px;float:right;margin-top:13px;border-bottom:1px solid #d9d9d9;padding-bottom:13px;}
+ul.navigationButtons li {
+	font-family: 'Raleway', 'sans-serif';
+	font-weight:300;
+	color:#333333;
+	font-size:12px;
+	line-height:18px;
+	width: 120px;
+	display: inline-block;	
+	vertical-align: top;
+	text-align:left;
+    *display: inline;
+    *zoom: 1;
+}
+ul.navigationButtons li:nth-child(5) {width:38px;}
+.mainImg {float:left;clear:both;margin-top:54px;}
+.mainImg img {width:990px;height:216px;}
+
+#divider {position:absolute;width:990px;height:4px;margin:347px 0px 54px 0px;background-color:#dddddd;}
+
+.mainBody {float:left;clear:both;margin-top:72px;}
+.mainBody p {font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;font-size:13px;line-height:18px;color:#333333;margin-top:20px;}
+
+.grid1 {width:108px;float:left;}
+.grid2 {width:234px;float:left;}
+.grid3 {width:360px;float:left;}
+.grid4 {width:486px;float:left;}
+.grid5 {width:504px;float:left;}
+.grid6 {width:738px;float:left;}
+.grid7 {width:864px;float:left;}
+.grid8 {width:990px;float:left;}
+.gutter {margin-right:18px;}

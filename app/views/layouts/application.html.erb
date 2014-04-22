@@ -11,6 +11,8 @@
         <meta name="author" cotent="eghamilton.co.uk" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
     	<meta http-equiv="HandheldFriendly"content="true" />
+
+		<link href='http://fonts.googleapis.com/css?family=Raleway:400,900,300,700' rel='stylesheet' type='text/css'>
        
        	<%= stylesheet_link_tag "application" %>
 		<%= javascript_include_tag "application" %>
@@ -20,9 +22,9 @@
 <body class="<%= params[:controller] %>_controller">
 	<div class="container">
 		
-		<div id="header"><%= render 'layouts/header' %></div>	
+		<%= render 'layouts/header' %>
+		<%= render 'layouts/divider' %>
 		<%= yield %>
-		<%= render 'layouts/footer' %></div>
 		
 	</div>
 </body>

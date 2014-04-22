@@ -4,57 +4,15 @@
 	<% end %>
 </div>
 
-<% if @book.homepageintro? %>
-	<div class="introText">
-	   	<div class="introTextWords">
-	   		<p><span class="headings">The Twin Worlds trilogy </span><%= @book.homepageintro %></p>
-	   	</div>
-	</div>
-<% end %>
+<div class="mainBody">
+	
+	<div class="grid2 gutter">
 
+		<h2>About</h2>
+		<p>Dominic was born in Bath, UK in 1982.</p>
 
-<div class="threeSections">
-	<div class="books">
-		<%= image_tag ('headerbox1.png') %>
-		<% @book_redux.each do |b| %>
-			<% if b.review1? || b.review2? || b.review3? %>
-				<br /><%= link_to image_tag(b.packshot), "/books" + "/" + @book.title.downcase.gsub(/\s+/, '-').gsub(/[^a-z0-9_-]/, '').squeeze('-'), :class => 'packshot' %>
-        		<div class="textBlock2">
-					<% if b.review1? %><em><%= '"' + b.review1 + '"' %></em><br /><br /><% end %>
-					<% if b.review2? %><em><%= '"' + b.review2 + '"' %></em><br /><br /><% end %>
-					<% if b.review3? %><em><%= '"' + b.review3 + '"' %></em><br /><br /><% end %>
-				</div>	
-			<% end %>
-			<% if user_signed_in? %>
-				<%= link_to image_tag('edit2.png'), edit_book_path(@book.title.downcase.gsub(/\s+/, '-').gsub(/[^a-z0-9_-]/, '').squeeze('-')), :class => "editRelease3" %>
-			<% end %>
-		<% end %>
-    </div>
-    
-    <div class="tweets">
-		<%= image_tag('headerbox2.png') %><br /><br />
-		<div class="twitterBox">
-			<% @tweets.each do |t| %>
-				<div class="tweet">
-					<div class="profile">
-						<%= image_tag("https://pbs.twimg.com/profile_images/378800000537985980/79fdbf175c59ae29bd1a77e64dbbf9be.jpeg") %>
-					</div><br />
-					<div class="tweetText">
-						<em><%= simple_format(t.text) %></em>
-					</div><br />
-				</div>
-			<% end %>
-		</div>
-		<div class="tweetMore"><%= link_to image_tag('more.png'), 'https://twitter.com/DominicHKing' %></div>
+		<p>He is the author of the Twin Worlds trilogy that follows Kal and Daine in their epic battle against the Reaper. The first two instalments - The Chamber (2012) and The Black Gate (2013) - are currently available. He cites writers such as Tolkien, Pullman, Martin and Bernard Cornwell and time spent in China, India, Nepal and Latin America as his major inspirations.</p>
+	
 	</div>
-    
-    <div class="thoughts">
-		<%= image_tag('headerbox3.png') %>
-        <div class="textBlock">
-			<%= simple_format(truncate (@feed.summary), length: 1125, :separator => '.') %>
-		</div>
-		<%= link_to image_tag('more.png'), other_writing_path, :class => 'readmore' %>
-    </div>
+
 </div>
-
-
