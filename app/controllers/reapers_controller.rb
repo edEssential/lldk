@@ -2,7 +2,7 @@ class ReapersController < ApplicationController
   before_filter :authenticate_user!, :except => [:index]  
   
   def index
-    @reaper = Reaper.find_by_id(1)
+    @reaper = Reaper.last
   end
   
   def new

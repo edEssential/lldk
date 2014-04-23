@@ -23,8 +23,11 @@
 	<div class="container">
 		
 		<%= render 'layouts/header' %>
-		<%= render 'layouts/divider' %>
+		<% if controller.controller_name != 'reapers' %>
+			<%= render 'layouts/divider' %>
+		<% end %>
 		<%= yield %>
+		<%= render 'layouts/footer' %>
 		
 	</div>
 </body>

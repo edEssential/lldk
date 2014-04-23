@@ -1,11 +1,13 @@
-<div class="introText">
-	<div class="introTextWords">
-		<p><span class="headings">The Reaper</span></p>
-	</div> 
-	
-	<% if user_signed_in? %>
-		<%= link_to image_tag('edit2.png'), edit_reaper_path(@reaper), :class => "editRelease2" %>
-	<% end %>
+<div class="mainBody">
+	<div class="grid5 gutter">
+		<h2>The Reaper</h2>
+		<%= simple_format(@reaper.content, class: "reaper") %>
+	</div>
+	<div class="grid3 marginLeft">
+		<h2>About</h2>
+		<%= simple_format(@reaper.about) %>
+	</div>
 </div>
+	
+	
 
-<div class="description"><%= simple_format(@reaper.content) %></div>

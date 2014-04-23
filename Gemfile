@@ -10,6 +10,8 @@ gem 'feedzirra'
 gem 'will_paginate', '~> 3.0'
 gem 'newrelic_rpm'
 gem 'friendly_id'
+gem 'sass-rails', '>= 3.2'
+gem 'bootstrap-sass', '~> 3.1.1'
 
 group :development, :test do
   gem 'sqlite3', '1.3.7'
@@ -32,6 +34,5 @@ group :production do
 end
 
 group :assets do
-  gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
 end

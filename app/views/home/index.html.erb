@@ -27,7 +27,9 @@
 	
 	<div class="grid2">
 		<h2>Tweets</h2>
-		<%= simple_format(truncate (@feed.summary), length: 1225, :separator => '.') %>
+		<% @tweets.each do |t| %>
+			<div class="tweet"><%= simple_format(t.text) %></div>
+		<% end %>
 		<div class="more"><%= link_to 'More', other_writing_path, :class => 'readmore' %></div>
 	</div>
 

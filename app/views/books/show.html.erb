@@ -1,40 +1,94 @@
 <div class="mainImg"><%= image_tag(@book.cover) %></div>
-<div class="introText">
-	<div class="introTextWords">
-		<p><span class="headings">Plot Synopsis</span></p>
+
+<div class="mainBody">
+
+	<div class="grid5 gutter">
+		<h2>Plot synopsis</h2>
+		<%= simple_format(@book.synopsis) %>
 	</div>
-	<% if user_signed_in? %>
-		<%= link_to image_tag('edit2.png'), edit_book_path(@book), :class => "editRelease2" %>
-	<% end %>
+	
+	<div class="grid3 marginLeft">
+		<h2>Details</h2>
+		<div class="panel-group panels" id="accordion">
+			<% if @book.buylink1? || @book.buylink2? || @book.buylink3? %>
+		  		<div class="panel panel-default">
+		    <div class="panel-heading">
+		      <h4 class="panel-title">
+		        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+		          Where to buy
+		        </a>
+		      </h4>
+		    </div>
+		    <div id="collapseOne" class="panel-collapse collapse">
+		      <div class="panel-body">
+		        <%= link_to @book.link1title, @book.buylink1  %> |
+				<%= link_to @book.link2title, @book.buylink2  %> |
+				<%= link_to @book.link3title, @book.buylink3  %>
+		      </div>
+		    </div>
+		  </div>
+		  	<% end %>
+			<% if @book.promotions1? %>
+				<div class="panel panel-default">
+		    <div class="panel-heading">
+		      <h4 class="panel-title">
+		        <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+		          Promotions
+		        </a>
+		      </h4>
+		    </div>
+		    <div id="collapseTwo" class="panel-collapse collapse">
+		      <div class="panel-body"><%= link_to @book.link4title, @book.promotions1 unless !@book.promotions1? %></div>
+		    </div>
+		  </div>
+		  	<% end %>
+			<% if !@book.buylink1? && !@book.buylink2? && !@book.buylink3? && !@book.promotions1? %>
+				<div class="panel panel-default">
+		    		<div class="panel-heading">
+		      			<h4 class="panel-title">
+		        			<a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+		          				Reviews
+		        			</a>
+		      			</h4>
+		    		</div>
+		    		<div id="collapseThree" class="panel-collapse collapse in">
+		      			<div class="panel-body">
+							<% if @book.title == 'The Chamber' %>
+								<iframe class="widgetFrame" src="http://www.goodreads.com/api/reviews_widget_iframe?did=DEVELOPER_ID&format=html&isbn=1479109193&links=660&min_rating=4&num_reviews=&review_back=ffffff&stars=000000&stylesheet=https%3A%2F%2Fs3.amazonaws.com%2Fdhk%2Ffeed.css&text=444" width="284" height="184" frameborder="0">
+								</iframe>
+							<% else %>
+								<iframe class="widgetFrame" src="http://www.goodreads.com/api/reviews_widget_iframe?did=DEVELOPER_ID&format=html&isbn=B00GM6P41G&links=660&min_rating=4&num_reviews=&review_back=ffffff&stars=000000&stylesheet=https%3A%2F%2Fs3.amazonaws.com%2Fdhk%2Ffeed.css&text=444" width="284" height="184" frameborder="0">
+								</iframe>
+							<% end %>
+		      			</div>
+		    		</div>
+		  		</div>
+			<% else %>
+				<div class="panel panel-default">
+		    		<div class="panel-heading">
+		      			<h4 class="panel-title">
+		        			<a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+		          				Reviews
+		        			</a>
+		      			</h4>
+		    		</div>
+		    		<div id="collapseThree" class="panel-collapse collapse">
+		      			<div class="panel-body">
+							<% if @book.title == 'The Chamber' %>
+								<iframe class="widgetFrame" src="http://www.goodreads.com/api/reviews_widget_iframe?did=DEVELOPER_ID&format=html&isbn=1479109193&links=660&min_rating=4&num_reviews=&review_back=ffffff&stars=000000&stylesheet=https%3A%2F%2Fs3.amazonaws.com%2Fdhk%2Ffeed.css&text=444" width="284" height="184" frameborder="0">
+								</iframe>
+							<% else %>
+								<iframe class="widgetFrame" src="http://www.goodreads.com/api/reviews_widget_iframe?did=DEVELOPER_ID&format=html&isbn=B00GM6P41G&links=660&min_rating=4&num_reviews=&review_back=ffffff&stars=000000&stylesheet=https%3A%2F%2Fs3.amazonaws.com%2Fdhk%2Ffeed.css&text=444" width="284" height="184" frameborder="0">
+								</iframe>
+							<% end %>
+		      			</div>
+		    		</div>
+		  		</div>
+			<% end %>	
+		</div>
+	</div>
+	
 </div>
-
-<div class="description"><%= simple_format(@book.synopsis) %></div>
-
-<div class="links">
-	<% if @book.buylink1? || @book.buylink2? || @book.buylink3? %>
-		<h1>Places to buy <%= @book.title %> </h1>
-	    <%= link_to @book.link1title, @book.buylink1  %>
-		<%= link_to @book.link2title, @book.buylink2  %>
-		<%= link_to @book.link3title, @book.buylink3  %>
-	    <br /><br />
-	<% end %>
-
-	<% if @book.promotions1? %>
-   	 	<h1>Promotions</h1>
-	    <%= link_to @book.link4title, @book.promotions1 unless !@book.promotions1? %>
-	<% end %>
-</div>
-
-<div class="widgetRead">
-	<h1><a href="http://www.goodreads.com/book/show/15936755-the-chamber">Goodreads reviews for <%= @book.title %></a></h1>
-	<% if @book.id == 1 || @book.id == 9 %>
-		<iframe class="widgetFrame" src="http://www.goodreads.com/api/reviews_widget_iframe/6507631.Dominic_H_King?did=DEVELOPER_ID&format=html&header_text=Goodreads+reviews+for+The+Chamber&isbn=1479109193&links=660&min_rating=1&num_reviews=5&review_back=ffffff&stars=000000&stylesheet=&text=444" width="558" height="500" frameborder="0">
-		</iframe>
-	<% else %>
-		<iframe class="widgetFrame" src="https://www.goodreads.com/api/reviews_widget_iframe/6507631.Dominic_H_King?did=DEVELOPER_ID&format=html&header_text=Goodreads+reviews+for+The+Black+Gate&isbn=B00GM6P41G&links=660&min_rating=&num_reviews=&review_back=ffffff&stars=000000&stylesheet=&text=444" width="558" height="500" frameborder="0">
-		</iframe>
-	<% end %>
-</div><!--Closing WIDGET-->
 
   
 
