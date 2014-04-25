@@ -16,4 +16,5 @@
  *= require grid
  *= require media_queries
  *= require navigation
+ *= require pagination
  */
