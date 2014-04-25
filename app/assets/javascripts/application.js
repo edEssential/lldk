@@ -17,7 +17,9 @@
 
 $(document).ready(function() {
     $('.slides').cycle({
-		fx: 'fade'
+		fx: 'fade',
+		timeout:  8000,
+		speed:  1500 
 	});
 	$('.widgetFrame').contents().find('.gr_reviews_showing').css({
 	    display: none

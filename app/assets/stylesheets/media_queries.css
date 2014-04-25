@@ -1,0 +1,29 @@
+.slicknav_menu {
+	display:none;
+}
+
+
+@media screen and (max-width: 768px) and (min-width: 320px) {
+	
+body, .container {width:95%;margin:0 2.5%;}	
+.grid1, .grid2, .grid3, .grid3_5, .grid4, .grid5, .grid6, .grid7, .grid8 {width:90%;margin:0px 5% 36px;float:left;clear:both;}
+.top {margin-top:-18px;}
+.gutter {margin-right:0px;}
+.navigation {display:none;}
+#header {margin-top:56px;}
+#logoETC {width:90%;float:left;margin-left:5%;text-align:center;}
+h2 {width:100%;}
+.mainImg {width:100%;}
+.grid8 img {width:90%;margin:-18px 0px -70px 0px;}
+
+#divider {display:none;}
+
+.mainBody {float:left;clear:both;margin-top:89px;}
+.mainBody p {font-family:'Open Sans', sans-serif;font-weight:300;font-size:15px;line-height:18px;color:#444444;margin-top:29px;}
+.more {border-bottom:1px solid #feb04b;}
+.more a {color:#ff7200;}
+.packshot {float:left;margin:6px 0px 25px 0px;}
+.packshot img {width:70px;height:90px;}
+.footer {margin:36px 5%;}
+  
+}

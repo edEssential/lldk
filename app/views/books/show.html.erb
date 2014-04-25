@@ -1,8 +1,8 @@
-<div class="mainImg"><%= image_tag(@book.cover) %></div>
+<div class="mainImg grid8"><%= image_tag(@book.cover) %></div>
 
 <div class="mainBody">
 
-	<div class="grid5 gutter">
+	<div class="grid5 gutter top">
 		<h2>Plot synopsis</h2>
 		<%= simple_format(@book.synopsis) %>
 	</div>
@@ -89,6 +89,3 @@
 	</div>
 	
 </div>
-
-  
-

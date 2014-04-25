@@ -1,9 +1,9 @@
-<div class="mainBody">
-	<div class="grid5 gutter">
-		<h2>The Reaper</h2>
-		<%= simple_format(@reaper.content, class: "reaper") %>
+<div class="mainBody padder">
+	<div class="grid6 gutter top">
+		<h2 class="reaperHead">The Reaper</h2>
+		<div class="reaperExcerpt"><%= simple_format(@reaper.content) %></div>
 	</div>
-	<div class="grid3 marginLeft">
+	<div class="grid1_5">
 		<h2>About</h2>
 		<%= simple_format(@reaper.about) %>
 	</div>

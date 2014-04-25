@@ -1,4 +1,4 @@
-<div class="mainImg slides">
+<div class="mainImg slides grid8">
 	<% @books.each do |b| %>
 		<%= link_to image_tag(b.cover), b %>
 	<% end %>
@@ -6,31 +6,35 @@
 
 <div class="mainBody">
 	
-	<div class="grid2 gutter">
+	<div class="grid2 gutter top">
 
-		<h2>About</h2>
+		<h2>About Dominic</h2>
 		<p><%= simple_format(truncate (@about.text), length: 465, :separator => '.') %></p>
-		<% @books.each do |b| %>
-			<div class="packshot">
-				<%= link_to image_tag(b.packshot), "/books" + "/" + b.title.downcase.gsub(/\s+/, '-').gsub(/[^a-z0-9_-]/, '').squeeze('-') %>
-			</div>
-		<% end %>
-		<div class="more"><%= link_to 'More', other_writing_path, :class => 'readmore' %></div>
+		<div class="more more1"><%= link_to 'More', other_writing_path %></div>
 	
 	</div>
 	
-	<div class="grid4 gutter">
-		<h2>From the blog</h2>
-		<%= simple_format(truncate (@feed.summary), length: 1225, :separator => '.') %>
+	<div class="grid3_5">
+		<h2>Latest News</h2>
+		<%= simple_format(truncate (@feed.summary), length: 810 ) %>
 		<div class="more"><%= link_to 'More', other_writing_path, :class => 'readmore' %></div>
 	</div>
 	
 	<div class="grid2">
-		<h2>Tweets</h2>
-		<% @tweets.each do |t| %>
-			<div class="tweet"><%= simple_format(t.text) %></div>
-		<% end %>
-		<div class="more"><%= link_to 'More', other_writing_path, :class => 'readmore' %></div>
+		<h2>Get in touch!</h2>
+		<div class="contactForm">	
+			<%= form_for(@contact, remote: true) do |f| %>
+				<div class="contactEmail">
+	    			<%= f.text_field :name, :placeholder => 'Name', :class => "contactField" %><br /><br />
+				</div>
+				<div class="contactName">
+	    			<%= f.text_field :email, :placeholder => 'Email', :class => "contactField" %><br /><br />
+				</div>
+				<div class="contactMessage">
+	    			<%= f.text_area :messagetext, :placeholder => 'Message', :class => "contactFieldArea" %><br /><br />
+				</div>
+	    		<div class="grid-full"><%= f.submit "Send", class: "button4 submit", id: "contact-submit" %></div>
+			<% end %>
+		</div>
 	</div>
-
 </div>

@@ -12,4 +12,8 @@
  *= require bootstrap.min
  *= require reset
  *= require ui
+ *= require contact
+ *= require grid
+ *= require media_queries
+ *= require navigation
  */
