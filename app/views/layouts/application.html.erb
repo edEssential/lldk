@@ -9,7 +9,7 @@
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
         <meta name="author" cotent="eghamilton.co.uk" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     	<meta http-equiv="HandheldFriendly"content="true" />
 
 		<link href='http://fonts.googleapis.com/css?family=Playfair+Display:900|Raleway:400,500,700|Open+Sans:300,700' rel='stylesheet' type='text/css'>
@@ -23,7 +23,7 @@
 	<div class="container">
 		
 		<%= render 'layouts/header' %>
-		<% if controller.controller_name == 'books' || controller.controller_name == 'home' %>
+		<% if controller.controller_name == 'home' || controller.controller_name == 'books' || controller.controller_name == 'reapers' %>
 			<%= render 'layouts/divider' %>
 		<% end %>
 		<%= yield %>

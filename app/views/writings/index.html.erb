@@ -1,41 +1,32 @@
+<div class="grid8">
+	<ul class="moreWritingButtons">
+		<li class="grid2 gutter">
+			<%= link_to image_tag('onWriting.png'), "http://www.goodreads.com/author/show/6507631.Dominic_H_King/blog", :target => '_blank' %><br/>
+		</li>
+		<li class="grid2 gutter">
+			<%= link_to image_tag('onMoney.png'), "http://www.gti.org/thinking/blog/", :target => '_blank' %>
+		</li>
+		<li class="grid2 gutter">
+			<%= link_to image_tag('onSport.png'), "http://www.facebook.com/okhockey", :target => '_blank' %>
+		</li>
+		<li class="grid2">
+			<%= link_to image_tag('onTrolleyBags.png'), "http://ihatetinytrolleybags.tumblr.com/", :target => '_blank' %>
+		</li>
+	</ul>
+</div>
+
 <div class="mainBody padder">
 	
-	<div class"grid8">
-   		<h2>More Writing</h2>
-	   	<div class="grid1 gutter">&nbsp;</div>
-		<ul class="moreWritingButtons grid6">
-			<li class="">
-				<%= link_to image_tag('bookIcon.png'), "http://www.goodreads.com/author/show/6507631.Dominic_H_King/blog", :target => '_blank' %><br/>
-				<p class="moreWritingText">On Writing</p>
-			</li>
-			<li class="">
-				<%= link_to image_tag('moneyIcon.png'), "http://www.gti.org/thinking/blog/", :target => '_blank' %>
-				<p class="moreWritingText">On Economics</p>
-			</li>
-			<li class="">
-				<%= link_to image_tag('sportIcon.png'), "http://www.facebook.com/okhockey", :target => '_blank' %>
-				<p class="moreWritingText">On Sport</p>
-			</li>
-			<li class="">
-				<%= link_to image_tag('luggage.png'), "http://ihatetinytrolleybags.tumblr.com/", :target => '_blank' %>
-				<p class="moreWritingText">On Trolley Bags</p>
-			</li>
-		</ul>
-	</div>
-	
-	<div class="grid8 padder">
-		<h3>From the blog...</h3>
-		<div class="grid1 gutter">&nbsp;</div>
-		<div class="grid6 gutter">
+	<div class="grid8">
+		<div class="grid8">
 			<% @feeds.each do |entry| %>
 		  		<h4><%= entry.name %></h4>
-					<div class="digg_pagination">
-						<%= will_paginate @feeds, :page_links => false %>
-					</div>
-					<%= simple_format(entry.content) %>
-					<%= (entry.publishedat) %>
+				<div class="digg_pagination">
+					<%= will_paginate @feeds, :page_links => false %>
+				</div>
+				<%= simple_format(entry.content, class: "blogContent") %>
+				<%= (entry.publishedat) %>
 			<% end %>
 		</div>
-		<div class="grid1">&nbsp;</div>
 	</div>
 </div>

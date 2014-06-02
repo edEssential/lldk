@@ -7,46 +7,30 @@ p {margin-bottom:18px;}
 
 #header {margin-top:56px;}
 #logoETC {width:456px;float:left;}
+.justify {text-align:justify!important;}
 h1 {font-family: 'Playfair Display', 'sans-serif';font-weight:900;font-size:40px;line-height:36px;color:#181818;letter-spacing:0px;}
 h2 {width:84px;font-family: 'Raleway', 'sans-serif';font-weight:700;font-size:20px;line-height:18px;color:#181818;letter-spacing:0.7px;border-bottom:1px solid #d9d9d9;padding-bottom:7px;}
 h2.reaperHead {width:118px;}
 h3 {width:160px;margin-bottom:36px;font-family: 'Raleway', 'sans-serif';font-weight:700;font-size:20px;line-height:18px;color:#181818;letter-spacing:0.7px;border-bottom:1px solid #d9d9d9;padding-bottom:7px;}
-h4 {margin-bottom:9px;font-family: 'Playfair Display', 'sans-serif';font-weight:700;font-size:20px;line-height:18px;color:#181818;letter-spacing:0.7px;border-bottom:1px solid #d9d9d9;padding-bottom:7px;}
-.navigation {float:right;margin-top:-22px;}
-ul.navigationButtons li {
-	font-family: 'Raleway', 'sans-serif';
-	font-weight:500;
-	color:#181818;
-	font-size:18px;
-	line-height:18px;
-	display: inline-block;
-	text-align:right;
-    *display: inline;
-    *zoom: 1;
-}
-ul.navigationButtons li:nth-child(1),
-ul.navigationButtons li:nth-child(2),
-ul.navigationButtons li:nth-child(3),
-ul.navigationButtons li:nth-child(4) {
-	margin-right:25px;
-}
-.mainImg {margin-top:59px!important;}
+h4 {margin-bottom:9px;font-family: 'Playfair Display', 'sans-serif';font-weight:700;font-size:24px;line-height:18px;color:#181818;letter-spacing:0.7px;padding-bottom:12px;border-top:1px solid #d9d9d9;padding-top:51px;}
+.mainImg {margin-top:41px!important;}
 .grid8 img {width:100%;border-radius:3px;border:1px solid #bcbcbc;}
 
-#divider {position:absolute;width:990px;height:1px;margin:507px 0px 54px 0px;background-color:#c4c4c4;}
+#divider {position:absolute;width:990px;height:1px;margin:324px 0px 54px 0px;background-color:#c4c4c4;}
 
-.mainBody {float:left;clear:both;margin-top:89px;}
-.mainBody p {font-family:'Open Sans', sans-serif;font-weight:300;font-size:15px;line-height:18px;color:#444444;margin-top:29px;}
+.mainBody {float:left;clear:both;margin-top:62px;}
+.mainBody p {font-family:'Open Sans', sans-serif;font-weight:300;font-size:15px;line-height:18px;color:#444444;margin-top:29px;text-align:left;}
 .more {font-family:'Raleway', 'sans-serif';font-weight:400;font-style:italic;text-transform:uppercase;font-size:13px;line-height:18px;float:left;clear:both;}
 .more a {color:#feb04b;}
 .more1 {margin-top:-11px;}
+.more2 {margin-top:32px;}
 .packshot {float:left;margin:6px 0px 25px 0px;}
 .packshot img {width:70px;height:90px;}
 .tweet {font-style:italic;}
 
 .panel-title {padding:12px!important;margin-bottom:6px;font-family:'Raleway', 'sans-serif';}
 .panel-title a {color:#444444;}
-.panels {margin:46px 0px 0px 0px;}
+.panels {margin:36px 0px 0px 18px;}
 .panel-body {font-family: 'Lato', "Lucida Grande", sans-serif;font-weight:300;font-size:13px;padding:10px 20px 20px 20px;line-height:15px;}
 .panel-body a {color:#444444;}
 .panel-body a:hover {color:#feb04b;}
@@ -54,23 +38,27 @@ ul.navigationButtons li:nth-child(4) {
 
 .padder {margin-top:97px;}
 .reaperExcerpt {font-family:'Open Sans', sans-serif;font-size:14px;font-weight:700;}
+.up {margin-top:-29px;}
 
 ul.moreWritingButtons li {
-	margin:18px 0px 0px 0px;
+	margin:59px 0px 0px 0px;
 	display: inline-block;
 	text-align:left;
     *display: inline;
     *zoom: 1;
 }
-ul.moreWritingButtons li img {margin-bottom:-30px;}
+ul.moreWritingButtons li img {margin-bottom:-72px;}
 ul.moreWritingButtons li:nth-child(1),
 ul.moreWritingButtons li:nth-child(2),
-ul.moreWritingButtons li:nth-child(3),
-ul.moreWritingButtons li:nth-child(4) {
-	margin-left:45px;
+ul.moreWritingButtons li:nth-child(3) {
+	margin-right:18px;
 }
 .moreWritingText {margin:0px 0px 0px 0px;text-align:center;font-family:'Playfair Display', sans-serif!important;text-transform:uppercase!important;}
 .down {margin-top:33px;}
+.blogContent {font-size:18px!important;line-height:22.5px!important;font-family:'Raleway'!important;font-weight:400!important;text-align:justify!important;margin:22.5px 0px 22.5px 0px!important;}
+.blogContent p {}
+	
+#writingPictures {margin-top:59px!important;}
 
 
 .footer {float:left;clear:both;border-top:2px solid #a4a4a4;padding-top:6px;margin:36px 0px 150px 0px;font-family: 'Raleway', 'sans-serif';font-size:13px;color:#a4a4a4;}

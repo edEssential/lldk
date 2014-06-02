@@ -4,7 +4,7 @@
 
 	<div class="grid5 gutter top">
 		<h2>Plot synopsis</h2>
-		<%= simple_format(@book.synopsis) %>
+		<%= simple_format(@book.synopsis, class: "blogContent") %>
 	</div>
 	
 	<div class="grid3 marginLeft">
@@ -13,11 +13,11 @@
 			<% if @book.buylink1? || @book.buylink2? || @book.buylink3? %>
 		  		<div class="panel panel-default">
 		    <div class="panel-heading">
-		      <h4 class="panel-title">
+		      <h5 class="panel-title">
 		        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
 		          Where to buy
 		        </a>
-		      </h4>
+		      </h5>
 		    </div>
 		    <div id="collapseOne" class="panel-collapse collapse">
 		      <div class="panel-body">
@@ -31,11 +31,11 @@
 			<% if @book.promotions1? %>
 				<div class="panel panel-default">
 		    <div class="panel-heading">
-		      <h4 class="panel-title">
+		      <h5 class="panel-title">
 		        <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
 		          Promotions
 		        </a>
-		      </h4>
+		      </h5>
 		    </div>
 		    <div id="collapseTwo" class="panel-collapse collapse">
 		      <div class="panel-body"><%= link_to @book.link4title, @book.promotions1 unless !@book.promotions1? %></div>
@@ -45,11 +45,11 @@
 			<% if !@book.buylink1? && !@book.buylink2? && !@book.buylink3? && !@book.promotions1? %>
 				<div class="panel panel-default">
 		    		<div class="panel-heading">
-		      			<h4 class="panel-title">
+		      			<h5 class="panel-title">
 		        			<a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
 		          				Reviews
 		        			</a>
-		      			</h4>
+		      			</h5>
 		    		</div>
 		    		<div id="collapseThree" class="panel-collapse collapse in">
 		      			<div class="panel-body">
@@ -66,11 +66,11 @@
 			<% else %>
 				<div class="panel panel-default">
 		    		<div class="panel-heading">
-		      			<h4 class="panel-title">
+		      			<h5 class="panel-title">
 		        			<a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
 		          				Reviews
 		        			</a>
-		      			</h4>
+		      			</h5>
 		    		</div>
 		    		<div id="collapseThree" class="panel-collapse collapse">
 		      			<div class="panel-body">

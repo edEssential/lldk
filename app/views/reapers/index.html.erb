@@ -1,12 +1,32 @@
-<div class="mainBody padder">
-	<div class="grid6 gutter top">
-		<h2 class="reaperHead">The Reaper</h2>
-		<div class="reaperExcerpt"><%= simple_format(@reaper.content) %></div>
+<div class="mainImg grid8"><%= image_tag('theReaper.png') %></div>
+
+<div class="mainBody">
+
+	<div class="grid5 gutter top">
+		<h2>Plot synopsis</h2>
+		<%= simple_format(@reaper.content, class: "blogContent") %>
 	</div>
-	<div class="grid1_5">
-		<h2>About</h2>
-		<%= simple_format(@reaper.about) %>
+	
+	<div class="grid3 marginLeft">
+		<h2>Details</h2>
+		<div class="panel-group panels" id="accordion">
+		  <div class="panel panel-default">
+		    <div class="panel-heading">
+		      <h5 class="panel-title">
+		        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+		          Where to buy
+		        </a>
+		      </h5>
+		    </div>
+		    <div id="collapseOne" class="panel-collapse collapse in">
+		      <div class="panel-body">
+		        Coming late 2014! Check here regularly for updates or follow me on twitter!
+		      </div>
+		    </div>
+		  </div>
+		</div>
 	</div>
+	
 </div>
 	
 	
