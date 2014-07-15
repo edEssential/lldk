@@ -554,3 +554,22 @@
 [11/28/13 16:47:07 +0000 administrators-MacBook-Pro-2.local (34697)] INFO : Installing Rails3 Error instrumentation
 [11/28/13 16:47:07 +0000 administrators-MacBook-Pro-2.local (34697)] INFO : Finished instrumentation
 [11/28/13 16:47:08 +0000 administrators-MacBook-Pro-2.local (34697)] INFO : Doing deferred dependency-detection before Rack startup
+[07/15/14 11:31:24 +0100 administrators-MacBook-Pro-2.local (9333)] INFO : Starting the New Relic agent in "development" environment.
+[07/15/14 11:31:24 +0100 administrators-MacBook-Pro-2.local (9333)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[07/15/14 11:31:24 +0100 administrators-MacBook-Pro-2.local (9333)] INFO : Reading configuration from config/newrelic.yml
+[07/15/14 11:31:24 +0100 administrators-MacBook-Pro-2.local (9333)] INFO : New Relic Agent Developer Mode enabled.
+[07/15/14 11:31:24 +0100 administrators-MacBook-Pro-2.local (9333)] INFO : Enabling the Request Sampler.
+[07/15/14 11:31:24 +0100 administrators-MacBook-Pro-2.local (9333)] INFO : Enabling the Request Sampler.
+[07/15/14 11:31:24 +0100 administrators-MacBook-Pro-2.local (9333)] INFO : Environment: development
+[07/15/14 11:31:24 +0100 administrators-MacBook-Pro-2.local (9333)] INFO : Dispatcher: webrick
+[07/15/14 11:31:24 +0100 administrators-MacBook-Pro-2.local (9333)] INFO : Application: My Application
+[07/15/14 11:31:24 +0100 administrators-MacBook-Pro-2.local (9333)] WARN : Agent configured not to send data in this environment.
+[07/15/14 11:31:24 +0100 administrators-MacBook-Pro-2.local (9333)] INFO : Installing ActiveRecord instrumentation
+[07/15/14 11:31:24 +0100 administrators-MacBook-Pro-2.local (9333)] INFO : Installing Curb instrumentation
+[07/15/14 11:31:24 +0100 administrators-MacBook-Pro-2.local (9333)] INFO : Installing Net instrumentation
+[07/15/14 11:31:24 +0100 administrators-MacBook-Pro-2.local (9333)] INFO : Installing deferred Rack instrumentation
+[07/15/14 11:31:24 +0100 administrators-MacBook-Pro-2.local (9333)] INFO : Installing Rails 3 Controller instrumentation
+[07/15/14 11:31:25 +0100 administrators-MacBook-Pro-2.local (9333)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[07/15/14 11:31:25 +0100 administrators-MacBook-Pro-2.local (9333)] INFO : Installing Rails3 Error instrumentation
+[07/15/14 11:31:25 +0100 administrators-MacBook-Pro-2.local (9333)] INFO : Finished instrumentation
+[07/15/14 11:31:25 +0100 administrators-MacBook-Pro-2.local (9333)] INFO : Doing deferred dependency-detection before Rack startup
