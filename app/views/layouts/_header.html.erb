@@ -1,37 +1,3 @@
-<div id="header">
-
-<div id="logoETC"><h1><%= link_to 'Dominic H. King', root_path, :class => "logowords" %></h1></div>
-	
-<%= link_to(image_tag('nav-icon.png', class: "menuBlock"), '#', id: "menuReveal") %>	
-	
-<div class="navigation">
-	<nav class="clearfix">  
-	    <ul class="clearfix">
-		 	<% @books.each do |b| %>
-				<% titlefix = b.title.downcase.gsub(/\s+/, '-').gsub(/[^a-z0-9_-]/, '').squeeze('-') %>
-				<li><%= link_to b.title, "/books" + "/" + titlefix, id: "#{titlefix}" + "nav" %></li>
-			<% end %>
-	        <li><%= link_to 'The Reaper', reapers_path, id: "reapernav" %></li>
-			<li><%= link_to 'More', other_writing_path, id: "morenav" %></li>
-			<li><%= link_to 'About', about_the_author_path, id: "aboutnav" %></li>
-	    </ul> 
-	</nav>
+<div class="col-md-12">
+	<div id="logoETC"><h1><%= link_to 'Dominic H. King', root_path, :class => "logowords" %></h1></div>
 </div>
-
-<div class="navigation2">
-	<nav class="clearfix">  
-	    <ul class="clearfix">
-		    <li id="pull"><h1>Dominic H. King</h1></a></li>
-			<div class="menu">
-			 	<% @books.each do |b| %>
-					<% titlefix = b.title.downcase.gsub(/\s+/, '-').gsub(/[^a-z0-9_-]/, '').squeeze('-') %>
-					<li><%= link_to b.title, "/books" + "/" + titlefix, id: "#{titlefix}" + "nav" %></li>
-				<% end %>
-		        <li><%= link_to 'The Reaper', reapers_path, id: "reapernav" %></li>
-				<li><%= link_to 'More', other_writing_path, id: "morenav" %></li>
-				<li><%= link_to 'About', about_the_author_path, id: "aboutnav" %></li>
-			</div>
-	    </ul> 
-	</nav>
-</div>
-

@@ -30,8 +30,6 @@
 //= require jquery.slicknav
 //= require jquery.fittext
 //= require jquery.collapser
-//= require mustache
-//= require_tree ../../templates
 //= require_tree .
 
 $(window).load(function() { // makes sure the whole site is loaded
