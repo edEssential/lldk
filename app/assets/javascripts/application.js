@@ -12,25 +12,46 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require jquery-ui.min
+//= require image-hover
+//= require modernizr 
+//= require retina
+//= require jquery.isotope.min
+//= require jquery.ba-bbq.min
+//= require jquery.isotope.load_home
+//= require responsive-nav
+//= require jquery.flexslider-min
+//= require jquery.fancybox.pack
+//= require jquery.slicknav
+//= require image.cycle
 //= require bootstrap
-//= require_tree .
+//= require jssor.slider.mini
+
 
 $(document).ready(function() {
-    $('.slides').cycle({
-		fx: 'fade',
-		timeout:  8000,
-		speed:  1500 
+	
+	$('a').each(function() {
+	   var a = new RegExp('/' + window.location.host + '/');
+	   if(!a.test(this.href)) {
+	       $(this).click(function(event) {
+	           event.preventDefault();
+	           event.stopPropagation();
+	           window.open(this.href, '_blank');
+	       });
+	   }
 	});
-	$('.widgetFrame').contents().find('.gr_reviews_showing').css({
-	    display: none
+	
+	$(function(){
+		$('#menu').slicknav();
 	});
-	$("a").click(function() {
-		link_host = this.href.split("/")[2];
-	    document_host = document.location.href.split("/")[2];
-
-	    if (link_host != document_host) {
-	      window.open(this.href);
-	      return false;
+	
+	$(".tips").tooltip();
+	
+	$('.delete_post').on('click', function() {
+		if(confirm('Are you sure you want to delete this record')){
+	    	return true
+	    }else{
+	        return false;
 	    }
 	});
 });

@@ -1,43 +1,37 @@
-<div class="formText formFade">
-	<p class="formHeader">Use this form to save your book to the site!</p><br /><br />
-	<div class="form">	
-		<h1><%= @book.title %></h1><hr/><br/>
-		<%= form_for(@book) do |f| %>
-			<%= f.label :title, class: 'formField' %><br />
-    		<%= f.text_area :title, class: 'formFieldBox'  %><br />
-			<%= f.label :Home_page_text, class: 'formField' %><br />
-    		<%= f.text_area :homepageintro, class: 'formFieldBox'  %><br />
-    		<%= f.label :Book_Synopsis, class: 'formField' %><br />
-    		<%= f.text_area :synopsis, class: 'formFieldBox'  %><br />
-			<%= f.label :Upload_cover_image, class: 'formTitle' %><br />
-			<%= f.file_field :cover, class: 'formFieldBox2' %><br />
-			<%= f.label :Upload_small_reviews_image, class: 'formTitle' %><br />
-			<%= f.file_field :packshot, class: 'formFieldBox2' %><br /><br />
-			<%= f.label :Buylink1_title, class: 'formField' %>
-    		<%= f.text_field :link1title, class: 'formFieldT'  %>
-			<%= f.label :buylink1, class: 'formField' %>
-    		<%= f.text_field :buylink1, class: 'formFieldT'  %><br />
-			<%= f.label :Buylink2_title, class: 'formField' %>
-    		<%= f.text_field :link2title, class: 'formFieldT'  %>
-			<%= f.label :buylink2, class: 'formField' %>
-    		<%= f.text_field :buylink2, class: 'formFieldT'  %><br />
-			<%= f.label :Buylink3_title, class: 'formField' %>
-    		<%= f.text_field :link3title, class: 'formFieldT'  %>
-			<%= f.label :buylink3, class: 'formField' %>
-    		<%= f.text_field :buylink3, class: 'formFieldT'  %><br /><br />
-			<%= f.label :Ask_david_link_text, class: 'formField' %><br />
-    		<%= f.text_area :link4title, class: 'formFieldT'  %><br />
-			<%= f.label :Ask_david_URL, class: 'formField' %><br />
-    		<%= f.text_field :promotions1, class: 'formFieldT'  %><br /><br />
-			<%= f.label :Goodreads_review_feed_url, class: 'formField' %><br />
-    		<%= f.text_field :reviewfeed, class: 'formFieldT'  %><br />
-			<%= f.label :Review_snippet1, class: 'formField' %><br />
-    		<%= f.text_field :review1, class: 'formFieldBox'  %><br />
-			<%= f.label :Review_snippet2, class: 'formField' %><br />
-    		<%= f.text_field :review2, class: 'formFieldBox'  %><br />
-			<%= f.label :Review_snippet3, class: 'formField' %><br />
-    		<%= f.text_field :review3, class: 'formFieldBox'  %><br />
-    		<%= f.submit %>
-		<% end %>		
+<div id="divider2">&#160;</div>
+<div class="col-md-12">
+	<div class="col-md-8 col-sm-offset-2 background">
+
+		<h1 class="formHeader">Add/edit your book's content below</h1>
+		<hr class="projectSeparator" />
+	
+		<div class="formWrapper">	
+			<%= form_for(@book) do |f| %>
+				<%= f.label :title, class: 'formLabel' %><br />
+	    		<%= f.text_field :title, class: 'formField' %>
+	    		<%= f.label :Book_Synopsis, class: 'formLabel' %><br />
+	    		<%= f.text_area :synopsis, class: 'formArea' %>
+				<%= f.label :Upload_cover_image, class: 'formLabel' %><br />
+				<%= f.file_field :cover %><br /><br />
+				<div class="col-md-6">
+					<%= f.label :Buylink1_title, class: 'formLabel' %>
+	    			<%= f.text_field :link1title, class: 'formField' %>
+					<%= f.label :Buylink2_title, class: 'formLabel' %>
+		    		<%= f.text_field :link2title, class: 'formField' %>
+					<%= f.label :Buylink3_title, class: 'formLabel' %>
+		    		<%= f.text_field :link3title, class: 'formField' %>
+				</div>
+				<div class="col-md-6">
+					<%= f.label :buylink1, class: 'formLabel' %>
+		    		<%= f.text_field :buylink1, class: 'formField' %>
+					<%= f.label :buylink2, class: 'formLabel' %>
+		    		<%= f.text_field :buylink2, class: 'formField' %>
+					<%= f.label :buylink3, class: 'formLabel' %>
+		    		<%= f.text_field :buylink3, class: 'formField' %>
+				</div>
+	    		<%= f.submit :class => "btn" %>
+			<% end %>
+		</div>
+	
 	</div>
 </div>

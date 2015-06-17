@@ -10,8 +10,9 @@ gem 'feedzirra'
 gem 'will_paginate', '~> 3.0'
 gem 'newrelic_rpm'
 gem 'friendly_id'
-gem 'sass-rails', '>= 3.2'
-gem 'bootstrap-sass', '~> 3.1.1'
+gem "twitter-bootstrap-rails"
+gem 'jssorslider-rails'
+gem 'jquery-rails'
 
 group :development, :test do
   gem 'sqlite3', '1.3.7'
@@ -22,11 +23,6 @@ group :test do
   gem 'selenium-webdriver', '2.0.0'
   gem 'capybara', '2.1.0'
 end
-
-gem 'uglifier', '2.1.1'
-gem 'jquery-rails', '2.2.1'
-gem 'turbolinks', '1.1.1'
-gem 'jbuilder', '1.0.2'
 
 group :production do
   gem 'pg', '0.15.1'

@@ -1,27 +1,33 @@
-<div class="formText formFade">
+<div id="divider2">&#160;</div>
+<div class="col-md-12">
+	<div class="col-md-6 col-sm-offset-3 background">
+
+	<h1 class="formHeader">Edit <%= resource_name.to_s.humanize %> details</h1>
+	<hr class="projectSeparator" />
+
+	<%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
+	  <%= devise_error_messages! %>
+
+	  	<div><%= f.label :email, :class => "formLabel" %><br />
+	  	<%= f.email_field :email, autofocus: true, :class => "formField" %></div>
 	
-	<p class="formHeader">Edit User</p>
-
-	<div class="form">
-		<%= form_for(resource, :as => resource_name, :url => registration_path(resource_name), :html => { :method => :put }) do |f| %>
-  			<%= devise_error_messages! %>
-
-  			<%= f.label :email, class: 'formField' %>
-  			<%= f.email_field :email, :autofocus => true, class: 'formFieldT'  %>
-
-  			<%= f.label :password, class: 'formField' %> <i>(leave blank if you don't want to change it)</i>
-  			<%= f.password_field :password, :autocomplete => "off", class: 'formFieldT'  %>
-
-  			<%= f.label :password_confirmation, class: 'formField' %>
-  			<%= f.password_field :password_confirmation, class: 'formFieldT'  %>
-			
-  			<%= f.label :current_password, class: 'formField' %> <i>(we need your current password to confirm your changes)</i>
-  			<%= f.password_field :current_password, class: 'formFieldT'  %><br />
-
-  			<%= f.submit "Update" %>
+		<% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
+		    <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
 		<% end %>
 
-		<%= link_to "Back", :back %><br /><br />
-		
-	</div>
+		<div><%= f.label :current_password, :class => "formLabel"  %><br /> 
+			<i class="formLabel">(we need your current password to confirm your changes)</i><br />
+		<%= f.password_field :current_password, autocomplete: "off", :class => "formField"  %></div>
+
+  		<div><%= f.label :new_password, :class => "formLabel" %><br />
+	    <%= f.password_field :password, autocomplete: "off", :class => "formField" %></div>
+
+	  	<div><%= f.label :new_password_confirmation, :class => "formLabel" %><br />
+	    <%= f.password_field :password_confirmation, autocomplete: "off", :class => "formField" %></div>
+
+	  	<div><%= f.submit "Update", :class => "btn" %></div>
+	<% end %>
+
+	<%= link_to "Back", :back, :class => 'btn' %>
+	
 </div>

@@ -7,4 +7,9 @@ class ApplicationController < ActionController::Base
     @books = Book.select('title,id').order('id ASC')  
   end
   
+  def bring_in_models
+    @books = Book.order("id DESC")
+    @abouts = About.order("id DESC")
+  end
+  
 end

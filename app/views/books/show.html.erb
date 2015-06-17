@@ -1,91 +1,58 @@
-<div class="mainImg grid8"><%= image_tag(@book.cover) %></div>
+<div class="col-md-12">
+	
+	<div class="mainImg"><%= image_tag(@book.cover) %></div>
+	<div class="strapline"><h1 class="strap"><%= @book.title %></h1></div>
+	<div id="divider">&#160;</div>
 
-<div class="mainBody">
-
-	<div class="grid5 gutter top">
+	<div class="col-md-8">
 		<h2>Plot synopsis</h2>
-		<%= simple_format(@book.synopsis, class: "blogContent") %>
+		<%= simple_format(@book.synopsis, class: "justify plotSyn") %>
 	</div>
 	
-	<div class="grid3 marginLeft">
+	<div class="col-md-4">
 		<h2>Details</h2>
-		<div class="panel-group panels" id="accordion">
+		<div class="panelTop">
+			<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
 			<% if @book.buylink1? || @book.buylink2? || @book.buylink3? %>
-		  		<div class="panel panel-default">
-		    <div class="panel-heading">
-		      <h5 class="panel-title">
-		        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
-		          Where to buy
-		        </a>
-		      </h5>
-		    </div>
-		    <div id="collapseOne" class="panel-collapse collapse">
-		      <div class="panel-body">
-		        <%= link_to @book.link1title, @book.buylink1  %> |
-				<%= link_to @book.link2title, @book.buylink2  %> |
-				<%= link_to @book.link3title, @book.buylink3  %>
-		      </div>
-		    </div>
-		  </div>
-		  	<% end %>
-			<% if @book.promotions1? %>
-				<div class="panel panel-default">
-		    <div class="panel-heading">
-		      <h5 class="panel-title">
-		        <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
-		          Promotions
-		        </a>
-		      </h5>
-		    </div>
-		    <div id="collapseTwo" class="panel-collapse collapse">
-		      <div class="panel-body"><%= link_to @book.link4title, @book.promotions1 unless !@book.promotions1? %></div>
-		    </div>
-		  </div>
-		  	<% end %>
-			<% if !@book.buylink1? && !@book.buylink2? && !@book.buylink3? && !@book.promotions1? %>
-				<div class="panel panel-default">
-		    		<div class="panel-heading">
+		  		<div class="panel panel-default panels">
+		    		<div class="panel-heading" role="tab" id="headingOne">
 		      			<h5 class="panel-title">
-		        			<a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
-		          				Reviews
+		        			<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+		          				Where to buy
 		        			</a>
 		      			</h5>
 		    		</div>
-		    		<div id="collapseThree" class="panel-collapse collapse in">
+		    		<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
 		      			<div class="panel-body">
-							<% if @book.title == 'The Chamber' %>
-								<iframe class="widgetFrame" src="http://www.goodreads.com/api/reviews_widget_iframe?did=DEVELOPER_ID&format=html&isbn=1479109193&links=660&min_rating=4&num_reviews=&review_back=ffffff&stars=000000&stylesheet=https%3A%2F%2Fs3.amazonaws.com%2Fdhk%2Ffeed.css&text=444" width="284" height="184" frameborder="0">
-								</iframe>
-							<% else %>
-								<iframe class="widgetFrame" src="http://www.goodreads.com/api/reviews_widget_iframe?did=DEVELOPER_ID&format=html&isbn=B00GM6P41G&links=660&min_rating=4&num_reviews=&review_back=ffffff&stars=000000&stylesheet=https%3A%2F%2Fs3.amazonaws.com%2Fdhk%2Ffeed.css&text=444" width="284" height="184" frameborder="0">
-								</iframe>
-							<% end %>
+		        			<%= link_to @book.link1title, @book.buylink1  %> |
+							<%= link_to @book.link2title, @book.buylink2  %> |
+							<%= link_to @book.link3title, @book.buylink3  %>
 		      			</div>
 		    		</div>
 		  		</div>
-			<% else %>
-				<div class="panel panel-default">
-		    		<div class="panel-heading">
-		      			<h5 class="panel-title">
-		        			<a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
-		          				Reviews
-		        			</a>
-		      			</h5>
-		    		</div>
-		    		<div id="collapseThree" class="panel-collapse collapse">
-		      			<div class="panel-body">
-							<% if @book.title == 'The Chamber' %>
-								<iframe class="widgetFrame" src="http://www.goodreads.com/api/reviews_widget_iframe?did=DEVELOPER_ID&format=html&isbn=1479109193&links=660&min_rating=4&num_reviews=&review_back=ffffff&stars=000000&stylesheet=https%3A%2F%2Fs3.amazonaws.com%2Fdhk%2Ffeed.css&text=444" width="284" height="184" frameborder="0">
-								</iframe>
-							<% else %>
-								<iframe class="widgetFrame" src="http://www.goodreads.com/api/reviews_widget_iframe?did=DEVELOPER_ID&format=html&isbn=B00GM6P41G&links=660&min_rating=4&num_reviews=&review_back=ffffff&stars=000000&stylesheet=https%3A%2F%2Fs3.amazonaws.com%2Fdhk%2Ffeed.css&text=444" width="284" height="184" frameborder="0">
-								</iframe>
-							<% end %>
-		      			</div>
-		    		</div>
-		  		</div>
-			<% end %>	
+		  	<% end %>
+			<div class="panel panel-default panels">
+	    		<div class="panel-heading" role="tab" id="headingTwo">
+	      			<h5 class="panel-title">
+	        			<a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+	          				Reviews
+	        			</a>
+	      			</h5>
+	    		</div>
+	    		<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+	      			<div class="panel-body">
+						<% if @book.title == 'The Chamber' %>
+							<iframe class="widgetFrame" src="http://www.goodreads.com/api/reviews_widget_iframe?did=DEVELOPER_ID&format=html&isbn=1479109193&links=660&min_rating=4&num_reviews=&review_back=ffffff&stars=000000&stylesheet=https%3A%2F%2Fs3.amazonaws.com%2Fdhk%2Ffeed.css&text=444" width="284" height="184" frameborder="0">
+							</iframe>
+						<% else %>
+							<iframe class="widgetFrame" src="http://www.goodreads.com/api/reviews_widget_iframe?did=DEVELOPER_ID&format=html&isbn=B00GM6P41G&links=660&min_rating=4&num_reviews=&review_back=ffffff&stars=000000&stylesheet=https%3A%2F%2Fs3.amazonaws.com%2Fdhk%2Ffeed.css&text=444" width="284" height="184" frameborder="0">
+							</iframe>
+						<% end %>
+	      			</div>
+	    		</div>
+	  		</div>	
+		</div>
 		</div>
 	</div>
-	
+
 </div>

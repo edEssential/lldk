@@ -1,0 +1,37 @@
+<div class="cmsWrapper">
+	<div class="releases">
+		<div class="divHeader">Books</div>
+		<div class="tableWrapper">
+			<div class="tableContent">
+				<% if @books.count > 0 %>
+					<table width="100%">
+						<tr class="tableHeader">
+							<th>TITLE</th>
+							<th>SYNOPSIS</th>
+						</tr>
+						<tr><hr class="ruler"/></tr>
+						<% @books.each do |b| %>
+							<tr class="tableRow">
+								<td width="20%"><%= b.title %></td>
+								<td width="78%"><%= truncate(b.synopsis, :length => 82) %></td>
+								<td width="1%" class="topperButtons"><%= link_to "E", edit_book_path(b), :title => "Edit #{b.title}",:class => "btn btn2 tips" %></td>
+								<td width="1%" class="topperButtons"><%= button_to "X", b, :method => :delete, :class => "btn btn3 delete_post", :remote => true %></td>
+							</tr>
+						<% end %>
+					</table>
+				<% else %>
+					<table width="100%">
+						<tr class="tableRow empty">
+							<td>
+								<em>YOU HAVE NO BOOKS YET... ADD SOME BELOW ?!</em>
+							</td>
+						</tr>
+					</table>
+				<% end %>
+			</div>
+		</div>
+	</div>
+	<h6>
+	<input type="hidden" value="works" class="modal-model-type">
+	<h6><%= link_to 'Add new book', new_book_path, :class => "darkButton2" %></h6>
+</div>

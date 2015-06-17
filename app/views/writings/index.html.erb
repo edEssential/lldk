@@ -1,30 +1,31 @@
-<div class="grid8">
-	<ul class="moreWritingButtons">
-		<li class="grid2 gutter">
-			<%= link_to image_tag('onWriting.png'), "http://www.goodreads.com/author/show/6507631.Dominic_H_King/blog", :target => '_blank' %><br/>
-		</li>
-		<li class="grid2 gutter">
-			<%= link_to image_tag('onMoney.png'), "http://www.gti.org/thinking/blog/", :target => '_blank' %>
-		</li>
-		<li class="grid2 gutter">
-			<%= link_to image_tag('onSport.png'), "http://www.facebook.com/okhockey", :target => '_blank' %>
-		</li>
-		<li class="grid2">
-			<%= link_to image_tag('onTrolleyBags.png'), "http://ihatetinytrolleybags.tumblr.com/", :target => '_blank' %>
-		</li>
-	</ul>
-</div>
-
-<div class="mainBody padder">
+<div class="col-md-12">
+	<div class="row">
+		<ul class="moreWritingButtons">
+			<li class="col-md-3">
+				<%= link_to image_tag('onWriting.png'), "http://www.goodreads.com/author/show/6507631.Dominic_H_King/blog", :target => '_blank', :class => "more" %><br/>
+			</li>
+			<li class="col-md-3">
+				<%= link_to image_tag('onMoney.png'), "http://www.gti.org/thinking/blog/", :target => '_blank', :class => "more" %>
+			</li>
+			<li class="col-md-3">
+				<%= link_to image_tag('onSport.png'), "http://www.facebook.com/okhockey", :target => '_blank', :class => "more" %>
+			</li>
+			<li class="col-md-3">
+				<%= link_to image_tag('onTrolleyBags.png'), "http://ihatetinytrolleybags.tumblr.com/", :target => '_blank', :class => "more" %>
+			</li>
+		</ul>
+	</div>
+	<div class="strapline2"><h1 class="strap">Recent thoughts</h1></div>
+	<div id="divider">&#160;</div>
+	<div class="row">
 	
-	<div class="grid8">
-		<div class="grid8">
+		<div class="col-md-12">
 			<% @feeds.each do |entry| %>
-		  		<h4><%= entry.name %></h4>
+	  			<h4><%= entry.name %></h4>
 				<div class="digg_pagination">
 					<%= will_paginate @feeds, :page_links => false %>
 				</div>
-				<%= simple_format(entry.content, class: "blogContent") %>
+				<%= simple_format(entry.content, class: "blogContent justify") %>
 				<%= (entry.publishedat) %>
 			<% end %>
 		</div>

@@ -1,152 +1,32 @@
-<div class="mainImg slides grid8">
-	<% @books.each do |b| %>
-		<%= link_to image_tag(b.cover), b %>
-	<% end %>
-</div>
-
-<div class="mainBody">
-	
-	<div class="grid2 gutter top">
-
-		<h2>About Dominic</h2>
-		<p><%= simple_format(truncate (@about.text), length: 465, :separator => '.') %></p>
-		<div class="more more1"><%= link_to 'More', other_writing_path %></div>
-	
+<div class="col-md-12">
+	<div id="slider1_container" style="position: relative; top: 0px; left: 0px; width: 1200px; height: 272px;">
+	    <!-- Slides Container -->
+	    <div u="slides" style="cursor: move; position: absolute; overflow: hidden; left: 0px; top: 0px; width: 1200px; height: 272px;">
+			<% @books.each do |b| %>
+	        	<div class="mainImg"><%= link_to image_tag(b.cover), b %></div>
+	        <% end %>
+	    </div>
 	</div>
+	<div class="strapline3"><h1 class="strap">Recent News</h1></div>
+	<div id="divider">&#160;</div>
+
+	<div class="mainBody">
 	
-	<div class="grid3_5">
-		<h2>Latest News</h2>
-		<%= simple_format(truncate (@feed.summary), length: 810 ) %>
-		<div class="more"><%= link_to 'More', other_writing_path, :class => 'readmore' %></div>
-	</div>
+		<div class="col-md-3">
+
+			<h2>About Dominic</h2>
+			<p><%= simple_format(truncate (@about.text), length: 465, :separator => '.') %></p>
+			<div class="more more1"><%= link_to 'More', abouts_path %></div>
 	
-	<!--<div class="grid2">
-		<h2>Get in touch!</h2>
-		<div class="contactForm">	
-			<%#= form_for(@contact, remote: true) do |f| %>
-				<div class="contactEmail">
-	    			<%#= f.text_field :name, :placeholder => 'Name', :class => "contactField" %><br /><br />
-				</div>
-				<div class="contactName">
-	    			<#%= f.text_field :email, :placeholder => 'Email', :class => "contactField" %><br /><br />
-				</div>
-				<div class="contactMessage">
-	    			<%#= f.text_area :messagetext, :placeholder => 'Message', :class => "contactFieldArea" %><br /><br />
-				</div>
-	    		<div class="grid-full"><%#= f.submit "Send", class: "button4 submit", id: "contact-submit" %></div>
-			<%# end %>
 		</div>
-	</div>-->
 	
-	<!--<div class="grid2">
-		<h2>Dominic's Bookshelf</h2>
-		<style type="text/css" media="screen">
-			.gr_custom_container_1398683684 {
-		    	/* customize your Goodreads widget container here*/
-		    	border-radius:10px;
-		    	padding: 22px 0px 9px 0px;
-		    	background-color: transparent;
-		    	color: #000000;
-		  	}
-		  	.gr_custom_header_1398683684 {
-		    	/* customize your Goodreads header here*/
-		    	display:none;
-		  	}
-		  	.gr_custom_each_container_1398683684 {
-		    	/* customize each individual book container here */
-		    	width: 100%;
-		    	clear: both;
-		    	margin-bottom: 10px;
-		    	overflow: auto;
-		    	padding:6px 0px 13px 0px;
-		    	border-bottom: 1px dotted #d9d9d9;
-				font-family:'Open Sans', sans-serif;font-weight:300;font-size:15px;line-height:18px;
-		  	}
-		  	.gr_custom_book_container_1398683684 {
-		    	/* customize your book covers here */
-		    	overflow: hidden;
-		    	height: 60px;
-		      	float: left;
-		      	margin-right: 4px;
-		      	width: 39px;
-		  	}
-		  	.gr_custom_author_1398683684 {
-		    	/* customize your author names here */
-		    	font-size: 10px;
-		  	}
-		  	.gr_custom_tags_1398683684 {
-		    /* customize your tags here */
-		    	font-size: 10px;
-		    	color: gray;
-		  	}
-		  	.gr_custom_rating_1398683684 {
-		    	/* customize your rating stars here */
-		    	float: right;
-		  	}
-			center {display:none;}
-		</style>
-		<div id="gr_custom_widget_1398683684">
-			<div class="gr_custom_container_1398683684">
-		    	<h2 class="gr_custom_header_1398683684">
-		    		<a href="https://www.goodreads.com/review/list/11959656-dominic-king?shelf=read&amp;utm_medium=api&amp;utm_source=custom_widget"
-		 			style="text-decoration: none;">Dominic's books</a>
-		    	</h2>
-		      	<div class="gr_custom_each_container_1398683684">
-		        	<div class="gr_custom_book_container_1398683684">
-		            	<a href="https://www.goodreads.com/review/show/393903809?utm_medium=api&amp;utm_source=custom_widget" 
-						title="Angels &amp; Demons  (Robert Langdon, #1)"><img alt="Angels &amp; Demons" border="0" 
-						src="https://d202m5krfqbpi5.cloudfront.net/books/1303390735s/960.jpg" /></a>
-		          	</div>
-		          	<div class="gr_custom_rating_1398683684">
-		            	<img alt="3 of 5 stars" class=" staticStars" src="https://www.goodreads.com/images/layout/stars/red_star_3_of_5.png" 
-						title="3 of 5 stars, liked it" />
-		          	</div>
-		          	<div class="gr_custom_title_1398683684">
-		            	<a href="https://www.goodreads.com/review/show/393903809?utm_medium=api&amp;utm_source=custom_widget">Angels &amp; Demons</a>
-		          	</div>
-		          	<div class="gr_custom_author_1398683684">
-		            	by <a href="https://www.goodreads.com/author/show/630.Dan_Brown">Dan Brown</a>
-		          	</div>
-		      	</div>
-		      	<div class="gr_custom_each_container_1398683684">
-		        	<div class="gr_custom_book_container_1398683684">
-		            	<a href="https://www.goodreads.com/review/show/393903941?utm_medium=api&amp;utm_source=custom_widget" title="Life of Pi">
-							<img alt="Life of Pi" border="0" src="https://d202m5krfqbpi5.cloudfront.net/books/1320562005s/4214.jpg" />
-						</a>
-		          	</div>
-		          	<div class="gr_custom_rating_1398683684">
-		            	<img alt="5 of 5 stars" class=" staticStars" src="https://www.goodreads.com/images/layout/stars/red_star_5_of_5.png" 
-						title="5 of 5 stars, it was amazing" />
-		          	</div>
-		          	<div class="gr_custom_title_1398683684">
-		            	<a href="https://www.goodreads.com/review/show/393903941?utm_medium=api&amp;utm_source=custom_widget">Life of Pi</a>
-		          	</div>
-		          	<div class="gr_custom_author_1398683684">
-		            	by <a href="https://www.goodreads.com/author/show/811.Yann_Martel">Yann Martel</a>
-		          	</div>
-		      	</div>
-		      	<div class="gr_custom_each_container_1398683684">
-		          	<div class="gr_custom_book_container_1398683684">
-		            	<a href="https://www.goodreads.com/review/show/393904178?utm_medium=api&amp;utm_source=custom_widget" title="The White Tiger">
-							<img alt="The White Tiger" border="0" src="https://d202m5krfqbpi5.cloudfront.net/books/1347754998s/1768603.jpg" />
-						</a>
-		          	</div>
-		          	<div class="gr_custom_rating_1398683684">
-		            	<img alt="5 of 5 stars" class=" staticStars" src="https://www.goodreads.com/images/layout/stars/red_star_5_of_5.png" 
-						title="5 of 5 stars, it was amazing" />
-		          	</div>
-		          	<div class="gr_custom_title_1398683684">
-		            	<a href="https://www.goodreads.com/review/show/393904178?utm_medium=api&amp;utm_source=custom_widget">The White Tiger</a>
-		          	</div>
-		          	<div class="gr_custom_author_1398683684">
-		            	by <a href="https://www.goodreads.com/author/show/810254.Aravind_Adiga">Aravind Adiga</a>
-		          	</div>
-		      	</div>
-			</div>
-		    <script src="https://www.goodreads.com/review/custom_widget/11959656.Dominic's%20bookshelf:%20read?cover_position=left&cover_size=small&num_books=3&order=a&shelf=read&show_author=1&show_cover=1&show_rating=1&show_review=1&show_tags=1&show_title=1&sort=date_added&widget_bg_color=FFFFFF&widget_bg_transparent=true&widget_border_width=1&widget_id=1398683684&widget_text_color=000000&widget_title_size=medium&widget_width=full" type="text/javascript" charset="utf-8">
-			</script>
-		</div>-->
-		<div class="grid2">
+		<div class="col-md-6">
+			<h2>Latest News</h2>
+			<p><%= simple_format(truncate (@feed.summary), length: 810 ) %></p>
+			<div class="more more1"><%= link_to 'More', other_writing_path %></div>
+		</div>
+	
+		<div class="col-md-3">
 			<h2>By Dominic</h2>
 			<style type="text/css" media="screen">
 				.gr_container {
@@ -207,6 +87,72 @@
 				src="https://www.goodreads.com/author/author_widget/6507631.Dominic_H_King?num_books=2&widget_id=1398686799">
 			</script>
 			<div class="more more2"><a href="https://www.goodreads.com/author/show/6507631.Dominic_H_King?from_search=true">More</div>
+			<script type="text/javascript" charset="utf-8">
+				$(document).ready(function() {
+					var options = {
+				        $AutoPlay: true,                                    //[Optional] Whether to auto play, to enable slideshow, this option must be set to true, default value is false
+				        $AutoPlaySteps: 1,                                  //[Optional] Steps to go for each navigation request (this options applys only when slideshow disabled), the default value is 1
+				        $AutoPlayInterval: 4000,                            //[Optional] Interval (in milliseconds) to go for next slide since the previous stopped if the slider is auto playing, default value is 3000
+				        $PauseOnHover: 1,                                   //[Optional] Whether to pause when mouse over if a slider is auto playing, 0 no pause, 1 pause for desktop, 2 pause for touch device, 3 pause for desktop and touch device, 4 freeze for desktop, 8 freeze for touch device, 12 freeze for desktop and touch device, default value is 1
+
+				        $ArrowKeyNavigation: true,   			            //[Optional] Allows keyboard (arrow key) navigation or not, default value is false
+				        $SlideEasing: $JssorEasing$.$EaseOutQuint,          //[Optional] Specifies easing for right to left animation, default value is $JssorEasing$.$EaseOutQuad
+				        $SlideDuration: 800,                                //[Optional] Specifies default duration (swipe) for slide in milliseconds, default value is 500
+				        $MinDragOffsetToSlide: 20,                          //[Optional] Minimum drag offset to trigger slide , default value is 20
+				        //$SlideWidth: 600,                                 //[Optional] Width of every slide in pixels, default value is width of 'slides' container
+				        //$SlideHeight: 300,                                //[Optional] Height of every slide in pixels, default value is height of 'slides' container
+				        $SlideSpacing: 0, 					                //[Optional] Space between each slide in pixels, default value is 0
+				        $DisplayPieces: 1,                                  //[Optional] Number of pieces to display (the slideshow would be disabled if the value is set to greater than 1), the default value is 1
+				        $ParkingPosition: 0,                                //[Optional] The offset position to park slide (this options applys only when slideshow disabled), default value is 0.
+				        $UISearchMode: 1,                                   //[Optional] The way (0 parellel, 1 recursive, default value is 1) to search UI components (slides container, loading screen, navigator container, arrow navigator container, thumbnail navigator container etc).
+				        $PlayOrientation: 1,                                //[Optional] Orientation to play slide (for auto play, navigation), 1 horizental, 2 vertical, 5 horizental reverse, 6 vertical reverse, default value is 1
+				        $DragOrientation: 1,                                //[Optional] Orientation to drag slide, 0 no drag, 1 horizental, 2 vertical, 3 either, default value is 1 (Note that the $DragOrientation should be the same as $PlayOrientation when $DisplayPieces is greater than 1, or parking position is not 0)
+
+				        $ArrowNavigatorOptions: {                           //[Optional] Options to specify and enable arrow navigator or not
+				            $Class: $JssorArrowNavigator$,                  //[Requried] Class to create arrow navigator instance
+				            $ChanceToShow: 2,                               //[Required] 0 Never, 1 Mouse Over, 2 Always
+				            $AutoCenter: 2,                                 //[Optional] Auto center arrows in parent container, 0 No, 1 Horizontal, 2 Vertical, 3 Both, default value is 0
+				            $Steps: 1,                                      //[Optional] Steps to go for each navigation request, default value is 1
+				            $Scale: false                                   //Scales bullets navigator or not while slider scale
+				        },
+
+				        $BulletNavigatorOptions: {                                //[Optional] Options to specify and enable navigator or not
+				            $Class: $JssorBulletNavigator$,                       //[Required] Class to create navigator instance
+				            $ChanceToShow: 2,                               //[Required] 0 Never, 1 Mouse Over, 2 Always
+				            $AutoCenter: 1,                                 //[Optional] Auto center navigator in parent container, 0 None, 1 Horizontal, 2 Vertical, 3 Both, default value is 0
+				            $Steps: 1,                                      //[Optional] Steps to go for each navigation request, default value is 1
+				            $Lanes: 1,                                      //[Optional] Specify lanes to arrange items, default value is 1
+				            $SpacingX: 12,                                   //[Optional] Horizontal space between each item in pixel, default value is 0
+				            $SpacingY: 4,                                   //[Optional] Vertical space between each item in pixel, default value is 0
+				            $Orientation: 1,                                //[Optional] The orientation of the navigator, 1 horizontal, 2 vertical, default value is 1
+				            $Scale: false                                   //Scales bullets navigator or not while slider scale
+				        }
+				    };
+
+				    //Make the element 'slider1_container' visible before initialize jssor slider.
+				    $("#slider1_container").css("display", "block");
+				    var jssor_slider1 = new $JssorSlider$("slider1_container", options);
+
+				    //responsive code begin
+				    //you can remove responsive code if you don't want the slider scales while window resizes
+				    function ScaleSlider() {
+				        var parentWidth = jssor_slider1.$Elmt.parentNode.clientWidth;
+				        if (parentWidth) {
+				            jssor_slider1.$ScaleWidth(parentWidth - 30);
+				        }
+				        else
+				            window.setTimeout(ScaleSlider, 30);
+				    }
+				    ScaleSlider();
+
+				    $(window).bind("load", ScaleSlider);
+				    $(window).bind("resize", ScaleSlider);
+				    $(window).bind("orientationchange", ScaleSlider);
+				    //responsive code end
+				});
+			</script>
 		</div>
+
 	</div>
+
 </div>

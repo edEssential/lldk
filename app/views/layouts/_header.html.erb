@@ -1,37 +1,27 @@
-<div id="header">
+<div class="row topMargin">
 
-<div id="logoETC"><h1><%= link_to 'Dominic H. King', root_path, :class => "logowords" %></h1></div>
+	<div class="col-md-4" id="logoETC"><h1><%= link_to 'Dominic H. King', root_path, :class => "logowords" %></h1></div>
+	<div class="col-md-2">
+		<% if user_signed_in? %>
+				{ Logged in as <strong><%= current_user.email %></strong> }
+				<%= link_to 'Edit', edit_user_registration_path %> | 
+				<%= link_to 'Logout', destroy_user_session_path, :method => :delete %> |
+				<%= link_to 'CMS', cms_path %>
+		<% else %>
+			&nbsp;
+		<% end %>
+	</div>
 	
-<%= link_to(image_tag('nav-icon.png', class: "menuBlock"), '#', id: "menuReveal") %>	
-	
-<div class="navigation">
-	<nav class="clearfix">  
-	    <ul class="clearfix">
-		 	<% @books.each do |b| %>
-				<% titlefix = b.title.downcase.gsub(/\s+/, '-').gsub(/[^a-z0-9_-]/, '').squeeze('-') %>
-				<li><%= link_to b.title, "/books" + "/" + titlefix, id: "#{titlefix}" + "nav" %></li>
+	<div class="col-md-6">
+		<ul id="menu" class="navigation option-set clearfix" data-option-key="filter" id="filters">
+			<% @books.each do |b| %>
+				<%# titlefix = b.title.downcase.gsub(/\s+/, '-').gsub(/[^a-z0-9_-]/, '').squeeze('-') %>
+				<!--<li><%#= link_to b.title, "/books" + "/" + titlefix, id: "#{titlefix}" + "nav" %></li>-->
+				<li><%= link_to b.title, b %>
 			<% end %>
-	        <li><%= link_to 'The Reaper', reapers_path, id: "reapernav" %></li>
-			<li><%= link_to 'More', other_writing_path, id: "morenav" %></li>
+		  	<li><%= link_to 'More', other_writing_path, id: "morenav" %></li>
 			<li><%= link_to 'About', about_the_author_path, id: "aboutnav" %></li>
-	    </ul> 
-	</nav>
+		</ul>
+	</div>
+	
 </div>
-
-<div class="navigation2">
-	<nav class="clearfix">  
-	    <ul class="clearfix">
-		    <li id="pull"><h1>Dominic H. King</h1></a></li>
-			<div class="menu">
-			 	<% @books.each do |b| %>
-					<% titlefix = b.title.downcase.gsub(/\s+/, '-').gsub(/[^a-z0-9_-]/, '').squeeze('-') %>
-					<li><%= link_to b.title, "/books" + "/" + titlefix, id: "#{titlefix}" + "nav" %></li>
-				<% end %>
-		        <li><%= link_to 'The Reaper', reapers_path, id: "reapernav" %></li>
-				<li><%= link_to 'More', other_writing_path, id: "morenav" %></li>
-				<li><%= link_to 'About', about_the_author_path, id: "aboutnav" %></li>
-			</div>
-	    </ul> 
-	</nav>
-</div>
-

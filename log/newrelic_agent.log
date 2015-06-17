@@ -796,3 +796,580 @@
 [06/02/14 10:25:51 +0100 administrators-MacBook-Pro-2.local (43728)] INFO : Installing Rails3 Error instrumentation
 [06/02/14 10:25:51 +0100 administrators-MacBook-Pro-2.local (43728)] INFO : Finished instrumentation
 [06/02/14 10:25:51 +0100 administrators-MacBook-Pro-2.local (43728)] INFO : Doing deferred dependency-detection before Rack startup
+[06/10/15 14:42:30 +0100 unknown-b8-8d-12-3a-8b-1c.home (5966)] INFO : Starting the New Relic agent in "development" environment.
+[06/10/15 14:42:30 +0100 unknown-b8-8d-12-3a-8b-1c.home (5966)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[06/10/15 14:42:30 +0100 unknown-b8-8d-12-3a-8b-1c.home (5966)] INFO : Reading configuration from config/newrelic.yml
+[06/10/15 14:42:30 +0100 unknown-b8-8d-12-3a-8b-1c.home (5966)] INFO : New Relic Agent Developer Mode enabled.
+[06/10/15 14:42:30 +0100 unknown-b8-8d-12-3a-8b-1c.home (5966)] INFO : Enabling the Request Sampler.
+[06/10/15 14:42:30 +0100 unknown-b8-8d-12-3a-8b-1c.home (5966)] INFO : Enabling the Request Sampler.
+[06/10/15 14:42:30 +0100 unknown-b8-8d-12-3a-8b-1c.home (5966)] INFO : Environment: development
+[06/10/15 14:42:30 +0100 unknown-b8-8d-12-3a-8b-1c.home (5966)] INFO : Dispatcher: webrick
+[06/10/15 14:42:30 +0100 unknown-b8-8d-12-3a-8b-1c.home (5966)] INFO : Application: My Application
+[06/10/15 14:42:30 +0100 unknown-b8-8d-12-3a-8b-1c.home (5966)] WARN : Agent configured not to send data in this environment.
+[06/10/15 14:42:30 +0100 unknown-b8-8d-12-3a-8b-1c.home (5966)] INFO : Installing ActiveRecord instrumentation
+[06/10/15 14:42:30 +0100 unknown-b8-8d-12-3a-8b-1c.home (5966)] INFO : Installing Curb instrumentation
+[06/10/15 14:42:30 +0100 unknown-b8-8d-12-3a-8b-1c.home (5966)] INFO : Installing Net instrumentation
+[06/10/15 14:42:30 +0100 unknown-b8-8d-12-3a-8b-1c.home (5966)] INFO : Installing deferred Rack instrumentation
+[06/10/15 14:42:30 +0100 unknown-b8-8d-12-3a-8b-1c.home (5966)] INFO : Installing Rails 3 Controller instrumentation
+[06/10/15 14:42:30 +0100 unknown-b8-8d-12-3a-8b-1c.home (5966)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[06/10/15 14:42:30 +0100 unknown-b8-8d-12-3a-8b-1c.home (5966)] INFO : Installing Rails3 Error instrumentation
+[06/10/15 14:42:30 +0100 unknown-b8-8d-12-3a-8b-1c.home (5966)] INFO : Finished instrumentation
+[06/10/15 14:42:30 +0100 unknown-b8-8d-12-3a-8b-1c.home (5966)] INFO : Doing deferred dependency-detection before Rack startup
+[06/15/15 11:28:32 +0100 unknown-b8-8d-12-3a-8b-1c.home (1911)] INFO : Starting the New Relic agent in "development" environment.
+[06/15/15 11:28:32 +0100 unknown-b8-8d-12-3a-8b-1c.home (1911)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[06/15/15 11:28:32 +0100 unknown-b8-8d-12-3a-8b-1c.home (1911)] INFO : Reading configuration from config/newrelic.yml
+[06/15/15 11:28:32 +0100 unknown-b8-8d-12-3a-8b-1c.home (1911)] INFO : New Relic Agent Developer Mode enabled.
+[06/15/15 11:28:32 +0100 unknown-b8-8d-12-3a-8b-1c.home (1911)] INFO : Enabling the Request Sampler.
+[06/15/15 11:28:32 +0100 unknown-b8-8d-12-3a-8b-1c.home (1911)] INFO : Enabling the Request Sampler.
+[06/15/15 11:28:32 +0100 unknown-b8-8d-12-3a-8b-1c.home (1911)] INFO : Environment: development
+[06/15/15 11:28:32 +0100 unknown-b8-8d-12-3a-8b-1c.home (1911)] INFO : Dispatcher: webrick
+[06/15/15 11:28:32 +0100 unknown-b8-8d-12-3a-8b-1c.home (1911)] INFO : Application: My Application
+[06/15/15 11:28:32 +0100 unknown-b8-8d-12-3a-8b-1c.home (1911)] WARN : Agent configured not to send data in this environment.
+[06/15/15 11:28:33 +0100 unknown-b8-8d-12-3a-8b-1c.home (1911)] INFO : Installing ActiveRecord instrumentation
+[06/15/15 11:28:33 +0100 unknown-b8-8d-12-3a-8b-1c.home (1911)] INFO : Installing Curb instrumentation
+[06/15/15 11:28:33 +0100 unknown-b8-8d-12-3a-8b-1c.home (1911)] INFO : Installing Net instrumentation
+[06/15/15 11:28:33 +0100 unknown-b8-8d-12-3a-8b-1c.home (1911)] INFO : Installing deferred Rack instrumentation
+[06/15/15 11:28:33 +0100 unknown-b8-8d-12-3a-8b-1c.home (1911)] INFO : Installing Rails 3 Controller instrumentation
+[06/15/15 11:28:33 +0100 unknown-b8-8d-12-3a-8b-1c.home (1911)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[06/15/15 11:28:33 +0100 unknown-b8-8d-12-3a-8b-1c.home (1911)] INFO : Installing Rails3 Error instrumentation
+[06/15/15 11:28:33 +0100 unknown-b8-8d-12-3a-8b-1c.home (1911)] INFO : Finished instrumentation
+[06/15/15 11:28:33 +0100 unknown-b8-8d-12-3a-8b-1c.home (1911)] INFO : Doing deferred dependency-detection before Rack startup
+[06/15/15 11:32:11 +0100 unknown-b8-8d-12-3a-8b-1c.home (1934)] INFO : Starting the New Relic agent in "development" environment.
+[06/15/15 11:32:11 +0100 unknown-b8-8d-12-3a-8b-1c.home (1934)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[06/15/15 11:32:11 +0100 unknown-b8-8d-12-3a-8b-1c.home (1934)] INFO : Reading configuration from config/newrelic.yml
+[06/15/15 11:32:11 +0100 unknown-b8-8d-12-3a-8b-1c.home (1934)] INFO : New Relic Agent Developer Mode enabled.
+[06/15/15 11:32:11 +0100 unknown-b8-8d-12-3a-8b-1c.home (1934)] INFO : Enabling the Request Sampler.
+[06/15/15 11:32:11 +0100 unknown-b8-8d-12-3a-8b-1c.home (1934)] INFO : Enabling the Request Sampler.
+[06/15/15 11:32:11 +0100 unknown-b8-8d-12-3a-8b-1c.home (1934)] INFO : Environment: development
+[06/15/15 11:32:11 +0100 unknown-b8-8d-12-3a-8b-1c.home (1934)] INFO : No known dispatcher detected.
+[06/15/15 11:32:11 +0100 unknown-b8-8d-12-3a-8b-1c.home (1934)] INFO : Application: My Application
+[06/15/15 11:32:11 +0100 unknown-b8-8d-12-3a-8b-1c.home (1934)] WARN : Agent configured not to send data in this environment.
+[06/15/15 11:32:11 +0100 unknown-b8-8d-12-3a-8b-1c.home (1934)] INFO : Installing ActiveRecord instrumentation
+[06/15/15 11:32:11 +0100 unknown-b8-8d-12-3a-8b-1c.home (1934)] INFO : Installing Curb instrumentation
+[06/15/15 11:32:11 +0100 unknown-b8-8d-12-3a-8b-1c.home (1934)] INFO : Installing Net instrumentation
+[06/15/15 11:32:11 +0100 unknown-b8-8d-12-3a-8b-1c.home (1934)] INFO : Installing deferred Rack instrumentation
+[06/15/15 11:32:11 +0100 unknown-b8-8d-12-3a-8b-1c.home (1934)] INFO : Installing Rails 3 Controller instrumentation
+[06/15/15 11:32:11 +0100 unknown-b8-8d-12-3a-8b-1c.home (1934)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[06/15/15 11:32:11 +0100 unknown-b8-8d-12-3a-8b-1c.home (1934)] INFO : Installing Rails3 Error instrumentation
+[06/15/15 11:32:11 +0100 unknown-b8-8d-12-3a-8b-1c.home (1934)] INFO : Finished instrumentation
+[06/15/15 11:32:27 +0100 unknown-b8-8d-12-3a-8b-1c.home (1937)] INFO : Starting the New Relic agent in "development" environment.
+[06/15/15 11:32:27 +0100 unknown-b8-8d-12-3a-8b-1c.home (1937)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[06/15/15 11:32:27 +0100 unknown-b8-8d-12-3a-8b-1c.home (1937)] INFO : Reading configuration from config/newrelic.yml
+[06/15/15 11:32:27 +0100 unknown-b8-8d-12-3a-8b-1c.home (1937)] INFO : New Relic Agent Developer Mode enabled.
+[06/15/15 11:32:27 +0100 unknown-b8-8d-12-3a-8b-1c.home (1937)] INFO : Enabling the Request Sampler.
+[06/15/15 11:32:27 +0100 unknown-b8-8d-12-3a-8b-1c.home (1937)] INFO : Enabling the Request Sampler.
+[06/15/15 11:32:27 +0100 unknown-b8-8d-12-3a-8b-1c.home (1937)] INFO : Environment: development
+[06/15/15 11:32:27 +0100 unknown-b8-8d-12-3a-8b-1c.home (1937)] INFO : Dispatcher: webrick
+[06/15/15 11:32:27 +0100 unknown-b8-8d-12-3a-8b-1c.home (1937)] INFO : Application: My Application
+[06/15/15 11:32:27 +0100 unknown-b8-8d-12-3a-8b-1c.home (1937)] WARN : Agent configured not to send data in this environment.
+[06/15/15 11:32:27 +0100 unknown-b8-8d-12-3a-8b-1c.home (1937)] INFO : Installing ActiveRecord instrumentation
+[06/15/15 11:32:27 +0100 unknown-b8-8d-12-3a-8b-1c.home (1937)] INFO : Installing Curb instrumentation
+[06/15/15 11:32:27 +0100 unknown-b8-8d-12-3a-8b-1c.home (1937)] INFO : Installing Net instrumentation
+[06/15/15 11:32:27 +0100 unknown-b8-8d-12-3a-8b-1c.home (1937)] INFO : Installing deferred Rack instrumentation
+[06/15/15 11:32:27 +0100 unknown-b8-8d-12-3a-8b-1c.home (1937)] INFO : Installing Rails 3 Controller instrumentation
+[06/15/15 11:32:27 +0100 unknown-b8-8d-12-3a-8b-1c.home (1937)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[06/15/15 11:32:27 +0100 unknown-b8-8d-12-3a-8b-1c.home (1937)] INFO : Installing Rails3 Error instrumentation
+[06/15/15 11:32:27 +0100 unknown-b8-8d-12-3a-8b-1c.home (1937)] INFO : Finished instrumentation
+[06/15/15 11:32:28 +0100 unknown-b8-8d-12-3a-8b-1c.home (1937)] INFO : Doing deferred dependency-detection before Rack startup
+[06/15/15 12:12:52 +0100 unknown-b8-8d-12-3a-8b-1c.home (1990)] INFO : Starting the New Relic agent in "development" environment.
+[06/15/15 12:12:52 +0100 unknown-b8-8d-12-3a-8b-1c.home (1990)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[06/15/15 12:12:52 +0100 unknown-b8-8d-12-3a-8b-1c.home (1990)] INFO : Reading configuration from config/newrelic.yml
+[06/15/15 12:12:52 +0100 unknown-b8-8d-12-3a-8b-1c.home (1990)] INFO : New Relic Agent Developer Mode enabled.
+[06/15/15 12:12:52 +0100 unknown-b8-8d-12-3a-8b-1c.home (1990)] INFO : Enabling the Request Sampler.
+[06/15/15 12:12:52 +0100 unknown-b8-8d-12-3a-8b-1c.home (1990)] INFO : Enabling the Request Sampler.
+[06/15/15 12:12:52 +0100 unknown-b8-8d-12-3a-8b-1c.home (1990)] INFO : Environment: development
+[06/15/15 12:12:52 +0100 unknown-b8-8d-12-3a-8b-1c.home (1990)] INFO : Dispatcher: webrick
+[06/15/15 12:12:52 +0100 unknown-b8-8d-12-3a-8b-1c.home (1990)] INFO : Application: My Application
+[06/15/15 12:12:52 +0100 unknown-b8-8d-12-3a-8b-1c.home (1990)] WARN : Agent configured not to send data in this environment.
+[06/15/15 12:12:52 +0100 unknown-b8-8d-12-3a-8b-1c.home (1990)] INFO : Installing ActiveRecord instrumentation
+[06/15/15 12:12:52 +0100 unknown-b8-8d-12-3a-8b-1c.home (1990)] INFO : Installing Curb instrumentation
+[06/15/15 12:12:52 +0100 unknown-b8-8d-12-3a-8b-1c.home (1990)] INFO : Installing Net instrumentation
+[06/15/15 12:12:52 +0100 unknown-b8-8d-12-3a-8b-1c.home (1990)] INFO : Installing deferred Rack instrumentation
+[06/15/15 12:12:52 +0100 unknown-b8-8d-12-3a-8b-1c.home (1990)] INFO : Installing Rails 3 Controller instrumentation
+[06/15/15 12:12:53 +0100 unknown-b8-8d-12-3a-8b-1c.home (1990)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[06/15/15 12:12:53 +0100 unknown-b8-8d-12-3a-8b-1c.home (1990)] INFO : Installing Rails3 Error instrumentation
+[06/15/15 12:12:53 +0100 unknown-b8-8d-12-3a-8b-1c.home (1990)] INFO : Finished instrumentation
+[06/15/15 12:12:53 +0100 unknown-b8-8d-12-3a-8b-1c.home (1990)] INFO : Doing deferred dependency-detection before Rack startup
+[06/15/15 12:20:32 +0100 unknown-b8-8d-12-3a-8b-1c.home (2006)] INFO : Starting the New Relic agent in "development" environment.
+[06/15/15 12:20:32 +0100 unknown-b8-8d-12-3a-8b-1c.home (2006)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[06/15/15 12:20:32 +0100 unknown-b8-8d-12-3a-8b-1c.home (2006)] INFO : Reading configuration from config/newrelic.yml
+[06/15/15 12:20:32 +0100 unknown-b8-8d-12-3a-8b-1c.home (2006)] INFO : New Relic Agent Developer Mode enabled.
+[06/15/15 12:20:32 +0100 unknown-b8-8d-12-3a-8b-1c.home (2006)] INFO : Enabling the Request Sampler.
+[06/15/15 12:20:32 +0100 unknown-b8-8d-12-3a-8b-1c.home (2006)] INFO : Enabling the Request Sampler.
+[06/15/15 12:20:32 +0100 unknown-b8-8d-12-3a-8b-1c.home (2006)] INFO : Environment: development
+[06/15/15 12:20:32 +0100 unknown-b8-8d-12-3a-8b-1c.home (2006)] INFO : Dispatcher: webrick
+[06/15/15 12:20:32 +0100 unknown-b8-8d-12-3a-8b-1c.home (2006)] INFO : Application: My Application
+[06/15/15 12:20:32 +0100 unknown-b8-8d-12-3a-8b-1c.home (2006)] WARN : Agent configured not to send data in this environment.
+[06/15/15 12:20:32 +0100 unknown-b8-8d-12-3a-8b-1c.home (2006)] INFO : Installing ActiveRecord instrumentation
+[06/15/15 12:20:32 +0100 unknown-b8-8d-12-3a-8b-1c.home (2006)] INFO : Installing Curb instrumentation
+[06/15/15 12:20:32 +0100 unknown-b8-8d-12-3a-8b-1c.home (2006)] INFO : Installing Net instrumentation
+[06/15/15 12:20:32 +0100 unknown-b8-8d-12-3a-8b-1c.home (2006)] INFO : Installing deferred Rack instrumentation
+[06/15/15 12:20:32 +0100 unknown-b8-8d-12-3a-8b-1c.home (2006)] INFO : Installing Rails 3 Controller instrumentation
+[06/15/15 12:20:32 +0100 unknown-b8-8d-12-3a-8b-1c.home (2006)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[06/15/15 12:20:32 +0100 unknown-b8-8d-12-3a-8b-1c.home (2006)] INFO : Installing Rails3 Error instrumentation
+[06/15/15 12:20:32 +0100 unknown-b8-8d-12-3a-8b-1c.home (2006)] INFO : Finished instrumentation
+[06/15/15 12:20:32 +0100 unknown-b8-8d-12-3a-8b-1c.home (2006)] INFO : Doing deferred dependency-detection before Rack startup
+[06/15/15 13:57:31 +0100 unknown-b8-8d-12-3a-8b-1c.home (2129)] INFO : Starting the New Relic agent in "development" environment.
+[06/15/15 13:57:31 +0100 unknown-b8-8d-12-3a-8b-1c.home (2129)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[06/15/15 13:57:31 +0100 unknown-b8-8d-12-3a-8b-1c.home (2129)] INFO : Reading configuration from config/newrelic.yml
+[06/15/15 13:57:31 +0100 unknown-b8-8d-12-3a-8b-1c.home (2129)] INFO : New Relic Agent Developer Mode enabled.
+[06/15/15 13:57:31 +0100 unknown-b8-8d-12-3a-8b-1c.home (2129)] INFO : Enabling the Request Sampler.
+[06/15/15 13:57:31 +0100 unknown-b8-8d-12-3a-8b-1c.home (2129)] INFO : Enabling the Request Sampler.
+[06/15/15 13:57:31 +0100 unknown-b8-8d-12-3a-8b-1c.home (2129)] INFO : Environment: development
+[06/15/15 13:57:31 +0100 unknown-b8-8d-12-3a-8b-1c.home (2129)] INFO : Dispatcher: webrick
+[06/15/15 13:57:31 +0100 unknown-b8-8d-12-3a-8b-1c.home (2129)] INFO : Application: My Application
+[06/15/15 13:57:31 +0100 unknown-b8-8d-12-3a-8b-1c.home (2129)] WARN : Agent configured not to send data in this environment.
+[06/15/15 13:57:31 +0100 unknown-b8-8d-12-3a-8b-1c.home (2129)] INFO : Installing ActiveRecord instrumentation
+[06/15/15 13:57:31 +0100 unknown-b8-8d-12-3a-8b-1c.home (2129)] INFO : Installing Curb instrumentation
+[06/15/15 13:57:31 +0100 unknown-b8-8d-12-3a-8b-1c.home (2129)] INFO : Installing Net instrumentation
+[06/15/15 13:57:31 +0100 unknown-b8-8d-12-3a-8b-1c.home (2129)] INFO : Installing deferred Rack instrumentation
+[06/15/15 13:57:31 +0100 unknown-b8-8d-12-3a-8b-1c.home (2129)] INFO : Installing Rails 3 Controller instrumentation
+[06/15/15 13:57:32 +0100 unknown-b8-8d-12-3a-8b-1c.home (2129)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[06/15/15 13:57:32 +0100 unknown-b8-8d-12-3a-8b-1c.home (2129)] INFO : Installing Rails3 Error instrumentation
+[06/15/15 13:57:32 +0100 unknown-b8-8d-12-3a-8b-1c.home (2129)] INFO : Finished instrumentation
+[06/15/15 13:57:32 +0100 unknown-b8-8d-12-3a-8b-1c.home (2129)] INFO : Doing deferred dependency-detection before Rack startup
+[06/15/15 13:59:04 +0100 unknown-b8-8d-12-3a-8b-1c.home (2136)] INFO : Starting the New Relic agent in "development" environment.
+[06/15/15 13:59:04 +0100 unknown-b8-8d-12-3a-8b-1c.home (2136)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[06/15/15 13:59:04 +0100 unknown-b8-8d-12-3a-8b-1c.home (2136)] INFO : Reading configuration from config/newrelic.yml
+[06/15/15 13:59:04 +0100 unknown-b8-8d-12-3a-8b-1c.home (2136)] INFO : New Relic Agent Developer Mode enabled.
+[06/15/15 13:59:04 +0100 unknown-b8-8d-12-3a-8b-1c.home (2136)] INFO : Enabling the Request Sampler.
+[06/15/15 13:59:04 +0100 unknown-b8-8d-12-3a-8b-1c.home (2136)] INFO : Enabling the Request Sampler.
+[06/15/15 13:59:04 +0100 unknown-b8-8d-12-3a-8b-1c.home (2136)] INFO : Environment: development
+[06/15/15 13:59:04 +0100 unknown-b8-8d-12-3a-8b-1c.home (2136)] INFO : Dispatcher: webrick
+[06/15/15 13:59:04 +0100 unknown-b8-8d-12-3a-8b-1c.home (2136)] INFO : Application: My Application
+[06/15/15 13:59:04 +0100 unknown-b8-8d-12-3a-8b-1c.home (2136)] WARN : Agent configured not to send data in this environment.
+[06/15/15 13:59:04 +0100 unknown-b8-8d-12-3a-8b-1c.home (2136)] INFO : Installing ActiveRecord instrumentation
+[06/15/15 13:59:04 +0100 unknown-b8-8d-12-3a-8b-1c.home (2136)] INFO : Installing Curb instrumentation
+[06/15/15 13:59:04 +0100 unknown-b8-8d-12-3a-8b-1c.home (2136)] INFO : Installing Net instrumentation
+[06/15/15 13:59:04 +0100 unknown-b8-8d-12-3a-8b-1c.home (2136)] INFO : Installing deferred Rack instrumentation
+[06/15/15 13:59:04 +0100 unknown-b8-8d-12-3a-8b-1c.home (2136)] INFO : Installing Rails 3 Controller instrumentation
+[06/15/15 13:59:04 +0100 unknown-b8-8d-12-3a-8b-1c.home (2136)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[06/15/15 13:59:04 +0100 unknown-b8-8d-12-3a-8b-1c.home (2136)] INFO : Installing Rails3 Error instrumentation
+[06/15/15 13:59:04 +0100 unknown-b8-8d-12-3a-8b-1c.home (2136)] INFO : Finished instrumentation
+[06/15/15 13:59:05 +0100 unknown-b8-8d-12-3a-8b-1c.home (2136)] INFO : Doing deferred dependency-detection before Rack startup
+[06/15/15 14:15:09 +0100 unknown-b8-8d-12-3a-8b-1c.home (2212)] INFO : Starting the New Relic agent in "development" environment.
+[06/15/15 14:15:09 +0100 unknown-b8-8d-12-3a-8b-1c.home (2212)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[06/15/15 14:15:09 +0100 unknown-b8-8d-12-3a-8b-1c.home (2212)] INFO : Reading configuration from config/newrelic.yml
+[06/15/15 14:15:09 +0100 unknown-b8-8d-12-3a-8b-1c.home (2212)] INFO : New Relic Agent Developer Mode enabled.
+[06/15/15 14:15:09 +0100 unknown-b8-8d-12-3a-8b-1c.home (2212)] INFO : Enabling the Request Sampler.
+[06/15/15 14:15:09 +0100 unknown-b8-8d-12-3a-8b-1c.home (2212)] INFO : Enabling the Request Sampler.
+[06/15/15 14:15:09 +0100 unknown-b8-8d-12-3a-8b-1c.home (2212)] INFO : Environment: development
+[06/15/15 14:15:09 +0100 unknown-b8-8d-12-3a-8b-1c.home (2212)] INFO : Dispatcher: webrick
+[06/15/15 14:15:09 +0100 unknown-b8-8d-12-3a-8b-1c.home (2212)] INFO : Application: My Application
+[06/15/15 14:15:09 +0100 unknown-b8-8d-12-3a-8b-1c.home (2212)] WARN : Agent configured not to send data in this environment.
+[06/15/15 14:15:09 +0100 unknown-b8-8d-12-3a-8b-1c.home (2212)] INFO : Installing ActiveRecord instrumentation
+[06/15/15 14:15:09 +0100 unknown-b8-8d-12-3a-8b-1c.home (2212)] INFO : Installing Curb instrumentation
+[06/15/15 14:15:09 +0100 unknown-b8-8d-12-3a-8b-1c.home (2212)] INFO : Installing Net instrumentation
+[06/15/15 14:15:09 +0100 unknown-b8-8d-12-3a-8b-1c.home (2212)] INFO : Installing deferred Rack instrumentation
+[06/15/15 14:15:09 +0100 unknown-b8-8d-12-3a-8b-1c.home (2212)] INFO : Installing Rails 3 Controller instrumentation
+[06/15/15 14:15:09 +0100 unknown-b8-8d-12-3a-8b-1c.home (2212)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[06/15/15 14:15:09 +0100 unknown-b8-8d-12-3a-8b-1c.home (2212)] INFO : Installing Rails3 Error instrumentation
+[06/15/15 14:15:09 +0100 unknown-b8-8d-12-3a-8b-1c.home (2212)] INFO : Finished instrumentation
+[06/15/15 14:15:10 +0100 unknown-b8-8d-12-3a-8b-1c.home (2212)] INFO : Doing deferred dependency-detection before Rack startup
+[06/15/15 14:35:29 +0100 unknown-b8-8d-12-3a-8b-1c.home (2244)] INFO : Starting the New Relic agent in "development" environment.
+[06/15/15 14:35:29 +0100 unknown-b8-8d-12-3a-8b-1c.home (2244)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[06/15/15 14:35:29 +0100 unknown-b8-8d-12-3a-8b-1c.home (2244)] INFO : Reading configuration from config/newrelic.yml
+[06/15/15 14:35:29 +0100 unknown-b8-8d-12-3a-8b-1c.home (2244)] INFO : New Relic Agent Developer Mode enabled.
+[06/15/15 14:35:29 +0100 unknown-b8-8d-12-3a-8b-1c.home (2244)] INFO : Enabling the Request Sampler.
+[06/15/15 14:35:29 +0100 unknown-b8-8d-12-3a-8b-1c.home (2244)] INFO : Enabling the Request Sampler.
+[06/15/15 14:35:29 +0100 unknown-b8-8d-12-3a-8b-1c.home (2244)] INFO : Environment: development
+[06/15/15 14:35:29 +0100 unknown-b8-8d-12-3a-8b-1c.home (2244)] INFO : Dispatcher: webrick
+[06/15/15 14:35:29 +0100 unknown-b8-8d-12-3a-8b-1c.home (2244)] INFO : Application: My Application
+[06/15/15 14:35:29 +0100 unknown-b8-8d-12-3a-8b-1c.home (2244)] WARN : Agent configured not to send data in this environment.
+[06/15/15 14:35:29 +0100 unknown-b8-8d-12-3a-8b-1c.home (2244)] INFO : Installing ActiveRecord instrumentation
+[06/15/15 14:35:29 +0100 unknown-b8-8d-12-3a-8b-1c.home (2244)] INFO : Installing Curb instrumentation
+[06/15/15 14:35:29 +0100 unknown-b8-8d-12-3a-8b-1c.home (2244)] INFO : Installing Net instrumentation
+[06/15/15 14:35:29 +0100 unknown-b8-8d-12-3a-8b-1c.home (2244)] INFO : Installing deferred Rack instrumentation
+[06/15/15 14:35:29 +0100 unknown-b8-8d-12-3a-8b-1c.home (2244)] INFO : Installing Rails 3 Controller instrumentation
+[06/15/15 14:35:29 +0100 unknown-b8-8d-12-3a-8b-1c.home (2244)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[06/15/15 14:35:29 +0100 unknown-b8-8d-12-3a-8b-1c.home (2244)] INFO : Installing Rails3 Error instrumentation
+[06/15/15 14:35:29 +0100 unknown-b8-8d-12-3a-8b-1c.home (2244)] INFO : Finished instrumentation
+[06/15/15 14:35:29 +0100 unknown-b8-8d-12-3a-8b-1c.home (2244)] INFO : Doing deferred dependency-detection before Rack startup
+[06/15/15 14:49:33 +0100 unknown-b8-8d-12-3a-8b-1c.home (2296)] INFO : Starting the New Relic agent in "development" environment.
+[06/15/15 14:49:33 +0100 unknown-b8-8d-12-3a-8b-1c.home (2296)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[06/15/15 14:49:33 +0100 unknown-b8-8d-12-3a-8b-1c.home (2296)] INFO : Reading configuration from config/newrelic.yml
+[06/15/15 14:49:33 +0100 unknown-b8-8d-12-3a-8b-1c.home (2296)] INFO : New Relic Agent Developer Mode enabled.
+[06/15/15 14:49:33 +0100 unknown-b8-8d-12-3a-8b-1c.home (2296)] INFO : Enabling the Request Sampler.
+[06/15/15 14:49:33 +0100 unknown-b8-8d-12-3a-8b-1c.home (2296)] INFO : Enabling the Request Sampler.
+[06/15/15 14:49:33 +0100 unknown-b8-8d-12-3a-8b-1c.home (2296)] INFO : Environment: development
+[06/15/15 14:49:33 +0100 unknown-b8-8d-12-3a-8b-1c.home (2296)] INFO : Dispatcher: webrick
+[06/15/15 14:49:33 +0100 unknown-b8-8d-12-3a-8b-1c.home (2296)] INFO : Application: My Application
+[06/15/15 14:49:33 +0100 unknown-b8-8d-12-3a-8b-1c.home (2296)] WARN : Agent configured not to send data in this environment.
+[06/15/15 14:49:33 +0100 unknown-b8-8d-12-3a-8b-1c.home (2296)] INFO : Installing ActiveRecord instrumentation
+[06/15/15 14:49:33 +0100 unknown-b8-8d-12-3a-8b-1c.home (2296)] INFO : Installing Curb instrumentation
+[06/15/15 14:49:33 +0100 unknown-b8-8d-12-3a-8b-1c.home (2296)] INFO : Installing Net instrumentation
+[06/15/15 14:49:33 +0100 unknown-b8-8d-12-3a-8b-1c.home (2296)] INFO : Installing deferred Rack instrumentation
+[06/15/15 14:49:33 +0100 unknown-b8-8d-12-3a-8b-1c.home (2296)] INFO : Installing Rails 3 Controller instrumentation
+[06/15/15 14:49:34 +0100 unknown-b8-8d-12-3a-8b-1c.home (2296)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[06/15/15 14:49:34 +0100 unknown-b8-8d-12-3a-8b-1c.home (2296)] INFO : Installing Rails3 Error instrumentation
+[06/15/15 14:49:34 +0100 unknown-b8-8d-12-3a-8b-1c.home (2296)] INFO : Finished instrumentation
+[06/15/15 14:49:34 +0100 unknown-b8-8d-12-3a-8b-1c.home (2296)] INFO : Doing deferred dependency-detection before Rack startup
+[06/16/15 10:19:33 +0100 unknown-b8-8d-12-3a-8b-1c.home (2648)] INFO : Starting the New Relic agent in "development" environment.
+[06/16/15 10:19:33 +0100 unknown-b8-8d-12-3a-8b-1c.home (2648)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[06/16/15 10:19:33 +0100 unknown-b8-8d-12-3a-8b-1c.home (2648)] INFO : Reading configuration from config/newrelic.yml
+[06/16/15 10:19:33 +0100 unknown-b8-8d-12-3a-8b-1c.home (2648)] INFO : New Relic Agent Developer Mode enabled.
+[06/16/15 10:19:33 +0100 unknown-b8-8d-12-3a-8b-1c.home (2648)] INFO : Enabling the Request Sampler.
+[06/16/15 10:19:33 +0100 unknown-b8-8d-12-3a-8b-1c.home (2648)] INFO : Enabling the Request Sampler.
+[06/16/15 10:19:33 +0100 unknown-b8-8d-12-3a-8b-1c.home (2648)] INFO : Environment: development
+[06/16/15 10:19:33 +0100 unknown-b8-8d-12-3a-8b-1c.home (2648)] INFO : Dispatcher: webrick
+[06/16/15 10:19:33 +0100 unknown-b8-8d-12-3a-8b-1c.home (2648)] INFO : Application: My Application
+[06/16/15 10:19:33 +0100 unknown-b8-8d-12-3a-8b-1c.home (2648)] WARN : Agent configured not to send data in this environment.
+[06/16/15 10:19:33 +0100 unknown-b8-8d-12-3a-8b-1c.home (2648)] INFO : Installing ActiveRecord instrumentation
+[06/16/15 10:19:33 +0100 unknown-b8-8d-12-3a-8b-1c.home (2648)] INFO : Installing Curb instrumentation
+[06/16/15 10:19:33 +0100 unknown-b8-8d-12-3a-8b-1c.home (2648)] INFO : Installing Net instrumentation
+[06/16/15 10:19:33 +0100 unknown-b8-8d-12-3a-8b-1c.home (2648)] INFO : Installing deferred Rack instrumentation
+[06/16/15 10:19:33 +0100 unknown-b8-8d-12-3a-8b-1c.home (2648)] INFO : Installing Rails 3 Controller instrumentation
+[06/16/15 10:19:33 +0100 unknown-b8-8d-12-3a-8b-1c.home (2648)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[06/16/15 10:19:33 +0100 unknown-b8-8d-12-3a-8b-1c.home (2648)] INFO : Installing Rails3 Error instrumentation
+[06/16/15 10:19:33 +0100 unknown-b8-8d-12-3a-8b-1c.home (2648)] INFO : Finished instrumentation
+[06/16/15 10:19:34 +0100 unknown-b8-8d-12-3a-8b-1c.home (2648)] INFO : Doing deferred dependency-detection before Rack startup
+[06/17/15 09:22:59 +0100 unknown-b8-8d-12-3a-8b-1c.home (676)] INFO : Starting the New Relic agent in "development" environment.
+[06/17/15 09:22:59 +0100 unknown-b8-8d-12-3a-8b-1c.home (676)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[06/17/15 09:22:59 +0100 unknown-b8-8d-12-3a-8b-1c.home (676)] INFO : Reading configuration from config/newrelic.yml
+[06/17/15 09:22:59 +0100 unknown-b8-8d-12-3a-8b-1c.home (676)] INFO : New Relic Agent Developer Mode enabled.
+[06/17/15 09:22:59 +0100 unknown-b8-8d-12-3a-8b-1c.home (676)] INFO : Enabling the Request Sampler.
+[06/17/15 09:22:59 +0100 unknown-b8-8d-12-3a-8b-1c.home (676)] INFO : Enabling the Request Sampler.
+[06/17/15 09:22:59 +0100 unknown-b8-8d-12-3a-8b-1c.home (676)] INFO : Environment: development
+[06/17/15 09:22:59 +0100 unknown-b8-8d-12-3a-8b-1c.home (676)] INFO : Dispatcher: webrick
+[06/17/15 09:22:59 +0100 unknown-b8-8d-12-3a-8b-1c.home (676)] INFO : Application: My Application
+[06/17/15 09:22:59 +0100 unknown-b8-8d-12-3a-8b-1c.home (676)] WARN : Agent configured not to send data in this environment.
+[06/17/15 09:22:59 +0100 unknown-b8-8d-12-3a-8b-1c.home (676)] INFO : Installing ActiveRecord instrumentation
+[06/17/15 09:22:59 +0100 unknown-b8-8d-12-3a-8b-1c.home (676)] INFO : Installing Curb instrumentation
+[06/17/15 09:22:59 +0100 unknown-b8-8d-12-3a-8b-1c.home (676)] INFO : Installing Net instrumentation
+[06/17/15 09:22:59 +0100 unknown-b8-8d-12-3a-8b-1c.home (676)] INFO : Installing deferred Rack instrumentation
+[06/17/15 09:22:59 +0100 unknown-b8-8d-12-3a-8b-1c.home (676)] INFO : Installing Rails 3 Controller instrumentation
+[06/17/15 09:22:59 +0100 unknown-b8-8d-12-3a-8b-1c.home (676)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[06/17/15 09:22:59 +0100 unknown-b8-8d-12-3a-8b-1c.home (676)] INFO : Installing Rails3 Error instrumentation
+[06/17/15 09:22:59 +0100 unknown-b8-8d-12-3a-8b-1c.home (676)] INFO : Finished instrumentation
+[06/17/15 09:22:59 +0100 unknown-b8-8d-12-3a-8b-1c.home (676)] INFO : Doing deferred dependency-detection before Rack startup
+[06/17/15 09:37:33 +0100 unknown-b8-8d-12-3a-8b-1c.home (740)] INFO : Starting the New Relic agent in "development" environment.
+[06/17/15 09:37:33 +0100 unknown-b8-8d-12-3a-8b-1c.home (740)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[06/17/15 09:37:33 +0100 unknown-b8-8d-12-3a-8b-1c.home (740)] INFO : Reading configuration from config/newrelic.yml
+[06/17/15 09:37:33 +0100 unknown-b8-8d-12-3a-8b-1c.home (740)] INFO : New Relic Agent Developer Mode enabled.
+[06/17/15 09:37:33 +0100 unknown-b8-8d-12-3a-8b-1c.home (740)] INFO : Enabling the Request Sampler.
+[06/17/15 09:37:33 +0100 unknown-b8-8d-12-3a-8b-1c.home (740)] INFO : Enabling the Request Sampler.
+[06/17/15 09:37:33 +0100 unknown-b8-8d-12-3a-8b-1c.home (740)] INFO : Environment: development
+[06/17/15 09:37:33 +0100 unknown-b8-8d-12-3a-8b-1c.home (740)] INFO : Dispatcher: webrick
+[06/17/15 09:37:33 +0100 unknown-b8-8d-12-3a-8b-1c.home (740)] INFO : Application: My Application
+[06/17/15 09:37:33 +0100 unknown-b8-8d-12-3a-8b-1c.home (740)] WARN : Agent configured not to send data in this environment.
+[06/17/15 09:37:33 +0100 unknown-b8-8d-12-3a-8b-1c.home (740)] INFO : Installing ActiveRecord instrumentation
+[06/17/15 09:37:33 +0100 unknown-b8-8d-12-3a-8b-1c.home (740)] INFO : Installing Curb instrumentation
+[06/17/15 09:37:33 +0100 unknown-b8-8d-12-3a-8b-1c.home (740)] INFO : Installing Net instrumentation
+[06/17/15 09:37:33 +0100 unknown-b8-8d-12-3a-8b-1c.home (740)] INFO : Installing deferred Rack instrumentation
+[06/17/15 09:37:33 +0100 unknown-b8-8d-12-3a-8b-1c.home (740)] INFO : Installing Rails 3 Controller instrumentation
+[06/17/15 09:37:33 +0100 unknown-b8-8d-12-3a-8b-1c.home (740)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[06/17/15 09:37:33 +0100 unknown-b8-8d-12-3a-8b-1c.home (740)] INFO : Installing Rails3 Error instrumentation
+[06/17/15 09:37:33 +0100 unknown-b8-8d-12-3a-8b-1c.home (740)] INFO : Finished instrumentation
+[06/17/15 09:37:34 +0100 unknown-b8-8d-12-3a-8b-1c.home (740)] INFO : Doing deferred dependency-detection before Rack startup
+[06/17/15 09:46:18 +0100 unknown-b8-8d-12-3a-8b-1c.home (769)] INFO : Starting the New Relic agent in "development" environment.
+[06/17/15 09:46:18 +0100 unknown-b8-8d-12-3a-8b-1c.home (769)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[06/17/15 09:46:18 +0100 unknown-b8-8d-12-3a-8b-1c.home (769)] INFO : Reading configuration from config/newrelic.yml
+[06/17/15 09:46:18 +0100 unknown-b8-8d-12-3a-8b-1c.home (769)] INFO : New Relic Agent Developer Mode enabled.
+[06/17/15 09:46:18 +0100 unknown-b8-8d-12-3a-8b-1c.home (769)] INFO : Enabling the Request Sampler.
+[06/17/15 09:46:18 +0100 unknown-b8-8d-12-3a-8b-1c.home (769)] INFO : Enabling the Request Sampler.
+[06/17/15 09:46:18 +0100 unknown-b8-8d-12-3a-8b-1c.home (769)] INFO : Environment: development
+[06/17/15 09:46:18 +0100 unknown-b8-8d-12-3a-8b-1c.home (769)] INFO : Dispatcher: webrick
+[06/17/15 09:46:18 +0100 unknown-b8-8d-12-3a-8b-1c.home (769)] INFO : Application: My Application
+[06/17/15 09:46:18 +0100 unknown-b8-8d-12-3a-8b-1c.home (769)] WARN : Agent configured not to send data in this environment.
+[06/17/15 09:46:18 +0100 unknown-b8-8d-12-3a-8b-1c.home (769)] INFO : Installing ActiveRecord instrumentation
+[06/17/15 09:46:18 +0100 unknown-b8-8d-12-3a-8b-1c.home (769)] INFO : Installing Curb instrumentation
+[06/17/15 09:46:18 +0100 unknown-b8-8d-12-3a-8b-1c.home (769)] INFO : Installing Net instrumentation
+[06/17/15 09:46:18 +0100 unknown-b8-8d-12-3a-8b-1c.home (769)] INFO : Installing deferred Rack instrumentation
+[06/17/15 09:46:18 +0100 unknown-b8-8d-12-3a-8b-1c.home (769)] INFO : Installing Rails 3 Controller instrumentation
+[06/17/15 09:46:19 +0100 unknown-b8-8d-12-3a-8b-1c.home (769)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[06/17/15 09:46:19 +0100 unknown-b8-8d-12-3a-8b-1c.home (769)] INFO : Installing Rails3 Error instrumentation
+[06/17/15 09:46:19 +0100 unknown-b8-8d-12-3a-8b-1c.home (769)] INFO : Finished instrumentation
+[06/17/15 09:46:19 +0100 unknown-b8-8d-12-3a-8b-1c.home (769)] INFO : Doing deferred dependency-detection before Rack startup
+[06/17/15 09:48:41 +0100 unknown-b8-8d-12-3a-8b-1c.home (776)] INFO : Starting the New Relic agent in "development" environment.
+[06/17/15 09:48:41 +0100 unknown-b8-8d-12-3a-8b-1c.home (776)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[06/17/15 09:48:41 +0100 unknown-b8-8d-12-3a-8b-1c.home (776)] INFO : Reading configuration from config/newrelic.yml
+[06/17/15 09:48:41 +0100 unknown-b8-8d-12-3a-8b-1c.home (776)] INFO : New Relic Agent Developer Mode enabled.
+[06/17/15 09:48:41 +0100 unknown-b8-8d-12-3a-8b-1c.home (776)] INFO : Enabling the Request Sampler.
+[06/17/15 09:48:41 +0100 unknown-b8-8d-12-3a-8b-1c.home (776)] INFO : Enabling the Request Sampler.
+[06/17/15 09:48:41 +0100 unknown-b8-8d-12-3a-8b-1c.home (776)] INFO : Environment: development
+[06/17/15 09:48:41 +0100 unknown-b8-8d-12-3a-8b-1c.home (776)] INFO : Dispatcher: webrick
+[06/17/15 09:48:41 +0100 unknown-b8-8d-12-3a-8b-1c.home (776)] INFO : Application: My Application
+[06/17/15 09:48:41 +0100 unknown-b8-8d-12-3a-8b-1c.home (776)] WARN : Agent configured not to send data in this environment.
+[06/17/15 09:48:41 +0100 unknown-b8-8d-12-3a-8b-1c.home (776)] INFO : Installing ActiveRecord instrumentation
+[06/17/15 09:48:41 +0100 unknown-b8-8d-12-3a-8b-1c.home (776)] INFO : Installing Curb instrumentation
+[06/17/15 09:48:41 +0100 unknown-b8-8d-12-3a-8b-1c.home (776)] INFO : Installing Net instrumentation
+[06/17/15 09:48:41 +0100 unknown-b8-8d-12-3a-8b-1c.home (776)] INFO : Installing deferred Rack instrumentation
+[06/17/15 09:48:41 +0100 unknown-b8-8d-12-3a-8b-1c.home (776)] INFO : Installing Rails 3 Controller instrumentation
+[06/17/15 09:48:42 +0100 unknown-b8-8d-12-3a-8b-1c.home (776)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[06/17/15 09:48:42 +0100 unknown-b8-8d-12-3a-8b-1c.home (776)] INFO : Installing Rails3 Error instrumentation
+[06/17/15 09:48:42 +0100 unknown-b8-8d-12-3a-8b-1c.home (776)] INFO : Finished instrumentation
+[06/17/15 09:48:42 +0100 unknown-b8-8d-12-3a-8b-1c.home (776)] INFO : Doing deferred dependency-detection before Rack startup
+[06/17/15 10:32:33 +0100 unknown-b8-8d-12-3a-8b-1c.home (881)] INFO : Starting the New Relic agent in "development" environment.
+[06/17/15 10:32:33 +0100 unknown-b8-8d-12-3a-8b-1c.home (881)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[06/17/15 10:32:33 +0100 unknown-b8-8d-12-3a-8b-1c.home (881)] INFO : Reading configuration from config/newrelic.yml
+[06/17/15 10:32:33 +0100 unknown-b8-8d-12-3a-8b-1c.home (881)] INFO : New Relic Agent Developer Mode enabled.
+[06/17/15 10:32:33 +0100 unknown-b8-8d-12-3a-8b-1c.home (881)] INFO : Enabling the Request Sampler.
+[06/17/15 10:32:33 +0100 unknown-b8-8d-12-3a-8b-1c.home (881)] INFO : Enabling the Request Sampler.
+[06/17/15 10:32:33 +0100 unknown-b8-8d-12-3a-8b-1c.home (881)] INFO : Environment: development
+[06/17/15 10:32:33 +0100 unknown-b8-8d-12-3a-8b-1c.home (881)] INFO : Dispatcher: webrick
+[06/17/15 10:32:33 +0100 unknown-b8-8d-12-3a-8b-1c.home (881)] INFO : Application: My Application
+[06/17/15 10:32:33 +0100 unknown-b8-8d-12-3a-8b-1c.home (881)] WARN : Agent configured not to send data in this environment.
+[06/17/15 10:32:33 +0100 unknown-b8-8d-12-3a-8b-1c.home (881)] INFO : Installing ActiveRecord instrumentation
+[06/17/15 10:32:33 +0100 unknown-b8-8d-12-3a-8b-1c.home (881)] INFO : Installing Curb instrumentation
+[06/17/15 10:32:33 +0100 unknown-b8-8d-12-3a-8b-1c.home (881)] INFO : Installing Net instrumentation
+[06/17/15 10:32:33 +0100 unknown-b8-8d-12-3a-8b-1c.home (881)] INFO : Installing deferred Rack instrumentation
+[06/17/15 10:32:33 +0100 unknown-b8-8d-12-3a-8b-1c.home (881)] INFO : Installing Rails 3 Controller instrumentation
+[06/17/15 10:32:33 +0100 unknown-b8-8d-12-3a-8b-1c.home (881)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[06/17/15 10:32:33 +0100 unknown-b8-8d-12-3a-8b-1c.home (881)] INFO : Installing Rails3 Error instrumentation
+[06/17/15 10:32:33 +0100 unknown-b8-8d-12-3a-8b-1c.home (881)] INFO : Finished instrumentation
+[06/17/15 10:32:33 +0100 unknown-b8-8d-12-3a-8b-1c.home (881)] INFO : Doing deferred dependency-detection before Rack startup
+[06/17/15 10:34:57 +0100 unknown-b8-8d-12-3a-8b-1c.home (892)] INFO : Starting the New Relic agent in "development" environment.
+[06/17/15 10:34:57 +0100 unknown-b8-8d-12-3a-8b-1c.home (892)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[06/17/15 10:34:57 +0100 unknown-b8-8d-12-3a-8b-1c.home (892)] INFO : Reading configuration from config/newrelic.yml
+[06/17/15 10:34:57 +0100 unknown-b8-8d-12-3a-8b-1c.home (892)] INFO : New Relic Agent Developer Mode enabled.
+[06/17/15 10:34:57 +0100 unknown-b8-8d-12-3a-8b-1c.home (892)] INFO : Enabling the Request Sampler.
+[06/17/15 10:34:57 +0100 unknown-b8-8d-12-3a-8b-1c.home (892)] INFO : Enabling the Request Sampler.
+[06/17/15 10:34:57 +0100 unknown-b8-8d-12-3a-8b-1c.home (892)] INFO : Environment: development
+[06/17/15 10:34:57 +0100 unknown-b8-8d-12-3a-8b-1c.home (892)] INFO : Dispatcher: webrick
+[06/17/15 10:34:57 +0100 unknown-b8-8d-12-3a-8b-1c.home (892)] INFO : Application: My Application
+[06/17/15 10:34:57 +0100 unknown-b8-8d-12-3a-8b-1c.home (892)] WARN : Agent configured not to send data in this environment.
+[06/17/15 10:34:57 +0100 unknown-b8-8d-12-3a-8b-1c.home (892)] INFO : Installing ActiveRecord instrumentation
+[06/17/15 10:34:57 +0100 unknown-b8-8d-12-3a-8b-1c.home (892)] INFO : Installing Curb instrumentation
+[06/17/15 10:34:57 +0100 unknown-b8-8d-12-3a-8b-1c.home (892)] INFO : Installing Net instrumentation
+[06/17/15 10:34:57 +0100 unknown-b8-8d-12-3a-8b-1c.home (892)] INFO : Installing deferred Rack instrumentation
+[06/17/15 10:34:57 +0100 unknown-b8-8d-12-3a-8b-1c.home (892)] INFO : Installing Rails 3 Controller instrumentation
+[06/17/15 10:34:57 +0100 unknown-b8-8d-12-3a-8b-1c.home (892)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[06/17/15 10:34:57 +0100 unknown-b8-8d-12-3a-8b-1c.home (892)] INFO : Installing Rails3 Error instrumentation
+[06/17/15 10:34:57 +0100 unknown-b8-8d-12-3a-8b-1c.home (892)] INFO : Finished instrumentation
+[06/17/15 10:34:57 +0100 unknown-b8-8d-12-3a-8b-1c.home (892)] INFO : Doing deferred dependency-detection before Rack startup
+[06/17/15 10:37:26 +0100 unknown-b8-8d-12-3a-8b-1c.home (900)] INFO : Starting the New Relic agent in "development" environment.
+[06/17/15 10:37:26 +0100 unknown-b8-8d-12-3a-8b-1c.home (900)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[06/17/15 10:37:26 +0100 unknown-b8-8d-12-3a-8b-1c.home (900)] INFO : Reading configuration from config/newrelic.yml
+[06/17/15 10:37:26 +0100 unknown-b8-8d-12-3a-8b-1c.home (900)] INFO : New Relic Agent Developer Mode enabled.
+[06/17/15 10:37:26 +0100 unknown-b8-8d-12-3a-8b-1c.home (900)] INFO : Enabling the Request Sampler.
+[06/17/15 10:37:26 +0100 unknown-b8-8d-12-3a-8b-1c.home (900)] INFO : Enabling the Request Sampler.
+[06/17/15 10:37:26 +0100 unknown-b8-8d-12-3a-8b-1c.home (900)] INFO : Environment: development
+[06/17/15 10:37:26 +0100 unknown-b8-8d-12-3a-8b-1c.home (900)] INFO : Dispatcher: webrick
+[06/17/15 10:37:26 +0100 unknown-b8-8d-12-3a-8b-1c.home (900)] INFO : Application: My Application
+[06/17/15 10:37:26 +0100 unknown-b8-8d-12-3a-8b-1c.home (900)] WARN : Agent configured not to send data in this environment.
+[06/17/15 10:37:26 +0100 unknown-b8-8d-12-3a-8b-1c.home (900)] INFO : Installing ActiveRecord instrumentation
+[06/17/15 10:37:26 +0100 unknown-b8-8d-12-3a-8b-1c.home (900)] INFO : Installing Curb instrumentation
+[06/17/15 10:37:26 +0100 unknown-b8-8d-12-3a-8b-1c.home (900)] INFO : Installing Net instrumentation
+[06/17/15 10:37:26 +0100 unknown-b8-8d-12-3a-8b-1c.home (900)] INFO : Installing deferred Rack instrumentation
+[06/17/15 10:37:26 +0100 unknown-b8-8d-12-3a-8b-1c.home (900)] INFO : Installing Rails 3 Controller instrumentation
+[06/17/15 10:37:26 +0100 unknown-b8-8d-12-3a-8b-1c.home (900)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[06/17/15 10:37:26 +0100 unknown-b8-8d-12-3a-8b-1c.home (900)] INFO : Installing Rails3 Error instrumentation
+[06/17/15 10:37:26 +0100 unknown-b8-8d-12-3a-8b-1c.home (900)] INFO : Finished instrumentation
+[06/17/15 10:37:26 +0100 unknown-b8-8d-12-3a-8b-1c.home (900)] INFO : Doing deferred dependency-detection before Rack startup
+[06/17/15 10:42:56 +0100 unknown-b8-8d-12-3a-8b-1c.home (909)] INFO : Starting the New Relic agent in "development" environment.
+[06/17/15 10:42:56 +0100 unknown-b8-8d-12-3a-8b-1c.home (909)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[06/17/15 10:42:56 +0100 unknown-b8-8d-12-3a-8b-1c.home (909)] INFO : Reading configuration from config/newrelic.yml
+[06/17/15 10:42:56 +0100 unknown-b8-8d-12-3a-8b-1c.home (909)] INFO : New Relic Agent Developer Mode enabled.
+[06/17/15 10:42:56 +0100 unknown-b8-8d-12-3a-8b-1c.home (909)] INFO : Enabling the Request Sampler.
+[06/17/15 10:42:56 +0100 unknown-b8-8d-12-3a-8b-1c.home (909)] INFO : Enabling the Request Sampler.
+[06/17/15 10:42:56 +0100 unknown-b8-8d-12-3a-8b-1c.home (909)] INFO : Environment: development
+[06/17/15 10:42:56 +0100 unknown-b8-8d-12-3a-8b-1c.home (909)] INFO : No known dispatcher detected.
+[06/17/15 10:42:56 +0100 unknown-b8-8d-12-3a-8b-1c.home (909)] INFO : Application: My Application
+[06/17/15 10:42:56 +0100 unknown-b8-8d-12-3a-8b-1c.home (909)] WARN : Agent configured not to send data in this environment.
+[06/17/15 10:42:56 +0100 unknown-b8-8d-12-3a-8b-1c.home (909)] INFO : Installing ActiveRecord instrumentation
+[06/17/15 10:42:56 +0100 unknown-b8-8d-12-3a-8b-1c.home (909)] INFO : Installing Curb instrumentation
+[06/17/15 10:42:56 +0100 unknown-b8-8d-12-3a-8b-1c.home (909)] INFO : Installing Net instrumentation
+[06/17/15 10:42:56 +0100 unknown-b8-8d-12-3a-8b-1c.home (909)] INFO : Installing deferred Rack instrumentation
+[06/17/15 10:42:56 +0100 unknown-b8-8d-12-3a-8b-1c.home (909)] INFO : Installing Rails 3 Controller instrumentation
+[06/17/15 10:42:56 +0100 unknown-b8-8d-12-3a-8b-1c.home (909)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[06/17/15 10:42:56 +0100 unknown-b8-8d-12-3a-8b-1c.home (909)] INFO : Installing Rails3 Error instrumentation
+[06/17/15 10:42:56 +0100 unknown-b8-8d-12-3a-8b-1c.home (909)] INFO : Finished instrumentation
+[06/17/15 10:54:57 +0100 unknown-b8-8d-12-3a-8b-1c.home (936)] INFO : Starting the New Relic agent in "development" environment.
+[06/17/15 10:54:57 +0100 unknown-b8-8d-12-3a-8b-1c.home (936)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[06/17/15 10:54:57 +0100 unknown-b8-8d-12-3a-8b-1c.home (936)] INFO : Reading configuration from config/newrelic.yml
+[06/17/15 10:54:57 +0100 unknown-b8-8d-12-3a-8b-1c.home (936)] INFO : New Relic Agent Developer Mode enabled.
+[06/17/15 10:54:57 +0100 unknown-b8-8d-12-3a-8b-1c.home (936)] INFO : Enabling the Request Sampler.
+[06/17/15 10:54:57 +0100 unknown-b8-8d-12-3a-8b-1c.home (936)] INFO : Enabling the Request Sampler.
+[06/17/15 10:54:57 +0100 unknown-b8-8d-12-3a-8b-1c.home (936)] INFO : Environment: development
+[06/17/15 10:54:57 +0100 unknown-b8-8d-12-3a-8b-1c.home (936)] INFO : No known dispatcher detected.
+[06/17/15 10:54:57 +0100 unknown-b8-8d-12-3a-8b-1c.home (936)] INFO : Application: My Application
+[06/17/15 10:54:57 +0100 unknown-b8-8d-12-3a-8b-1c.home (936)] WARN : Agent configured not to send data in this environment.
+[06/17/15 10:54:57 +0100 unknown-b8-8d-12-3a-8b-1c.home (936)] INFO : Installing ActiveRecord instrumentation
+[06/17/15 10:54:57 +0100 unknown-b8-8d-12-3a-8b-1c.home (936)] INFO : Installing Curb instrumentation
+[06/17/15 10:54:57 +0100 unknown-b8-8d-12-3a-8b-1c.home (936)] INFO : Installing Net instrumentation
+[06/17/15 10:54:57 +0100 unknown-b8-8d-12-3a-8b-1c.home (936)] INFO : Installing deferred Rack instrumentation
+[06/17/15 10:54:57 +0100 unknown-b8-8d-12-3a-8b-1c.home (936)] INFO : Installing Rails 3 Controller instrumentation
+[06/17/15 10:54:58 +0100 unknown-b8-8d-12-3a-8b-1c.home (936)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[06/17/15 10:54:58 +0100 unknown-b8-8d-12-3a-8b-1c.home (936)] INFO : Installing Rails3 Error instrumentation
+[06/17/15 10:54:58 +0100 unknown-b8-8d-12-3a-8b-1c.home (936)] INFO : Finished instrumentation
+[06/17/15 10:59:57 +0100 unknown-b8-8d-12-3a-8b-1c.home (945)] INFO : Starting the New Relic agent in "development" environment.
+[06/17/15 10:59:57 +0100 unknown-b8-8d-12-3a-8b-1c.home (945)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[06/17/15 10:59:57 +0100 unknown-b8-8d-12-3a-8b-1c.home (945)] INFO : Reading configuration from config/newrelic.yml
+[06/17/15 10:59:57 +0100 unknown-b8-8d-12-3a-8b-1c.home (945)] INFO : New Relic Agent Developer Mode enabled.
+[06/17/15 10:59:57 +0100 unknown-b8-8d-12-3a-8b-1c.home (945)] INFO : Enabling the Request Sampler.
+[06/17/15 10:59:57 +0100 unknown-b8-8d-12-3a-8b-1c.home (945)] INFO : Enabling the Request Sampler.
+[06/17/15 10:59:57 +0100 unknown-b8-8d-12-3a-8b-1c.home (945)] INFO : Environment: development
+[06/17/15 10:59:57 +0100 unknown-b8-8d-12-3a-8b-1c.home (945)] INFO : No known dispatcher detected.
+[06/17/15 10:59:57 +0100 unknown-b8-8d-12-3a-8b-1c.home (945)] INFO : Application: My Application
+[06/17/15 10:59:57 +0100 unknown-b8-8d-12-3a-8b-1c.home (945)] WARN : Agent configured not to send data in this environment.
+[06/17/15 10:59:57 +0100 unknown-b8-8d-12-3a-8b-1c.home (945)] INFO : Installing ActiveRecord instrumentation
+[06/17/15 10:59:57 +0100 unknown-b8-8d-12-3a-8b-1c.home (945)] INFO : Installing Curb instrumentation
+[06/17/15 10:59:57 +0100 unknown-b8-8d-12-3a-8b-1c.home (945)] INFO : Installing Net instrumentation
+[06/17/15 10:59:57 +0100 unknown-b8-8d-12-3a-8b-1c.home (945)] INFO : Installing deferred Rack instrumentation
+[06/17/15 10:59:57 +0100 unknown-b8-8d-12-3a-8b-1c.home (945)] INFO : Installing Rails 3 Controller instrumentation
+[06/17/15 10:59:57 +0100 unknown-b8-8d-12-3a-8b-1c.home (945)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[06/17/15 10:59:57 +0100 unknown-b8-8d-12-3a-8b-1c.home (945)] INFO : Installing Rails3 Error instrumentation
+[06/17/15 10:59:57 +0100 unknown-b8-8d-12-3a-8b-1c.home (945)] INFO : Finished instrumentation
+[06/17/15 11:00:31 +0100 unknown-b8-8d-12-3a-8b-1c.home (950)] INFO : Starting the New Relic agent in "development" environment.
+[06/17/15 11:00:31 +0100 unknown-b8-8d-12-3a-8b-1c.home (950)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[06/17/15 11:00:31 +0100 unknown-b8-8d-12-3a-8b-1c.home (950)] INFO : Reading configuration from config/newrelic.yml
+[06/17/15 11:00:31 +0100 unknown-b8-8d-12-3a-8b-1c.home (950)] INFO : New Relic Agent Developer Mode enabled.
+[06/17/15 11:00:31 +0100 unknown-b8-8d-12-3a-8b-1c.home (950)] INFO : Enabling the Request Sampler.
+[06/17/15 11:00:31 +0100 unknown-b8-8d-12-3a-8b-1c.home (950)] INFO : Enabling the Request Sampler.
+[06/17/15 11:00:31 +0100 unknown-b8-8d-12-3a-8b-1c.home (950)] INFO : Environment: development
+[06/17/15 11:00:31 +0100 unknown-b8-8d-12-3a-8b-1c.home (950)] INFO : No known dispatcher detected.
+[06/17/15 11:00:31 +0100 unknown-b8-8d-12-3a-8b-1c.home (950)] INFO : Application: My Application
+[06/17/15 11:00:31 +0100 unknown-b8-8d-12-3a-8b-1c.home (950)] WARN : Agent configured not to send data in this environment.
+[06/17/15 11:00:31 +0100 unknown-b8-8d-12-3a-8b-1c.home (950)] INFO : Installing ActiveRecord instrumentation
+[06/17/15 11:00:31 +0100 unknown-b8-8d-12-3a-8b-1c.home (950)] INFO : Installing Curb instrumentation
+[06/17/15 11:00:31 +0100 unknown-b8-8d-12-3a-8b-1c.home (950)] INFO : Installing Net instrumentation
+[06/17/15 11:00:31 +0100 unknown-b8-8d-12-3a-8b-1c.home (950)] INFO : Installing deferred Rack instrumentation
+[06/17/15 11:00:31 +0100 unknown-b8-8d-12-3a-8b-1c.home (950)] INFO : Installing Rails 3 Controller instrumentation
+[06/17/15 11:00:31 +0100 unknown-b8-8d-12-3a-8b-1c.home (950)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[06/17/15 11:00:31 +0100 unknown-b8-8d-12-3a-8b-1c.home (950)] INFO : Installing Rails3 Error instrumentation
+[06/17/15 11:00:31 +0100 unknown-b8-8d-12-3a-8b-1c.home (950)] INFO : Finished instrumentation
+[06/17/15 11:00:51 +0100 unknown-b8-8d-12-3a-8b-1c.home (956)] INFO : Starting the New Relic agent in "development" environment.
+[06/17/15 11:00:51 +0100 unknown-b8-8d-12-3a-8b-1c.home (956)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[06/17/15 11:00:51 +0100 unknown-b8-8d-12-3a-8b-1c.home (956)] INFO : Reading configuration from config/newrelic.yml
+[06/17/15 11:00:51 +0100 unknown-b8-8d-12-3a-8b-1c.home (956)] INFO : New Relic Agent Developer Mode enabled.
+[06/17/15 11:00:51 +0100 unknown-b8-8d-12-3a-8b-1c.home (956)] INFO : Enabling the Request Sampler.
+[06/17/15 11:00:51 +0100 unknown-b8-8d-12-3a-8b-1c.home (956)] INFO : Enabling the Request Sampler.
+[06/17/15 11:00:51 +0100 unknown-b8-8d-12-3a-8b-1c.home (956)] INFO : Environment: development
+[06/17/15 11:00:51 +0100 unknown-b8-8d-12-3a-8b-1c.home (956)] INFO : No known dispatcher detected.
+[06/17/15 11:00:51 +0100 unknown-b8-8d-12-3a-8b-1c.home (956)] INFO : Application: My Application
+[06/17/15 11:00:51 +0100 unknown-b8-8d-12-3a-8b-1c.home (956)] WARN : Agent configured not to send data in this environment.
+[06/17/15 11:00:51 +0100 unknown-b8-8d-12-3a-8b-1c.home (956)] INFO : Installing ActiveRecord instrumentation
+[06/17/15 11:00:51 +0100 unknown-b8-8d-12-3a-8b-1c.home (956)] INFO : Installing Curb instrumentation
+[06/17/15 11:00:51 +0100 unknown-b8-8d-12-3a-8b-1c.home (956)] INFO : Installing Net instrumentation
+[06/17/15 11:00:51 +0100 unknown-b8-8d-12-3a-8b-1c.home (956)] INFO : Installing deferred Rack instrumentation
+[06/17/15 11:00:51 +0100 unknown-b8-8d-12-3a-8b-1c.home (956)] INFO : Installing Rails 3 Controller instrumentation
+[06/17/15 11:00:52 +0100 unknown-b8-8d-12-3a-8b-1c.home (956)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[06/17/15 11:00:52 +0100 unknown-b8-8d-12-3a-8b-1c.home (956)] INFO : Installing Rails3 Error instrumentation
+[06/17/15 11:00:52 +0100 unknown-b8-8d-12-3a-8b-1c.home (956)] INFO : Finished instrumentation
+[06/17/15 11:07:12 +0100 unknown-b8-8d-12-3a-8b-1c.home (975)] INFO : Starting the New Relic agent in "development" environment.
+[06/17/15 11:07:12 +0100 unknown-b8-8d-12-3a-8b-1c.home (975)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[06/17/15 11:07:12 +0100 unknown-b8-8d-12-3a-8b-1c.home (975)] INFO : Reading configuration from config/newrelic.yml
+[06/17/15 11:07:12 +0100 unknown-b8-8d-12-3a-8b-1c.home (975)] INFO : New Relic Agent Developer Mode enabled.
+[06/17/15 11:07:12 +0100 unknown-b8-8d-12-3a-8b-1c.home (975)] INFO : Enabling the Request Sampler.
+[06/17/15 11:07:12 +0100 unknown-b8-8d-12-3a-8b-1c.home (975)] INFO : Enabling the Request Sampler.
+[06/17/15 11:07:12 +0100 unknown-b8-8d-12-3a-8b-1c.home (975)] INFO : Environment: development
+[06/17/15 11:07:12 +0100 unknown-b8-8d-12-3a-8b-1c.home (975)] INFO : No known dispatcher detected.
+[06/17/15 11:07:12 +0100 unknown-b8-8d-12-3a-8b-1c.home (975)] INFO : Application: My Application
+[06/17/15 11:07:12 +0100 unknown-b8-8d-12-3a-8b-1c.home (975)] WARN : Agent configured not to send data in this environment.
+[06/17/15 11:07:12 +0100 unknown-b8-8d-12-3a-8b-1c.home (975)] INFO : Installing ActiveRecord instrumentation
+[06/17/15 11:07:12 +0100 unknown-b8-8d-12-3a-8b-1c.home (975)] INFO : Installing Curb instrumentation
+[06/17/15 11:07:12 +0100 unknown-b8-8d-12-3a-8b-1c.home (975)] INFO : Installing Net instrumentation
+[06/17/15 11:07:12 +0100 unknown-b8-8d-12-3a-8b-1c.home (975)] INFO : Installing deferred Rack instrumentation
+[06/17/15 11:07:12 +0100 unknown-b8-8d-12-3a-8b-1c.home (975)] INFO : Installing Rails 3 Controller instrumentation
+[06/17/15 11:07:12 +0100 unknown-b8-8d-12-3a-8b-1c.home (975)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[06/17/15 11:07:12 +0100 unknown-b8-8d-12-3a-8b-1c.home (975)] INFO : Installing Rails3 Error instrumentation
+[06/17/15 11:07:12 +0100 unknown-b8-8d-12-3a-8b-1c.home (975)] INFO : Finished instrumentation
+[06/17/15 11:11:31 +0100 unknown-b8-8d-12-3a-8b-1c.home (989)] INFO : Starting the New Relic agent in "development" environment.
+[06/17/15 11:11:31 +0100 unknown-b8-8d-12-3a-8b-1c.home (989)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[06/17/15 11:11:31 +0100 unknown-b8-8d-12-3a-8b-1c.home (989)] INFO : Reading configuration from config/newrelic.yml
+[06/17/15 11:11:31 +0100 unknown-b8-8d-12-3a-8b-1c.home (989)] INFO : New Relic Agent Developer Mode enabled.
+[06/17/15 11:11:31 +0100 unknown-b8-8d-12-3a-8b-1c.home (989)] INFO : Enabling the Request Sampler.
+[06/17/15 11:11:31 +0100 unknown-b8-8d-12-3a-8b-1c.home (989)] INFO : Enabling the Request Sampler.
+[06/17/15 11:11:31 +0100 unknown-b8-8d-12-3a-8b-1c.home (989)] INFO : Environment: development
+[06/17/15 11:11:31 +0100 unknown-b8-8d-12-3a-8b-1c.home (989)] INFO : No known dispatcher detected.
+[06/17/15 11:11:31 +0100 unknown-b8-8d-12-3a-8b-1c.home (989)] INFO : Application: My Application
+[06/17/15 11:11:31 +0100 unknown-b8-8d-12-3a-8b-1c.home (989)] WARN : Agent configured not to send data in this environment.
+[06/17/15 11:11:31 +0100 unknown-b8-8d-12-3a-8b-1c.home (989)] INFO : Installing ActiveRecord instrumentation
+[06/17/15 11:11:31 +0100 unknown-b8-8d-12-3a-8b-1c.home (989)] INFO : Installing Curb instrumentation
+[06/17/15 11:11:31 +0100 unknown-b8-8d-12-3a-8b-1c.home (989)] INFO : Installing Net instrumentation
+[06/17/15 11:11:31 +0100 unknown-b8-8d-12-3a-8b-1c.home (989)] INFO : Installing deferred Rack instrumentation
+[06/17/15 11:11:31 +0100 unknown-b8-8d-12-3a-8b-1c.home (989)] INFO : Installing Rails 3 Controller instrumentation
+[06/17/15 11:11:32 +0100 unknown-b8-8d-12-3a-8b-1c.home (989)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[06/17/15 11:11:32 +0100 unknown-b8-8d-12-3a-8b-1c.home (989)] INFO : Installing Rails3 Error instrumentation
+[06/17/15 11:11:32 +0100 unknown-b8-8d-12-3a-8b-1c.home (989)] INFO : Finished instrumentation
+[06/17/15 11:13:13 +0100 unknown-b8-8d-12-3a-8b-1c.home (996)] INFO : Starting the New Relic agent in "development" environment.
+[06/17/15 11:13:13 +0100 unknown-b8-8d-12-3a-8b-1c.home (996)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[06/17/15 11:13:13 +0100 unknown-b8-8d-12-3a-8b-1c.home (996)] INFO : Reading configuration from config/newrelic.yml
+[06/17/15 11:13:13 +0100 unknown-b8-8d-12-3a-8b-1c.home (996)] INFO : New Relic Agent Developer Mode enabled.
+[06/17/15 11:13:13 +0100 unknown-b8-8d-12-3a-8b-1c.home (996)] INFO : Enabling the Request Sampler.
+[06/17/15 11:13:13 +0100 unknown-b8-8d-12-3a-8b-1c.home (996)] INFO : Enabling the Request Sampler.
+[06/17/15 11:13:13 +0100 unknown-b8-8d-12-3a-8b-1c.home (996)] INFO : Environment: development
+[06/17/15 11:13:13 +0100 unknown-b8-8d-12-3a-8b-1c.home (996)] INFO : No known dispatcher detected.
+[06/17/15 11:13:13 +0100 unknown-b8-8d-12-3a-8b-1c.home (996)] INFO : Application: My Application
+[06/17/15 11:13:13 +0100 unknown-b8-8d-12-3a-8b-1c.home (996)] WARN : Agent configured not to send data in this environment.
+[06/17/15 11:13:13 +0100 unknown-b8-8d-12-3a-8b-1c.home (996)] INFO : Installing ActiveRecord instrumentation
+[06/17/15 11:13:13 +0100 unknown-b8-8d-12-3a-8b-1c.home (996)] INFO : Installing Curb instrumentation
+[06/17/15 11:13:13 +0100 unknown-b8-8d-12-3a-8b-1c.home (996)] INFO : Installing Net instrumentation
+[06/17/15 11:13:13 +0100 unknown-b8-8d-12-3a-8b-1c.home (996)] INFO : Installing deferred Rack instrumentation
+[06/17/15 11:13:13 +0100 unknown-b8-8d-12-3a-8b-1c.home (996)] INFO : Installing Rails 3 Controller instrumentation
+[06/17/15 11:13:13 +0100 unknown-b8-8d-12-3a-8b-1c.home (996)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[06/17/15 11:13:13 +0100 unknown-b8-8d-12-3a-8b-1c.home (996)] INFO : Installing Rails3 Error instrumentation
+[06/17/15 11:13:13 +0100 unknown-b8-8d-12-3a-8b-1c.home (996)] INFO : Finished instrumentation
+[06/17/15 11:15:06 +0100 unknown-b8-8d-12-3a-8b-1c.home (1002)] INFO : Starting the New Relic agent in "development" environment.
+[06/17/15 11:15:06 +0100 unknown-b8-8d-12-3a-8b-1c.home (1002)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[06/17/15 11:15:06 +0100 unknown-b8-8d-12-3a-8b-1c.home (1002)] INFO : Reading configuration from config/newrelic.yml
+[06/17/15 11:15:06 +0100 unknown-b8-8d-12-3a-8b-1c.home (1002)] INFO : New Relic Agent Developer Mode enabled.
+[06/17/15 11:15:06 +0100 unknown-b8-8d-12-3a-8b-1c.home (1002)] INFO : Enabling the Request Sampler.
+[06/17/15 11:15:06 +0100 unknown-b8-8d-12-3a-8b-1c.home (1002)] INFO : Enabling the Request Sampler.
+[06/17/15 11:15:06 +0100 unknown-b8-8d-12-3a-8b-1c.home (1002)] INFO : Environment: development
+[06/17/15 11:15:06 +0100 unknown-b8-8d-12-3a-8b-1c.home (1002)] INFO : No known dispatcher detected.
+[06/17/15 11:15:06 +0100 unknown-b8-8d-12-3a-8b-1c.home (1002)] INFO : Application: My Application
+[06/17/15 11:15:06 +0100 unknown-b8-8d-12-3a-8b-1c.home (1002)] WARN : Agent configured not to send data in this environment.
+[06/17/15 11:15:06 +0100 unknown-b8-8d-12-3a-8b-1c.home (1002)] INFO : Installing ActiveRecord instrumentation
+[06/17/15 11:15:06 +0100 unknown-b8-8d-12-3a-8b-1c.home (1002)] INFO : Installing Curb instrumentation
+[06/17/15 11:15:06 +0100 unknown-b8-8d-12-3a-8b-1c.home (1002)] INFO : Installing Net instrumentation
+[06/17/15 11:15:06 +0100 unknown-b8-8d-12-3a-8b-1c.home (1002)] INFO : Installing deferred Rack instrumentation
+[06/17/15 11:15:06 +0100 unknown-b8-8d-12-3a-8b-1c.home (1002)] INFO : Installing Rails 3 Controller instrumentation
+[06/17/15 11:15:06 +0100 unknown-b8-8d-12-3a-8b-1c.home (1002)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[06/17/15 11:15:06 +0100 unknown-b8-8d-12-3a-8b-1c.home (1002)] INFO : Installing Rails3 Error instrumentation
+[06/17/15 11:15:06 +0100 unknown-b8-8d-12-3a-8b-1c.home (1002)] INFO : Finished instrumentation
+[06/17/15 11:15:52 +0100 unknown-b8-8d-12-3a-8b-1c.home (1016)] INFO : Starting the New Relic agent in "development" environment.
+[06/17/15 11:15:52 +0100 unknown-b8-8d-12-3a-8b-1c.home (1016)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[06/17/15 11:15:52 +0100 unknown-b8-8d-12-3a-8b-1c.home (1016)] INFO : Reading configuration from config/newrelic.yml
+[06/17/15 11:15:52 +0100 unknown-b8-8d-12-3a-8b-1c.home (1016)] INFO : New Relic Agent Developer Mode enabled.
+[06/17/15 11:15:52 +0100 unknown-b8-8d-12-3a-8b-1c.home (1016)] INFO : Enabling the Request Sampler.
+[06/17/15 11:15:52 +0100 unknown-b8-8d-12-3a-8b-1c.home (1016)] INFO : Enabling the Request Sampler.
+[06/17/15 11:15:52 +0100 unknown-b8-8d-12-3a-8b-1c.home (1016)] INFO : Environment: development
+[06/17/15 11:15:52 +0100 unknown-b8-8d-12-3a-8b-1c.home (1016)] INFO : No known dispatcher detected.
+[06/17/15 11:15:52 +0100 unknown-b8-8d-12-3a-8b-1c.home (1016)] INFO : Application: My Application
+[06/17/15 11:15:52 +0100 unknown-b8-8d-12-3a-8b-1c.home (1016)] WARN : Agent configured not to send data in this environment.
+[06/17/15 11:15:52 +0100 unknown-b8-8d-12-3a-8b-1c.home (1016)] INFO : Installing ActiveRecord instrumentation
+[06/17/15 11:15:52 +0100 unknown-b8-8d-12-3a-8b-1c.home (1016)] INFO : Installing Curb instrumentation
+[06/17/15 11:15:52 +0100 unknown-b8-8d-12-3a-8b-1c.home (1016)] INFO : Installing Net instrumentation
+[06/17/15 11:15:52 +0100 unknown-b8-8d-12-3a-8b-1c.home (1016)] INFO : Installing deferred Rack instrumentation
+[06/17/15 11:15:52 +0100 unknown-b8-8d-12-3a-8b-1c.home (1016)] INFO : Installing Rails 3 Controller instrumentation
+[06/17/15 11:15:52 +0100 unknown-b8-8d-12-3a-8b-1c.home (1016)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[06/17/15 11:15:52 +0100 unknown-b8-8d-12-3a-8b-1c.home (1016)] INFO : Installing Rails3 Error instrumentation
+[06/17/15 11:15:52 +0100 unknown-b8-8d-12-3a-8b-1c.home (1016)] INFO : Finished instrumentation
+[06/17/15 11:16:05 +0100 unknown-b8-8d-12-3a-8b-1c.home (1022)] INFO : Starting the New Relic agent in "development" environment.
+[06/17/15 11:16:05 +0100 unknown-b8-8d-12-3a-8b-1c.home (1022)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[06/17/15 11:16:05 +0100 unknown-b8-8d-12-3a-8b-1c.home (1022)] INFO : Reading configuration from config/newrelic.yml
+[06/17/15 11:16:05 +0100 unknown-b8-8d-12-3a-8b-1c.home (1022)] INFO : New Relic Agent Developer Mode enabled.
+[06/17/15 11:16:05 +0100 unknown-b8-8d-12-3a-8b-1c.home (1022)] INFO : Enabling the Request Sampler.
+[06/17/15 11:16:05 +0100 unknown-b8-8d-12-3a-8b-1c.home (1022)] INFO : Enabling the Request Sampler.
+[06/17/15 11:16:05 +0100 unknown-b8-8d-12-3a-8b-1c.home (1022)] INFO : Environment: development
+[06/17/15 11:16:05 +0100 unknown-b8-8d-12-3a-8b-1c.home (1022)] INFO : Dispatcher: webrick
+[06/17/15 11:16:05 +0100 unknown-b8-8d-12-3a-8b-1c.home (1022)] INFO : Application: My Application
+[06/17/15 11:16:05 +0100 unknown-b8-8d-12-3a-8b-1c.home (1022)] WARN : Agent configured not to send data in this environment.
+[06/17/15 11:16:05 +0100 unknown-b8-8d-12-3a-8b-1c.home (1022)] INFO : Installing ActiveRecord instrumentation
+[06/17/15 11:16:05 +0100 unknown-b8-8d-12-3a-8b-1c.home (1022)] INFO : Installing Curb instrumentation
+[06/17/15 11:16:05 +0100 unknown-b8-8d-12-3a-8b-1c.home (1022)] INFO : Installing Net instrumentation
+[06/17/15 11:16:05 +0100 unknown-b8-8d-12-3a-8b-1c.home (1022)] INFO : Installing deferred Rack instrumentation
+[06/17/15 11:16:05 +0100 unknown-b8-8d-12-3a-8b-1c.home (1022)] INFO : Installing Rails 3 Controller instrumentation
+[06/17/15 11:16:05 +0100 unknown-b8-8d-12-3a-8b-1c.home (1022)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[06/17/15 11:16:05 +0100 unknown-b8-8d-12-3a-8b-1c.home (1022)] INFO : Installing Rails3 Error instrumentation
+[06/17/15 11:16:05 +0100 unknown-b8-8d-12-3a-8b-1c.home (1022)] INFO : Finished instrumentation
+[06/17/15 11:16:06 +0100 unknown-b8-8d-12-3a-8b-1c.home (1022)] INFO : Doing deferred dependency-detection before Rack startup
+[06/17/15 11:31:55 +0100 unknown-b8-8d-12-3a-8b-1c.home (1056)] INFO : Starting the New Relic agent in "development" environment.
+[06/17/15 11:31:55 +0100 unknown-b8-8d-12-3a-8b-1c.home (1056)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[06/17/15 11:31:55 +0100 unknown-b8-8d-12-3a-8b-1c.home (1056)] INFO : Reading configuration from config/newrelic.yml
+[06/17/15 11:31:55 +0100 unknown-b8-8d-12-3a-8b-1c.home (1056)] INFO : New Relic Agent Developer Mode enabled.
+[06/17/15 11:31:55 +0100 unknown-b8-8d-12-3a-8b-1c.home (1056)] INFO : Enabling the Request Sampler.
+[06/17/15 11:31:55 +0100 unknown-b8-8d-12-3a-8b-1c.home (1056)] INFO : Enabling the Request Sampler.
+[06/17/15 11:31:55 +0100 unknown-b8-8d-12-3a-8b-1c.home (1056)] INFO : Environment: development
+[06/17/15 11:31:55 +0100 unknown-b8-8d-12-3a-8b-1c.home (1056)] INFO : No known dispatcher detected.
+[06/17/15 11:31:55 +0100 unknown-b8-8d-12-3a-8b-1c.home (1056)] INFO : Application: My Application
+[06/17/15 11:31:55 +0100 unknown-b8-8d-12-3a-8b-1c.home (1056)] WARN : Agent configured not to send data in this environment.
+[06/17/15 11:31:55 +0100 unknown-b8-8d-12-3a-8b-1c.home (1056)] INFO : Installing ActiveRecord instrumentation
+[06/17/15 11:31:55 +0100 unknown-b8-8d-12-3a-8b-1c.home (1056)] INFO : Installing Curb instrumentation
+[06/17/15 11:31:55 +0100 unknown-b8-8d-12-3a-8b-1c.home (1056)] INFO : Installing Net instrumentation
+[06/17/15 11:31:55 +0100 unknown-b8-8d-12-3a-8b-1c.home (1056)] INFO : Installing deferred Rack instrumentation
+[06/17/15 11:31:55 +0100 unknown-b8-8d-12-3a-8b-1c.home (1056)] INFO : Installing Rails 3 Controller instrumentation
+[06/17/15 11:31:56 +0100 unknown-b8-8d-12-3a-8b-1c.home (1056)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[06/17/15 11:31:56 +0100 unknown-b8-8d-12-3a-8b-1c.home (1056)] INFO : Installing Rails3 Error instrumentation
+[06/17/15 11:31:56 +0100 unknown-b8-8d-12-3a-8b-1c.home (1056)] INFO : Finished instrumentation
