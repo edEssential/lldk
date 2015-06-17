@@ -30,5 +30,6 @@ group :production do
 end
 
 group :assets do
-  gem 'coffee-rails', '~> 3.2.1'
+  gem 'therubyracer'
+  gem 'uglifier'
 end
