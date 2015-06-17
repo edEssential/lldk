@@ -12,6 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require jquery-migrate-1.2.1.min
 //= require jquery-ui.min
 //= require image-hover
 //= require modernizr 
