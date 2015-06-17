@@ -12,11 +12,46 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require jquery-cycle
-//= require_tree .
+//= require jquery-ui.min
+//= require image-hover
+//= require modernizr 
+//= require retina
+//= require jquery.isotope.min
+//= require jquery.ba-bbq.min
+//= require jquery.isotope.load_home
+//= require responsive-nav
+//= require jquery.flexslider-min
+//= require jquery.fancybox.pack
+//= require jquery.slicknav
+//= require image.cycle
+//= require bootstrap
+//= require jssor.slider.mini
+
 
 $(document).ready(function() {
-    $('.slides').cycle({
-		fx: 'fade'
+	
+	$('a').each(function() {
+	   var a = new RegExp('/' + window.location.host + '/');
+	   if(!a.test(this.href)) {
+	       $(this).click(function(event) {
+	           event.preventDefault();
+	           event.stopPropagation();
+	           window.open(this.href, '_blank');
+	       });
+	   }
+	});
+	
+	$(function(){
+		$('#menu').slicknav();
+	});
+	
+	$(".tips").tooltip();
+	
+	$('.delete_post').on('click', function() {
+		if(confirm('Are you sure you want to delete this record')){
+	    	return true
+	    }else{
+	        return false;
+	    }
 	});
 });

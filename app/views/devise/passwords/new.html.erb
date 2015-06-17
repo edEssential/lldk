@@ -1,0 +1,20 @@
+<div id="divider2">&#160;</div>
+<div class="col-md-12">
+	<div class="col-md-6 col-sm-offset-3 background">
+
+	<h1 class="formHeader">Forgot your password?</h1>
+	<hr class="projectSeparator" />
+
+	<%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
+	  <%= devise_error_messages! %>
+
+	  	<div><%= f.label :email, :class => "formLabel" %><br />
+	  	<%= f.email_field :email, autofocus: true, :class => "formField" %></div>
+
+	  	<div><%= f.submit "Send me reset password instructions", :class => "btn" %></div>
+	<% end %>
+	
+</div>
+
+
+

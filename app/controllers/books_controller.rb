@@ -36,10 +36,7 @@ class BooksController < ApplicationController
   end
   
   def show
-    @book = Book.find_by_slug(params[:id])
-    if request.path != book_path(@book)
-      redirect_to @book, status: :moved_permanently
-    end
+    @book = Book.find(params[:id])
   end
   
 end

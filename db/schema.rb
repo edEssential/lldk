@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20131119154059) do
+ActiveRecord::Schema.define(:version => 20150617103156) do
 
   create_table "abouts", :force => true do |t|
     t.datetime "created_at",          :null => false
@@ -32,12 +32,8 @@ ActiveRecord::Schema.define(:version => 20131119154059) do
     t.string   "buylink1"
     t.string   "buylink2"
     t.string   "buylink3"
-    t.string   "promotions1"
-    t.string   "promotions2"
-    t.string   "promotions3"
-    t.string   "reviewfeed"
-    t.datetime "created_at",            :null => false
-    t.datetime "updated_at",            :null => false
+    t.datetime "created_at",         :null => false
+    t.datetime "updated_at",         :null => false
     t.string   "cover_file_name"
     t.string   "cover_content_type"
     t.integer  "cover_file_size"
@@ -45,39 +41,7 @@ ActiveRecord::Schema.define(:version => 20131119154059) do
     t.string   "link1title"
     t.string   "link2title"
     t.string   "link3title"
-    t.string   "link4title"
-    t.string   "link5title"
-    t.string   "link6title"
     t.string   "title"
-    t.string   "homepageintro"
-    t.string   "review1"
-    t.string   "review2"
-    t.string   "review3"
-    t.string   "packshot_file_name"
-    t.string   "packshot_content_type"
-    t.integer  "packshot_file_size"
-    t.datetime "packshot_updated_at"
-    t.string   "slug"
-  end
-
-  add_index "books", ["slug"], :name => "index_books_on_slug"
-
-  create_table "contacts", :force => true do |t|
-    t.string   "name"
-    t.string   "email"
-    t.datetime "created_at",          :null => false
-    t.datetime "updated_at",          :null => false
-    t.text     "description"
-    t.string   "facebook"
-    t.string   "twitter"
-    t.string   "linkedin"
-    t.text     "contacttext"
-    t.text     "messagetext"
-    t.text     "thankstext"
-    t.string   "avatar_file_name"
-    t.string   "avatar_content_type"
-    t.integer  "avatar_file_size"
-    t.datetime "avatar_updated_at"
   end
 
   create_table "friendly_id_slugs", :force => true do |t|
@@ -90,12 +54,6 @@ ActiveRecord::Schema.define(:version => 20131119154059) do
   add_index "friendly_id_slugs", ["slug", "sluggable_type"], :name => "index_friendly_id_slugs_on_slug_and_sluggable_type", :unique => true
   add_index "friendly_id_slugs", ["sluggable_id"], :name => "index_friendly_id_slugs_on_sluggable_id"
   add_index "friendly_id_slugs", ["sluggable_type"], :name => "index_friendly_id_slugs_on_sluggable_type"
-
-  create_table "reapers", :force => true do |t|
-    t.text     "content"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
-  end
 
   create_table "users", :force => true do |t|
     t.string   "email",                  :default => "", :null => false

@@ -1,20 +1,31 @@
-<div class="formText formFade">
-	<p class="formHeader">Use this form to save your about text to the site!</p><br /><br />
-	<div class="form">	
-		<%= form_for(@about) do |f| %>
-			<%= f.label :Upload_image, class: 'formField' %><br />
-			<%= f.file_field :avatar, class: 'formFieldT'  %><br />
-			<%= f.label :About_text, class: 'formField' %><br />
-			<%= f.text_area :text, class: 'formFieldT'  %><br />
-			<%= f.label :Facebook_URL, class: 'formField' %><br />
-			<%= f.text_field :facebook, class: 'formFieldT'  %><br />
-			<%= f.label :Linkedin_URL, class: 'formField' %><br />
-			<%= f.text_field :linkedin, class: 'formFieldT'  %><br />
-			<%= f.label :Twitter_URL, class: 'formField' %><br />
-			<%= f.text_field :twitter, class: 'formFieldT'  %><br />
-			<%= f.label :Get_in_touch_text, class: 'formField' %><br />
-    		<%= f.text_area :getintouchtext, class: 'formFieldBox'  %><br />
-    		<%= f.submit %>
-		<% end %>		
+<div id="divider2">&#160;</div>
+<div class="col-md-12">
+	<div class="col-md-8 col-sm-offset-2 background">
+
+		<h1 class="formHeader">Add/edit your about text content below</h1>
+		<hr class="projectSeparator" />
+	
+		<div class="formWrapper">	
+			<%= form_for(@about) do |f| %>
+				<div class="col-md-6">
+    				<%= f.label :About_text, class: 'formLabel' %><br />
+    				<%= f.text_area :text, class: 'formArea' %>
+					<%= f.label :Upload_image, class: 'formLabel' %><br />
+					<%= f.file_field :cover %><br /><br />
+					<%= f.label :Facebook_URL, class: 'formLabel' %>
+	    			<%= f.text_field :facebook, class: 'formField' %>
+					<%= f.label :Linkedin_URL, class: 'formLabel' %>
+		    		<%= f.text_field :linkedin, class: 'formField' %>
+					<%= f.label :Twitter_URL, class: 'formLabel' %>
+		    		<%= f.text_field :twitter, class: 'formField' %>
+				</div>
+				<div class="col-md-6">
+					<%= f.label :Get_in_touch_text, class: 'formLabel' %>
+	    			<%= f.text_area :getintouchtext, class: 'formArea' %>
+		    		<%= f.submit :class => "btn" %>
+				</div>
+			<% end %>
+		</div>
+	
 	</div>
 </div>

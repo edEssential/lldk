@@ -1,0 +1,56 @@
+a {color:#000000;}
+a:hover {color:#ffa500;text-decoration:none;}
+p {text-align:justify;}
+
+.slicknav_menu {
+	display:none;
+}
+
+.strapline, .strapline2, .strapline3 {
+	display:none;
+}
+
+.mainImg {display:block;}
+
+@media screen and (max-width: 1199px) {
+	
+	ul.moreWritingButtons li {
+		display: none;
+	}
+	.strapline2 {display:block;}
+	.js #menu {
+		display:none;
+	}
+	
+	.js .slicknav_menu {
+		display:block;
+	}
+	.blogContent, .plotSyn, .col-md-8 {padding:0px}
+
+}
+
+@media screen and (max-width: 990px) {
+	
+	
+	.col-md-9, .padd, .col-md-6, .col-md-3 {padding:0px;}
+	#divider2 {margin-top:-80px;}
+	.col-md-9 {margin:30px 0px 0px 0px;}
+	.pictureTop {margin-top:0px;}
+	
+}
+
+@media screen and (max-width: 767px) {
+	
+	#slider1_container, .mainImg {
+		display:none;
+	}
+	h4 {line-height:25px;}
+	.strapline, .strapline2, .strapline3 {
+		display:block;
+	}
+	.strapline3 {margin-top:-90px!important;}
+	#divider {
+		margin-bottom:25.5px;
+	}
+	.more1, .more2, .readmore {margin-bottom:25.5px;}
+}

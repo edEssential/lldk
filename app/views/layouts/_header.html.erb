@@ -1,49 +1,27 @@
-<div class="body">
-	<div class="header">
+<div class="row topMargin">
 
-	<%= link_to 'Dominic H. King', root_path, :class => "logowords" %>
-  
-  	<div class="headerIMG">
-		<div class="socialNavigationContainer">
-	    	<div class="socialNavigationGroup">
-	        	<%= link_to image_tag('facebook.png'), 'https://www.facebook.com/DominicHKing', :target => 'blank' %>
-				<%= link_to image_tag('twitter.png'), 'http://twitter.com/DominicHKing', :target => 'blank' %>
-				<%= link_to image_tag('linkedin.png'), 'http://uk.linkedin.com/pub/dominic-king/2a/8ab/445' %>
-				<%= link_to image_tag('email.png'), about_the_author_path %>
-	    	</div>
-		</div>
-	</div>
-	
-	<div class="navigation" id="navigation">
-		<div class="navigationSub">
-			<div class="navigationButtons">
-				<ul>
-					<% @books.each do |b| %>
-						<li><%= link_to b.title, "/books" + "/" + b.title.downcase.gsub(/\s+/, '-').gsub(/[^a-z0-9_-]/, '').squeeze('-') %></li>
-					<% end %>
-					<li><%= link_to 'The Reaper', reapers_path %></li>
-					<li><%= link_to 'Other Writing', other_writing_path %></li>
-					<li><%= link_to 'More About The Author', about_the_author_path %></li>
-				</ul>
-			</div>
-		</div>
+	<div class="col-md-4" id="logoETC"><h1><%= link_to 'Dominic H. King', root_path, :class => "logowords" %></h1></div>
+	<div class="col-md-2">
 		<% if user_signed_in? %>
-			<% if current_user.email.length > 23 %>
-				<div class="userInfo">
-					{ Logged in as <strong><%= current_user.email %></strong>
-					<span class="editLinkText2"><%= link_to 'Edit', edit_user_registration_path %></span>
-					<span class="editLinkText2"><%= link_to 'Logout', destroy_user_session_path, method: :delete %> }</span>
-				</div>
-			<% else %>
-				<div class="userInfo2">
-					{ Logged in as <strong><%= current_user.email %></strong>
-					<span class="editLinkText2"><%= link_to 'Edit', edit_user_registration_path %></span>
-					<span class="editLinkText2"><%= link_to 'Logout', destroy_user_session_path, method: :delete %> }</span>
-				</div>
-			<% end %>
+				{ Logged in as <strong><%= current_user.email %></strong> }
+				<%= link_to 'Edit', edit_user_registration_path %> | 
+				<%= link_to 'Logout', destroy_user_session_path, :method => :delete %> |
+				<%= link_to 'CMS', cms_path %>
+		<% else %>
+			&nbsp;
 		<% end %>
 	</div>
-</div><!--Closing header-->
+	
+	<div class="col-md-6">
+		<ul id="menu" class="navigation option-set clearfix" data-option-key="filter" id="filters">
+			<% @books.each do |b| %>
+				<%# titlefix = b.title.downcase.gsub(/\s+/, '-').gsub(/[^a-z0-9_-]/, '').squeeze('-') %>
+				<!--<li><%#= link_to b.title, "/books" + "/" + titlefix, id: "#{titlefix}" + "nav" %></li>-->
+				<li><%= link_to b.title, b %>
+			<% end %>
+		  	<li><%= link_to 'More', other_writing_path, id: "morenav" %></li>
+			<li><%= link_to 'About', about_the_author_path, id: "aboutnav" %></li>
+		</ul>
+	</div>
+	
 </div>
-
-
