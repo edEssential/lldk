@@ -8,7 +8,7 @@ class AboutsController < ApplicationController
   def create
     @about = About.create(params[:about])
     respond_to do |format|
-      format.html { redirect_to about_path }
+      format.html { redirect_to cms_path }
     end
   end
   
@@ -20,7 +20,7 @@ class AboutsController < ApplicationController
     @about = About.find(params[:id])
     if @about.update_attributes(params[:about])
       respond_to do |format|
-       format.html { redirect_to abouts_path }
+       format.html { redirect_to cms_path }
       end
     else
       render :action => 'edit'
@@ -31,7 +31,7 @@ class AboutsController < ApplicationController
     @about = About.find(params[:id])
     @about.destroy
     respond_to do |format|
-      format.html { redirect_to abouts_path }
+      format.html { redirect_to cms_path }
     end
   end
   

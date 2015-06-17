@@ -14,8 +14,7 @@
 							<tr class="tableRow">
 								<td width="78%"><%= truncate(a.text, :length => 82) %></td>
 								<td width="20%"><%= truncate(a.getintouchtext, :length => 22) %></td>
-								<td width="1%" class="topperButtons"><%= link_to "E", edit_about_path(a), :title => "Edit about text",:class => "btn btn2 tips" %></td>
-								<td width="1%" class="topperButtons"><%= button_to "X", a, :method => :delete, :class => "btn btn3 delete_post", :remote => true %></td>
+								<td width="2%" class="topperButtons"><%= link_to "E", edit_about_path(a), :title => "Edit about text",:class => "btn btn2 tips" %></td>
 							</tr>
 						<% end %>
 					</table>
