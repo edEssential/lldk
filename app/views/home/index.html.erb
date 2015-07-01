@@ -2,9 +2,13 @@
 	<div id="slider1_container" style="position: relative; top: 0px; left: 0px; width: 1200px; height: 272px;">
 	    <!-- Slides Container -->
 	    <div u="slides" style="cursor: move; position: absolute; overflow: hidden; left: 0px; top: 0px; width: 1200px; height: 272px;">
-			<% @books.each do |b| %>
-	        	<div class="mainImg"><%= link_to image_tag(b.cover), b %></div>
-	        <% end %>
+			<% @books.each_with_index do |b, i| %>
+				<% if i == 0 %>
+					<div class="mainImg"><%= link_to image_tag(b.cover), b.boxset_link %></div>
+	        	<% else %>
+					<div class="mainImg"><%= link_to image_tag(b.cover), b %></div>
+				<% end %>
+			<% end %>
 	    </div>
 	</div>
 	<div class="strapline3"><h1 class="strap">Recent News</h1></div>

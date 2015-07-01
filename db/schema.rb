@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20150617103156) do
+ActiveRecord::Schema.define(:version => 20150617203917) do
 
   create_table "abouts", :force => true do |t|
     t.datetime "created_at",          :null => false
@@ -42,6 +42,7 @@ ActiveRecord::Schema.define(:version => 20150617103156) do
     t.string   "link2title"
     t.string   "link3title"
     t.string   "title"
+    t.string   "boxset_link"
   end
 
   create_table "friendly_id_slugs", :force => true do |t|

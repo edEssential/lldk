@@ -7,8 +7,12 @@
 	
 		<div class="formWrapper">	
 			<%= form_for(@book) do |f| %>
-				<%= f.label :title, class: 'formLabel' %><br />
-	    		<%= f.text_field :title, class: 'formField' %>
+				<div class="col-md-6">
+					<%= f.label :title, class: 'formLabel' %><br />
+		    		<%= f.text_field :title, class: 'formField' %>
+					<%= f.label :boxset_link, class: 'formLabel' %><br />
+			    	<%= f.text_field :boxset_link, class: 'formField' %>
+				</div>
 	    		<%= f.label :Book_Synopsis, class: 'formLabel' %><br />
 	    		<%= f.text_area :synopsis, class: 'formArea' %>
 				<%= f.label :Upload_cover_image, class: 'formLabel' %><br />
