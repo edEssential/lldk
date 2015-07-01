@@ -15,7 +15,7 @@
 	<div class="col-md-6">
 		<ul id="menu" class="navigation option-set clearfix" data-option-key="filter" id="filters">
 			<% @books.each_with_index do |b, i| %>
-				<% if i != 0 %>
+				<% if i == 9 || i == 10 || i == 11 %>
 					<%# titlefix = b.title.downcase.gsub(/\s+/, '-').gsub(/[^a-z0-9_-]/, '').squeeze('-') %>
 					<!--<li><%#= link_to b.title, "/books" + "/" + titlefix, id: "#{titlefix}" + "nav" %></li>-->
 					<li><%= link_to b.title, b %>
