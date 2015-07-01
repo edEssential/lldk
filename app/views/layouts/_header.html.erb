@@ -14,10 +14,12 @@
 	
 	<div class="col-md-6">
 		<ul id="menu" class="navigation option-set clearfix" data-option-key="filter" id="filters">
-			<% @books.each do |b| %>
-				<%# titlefix = b.title.downcase.gsub(/\s+/, '-').gsub(/[^a-z0-9_-]/, '').squeeze('-') %>
-				<!--<li><%#= link_to b.title, "/books" + "/" + titlefix, id: "#{titlefix}" + "nav" %></li>-->
-				<li><%= link_to b.title, b %>
+			<% @books.each_with_index do |b, i| %>
+				<% if i == 0 %>
+					<%# titlefix = b.title.downcase.gsub(/\s+/, '-').gsub(/[^a-z0-9_-]/, '').squeeze('-') %>
+					<!--<li><%#= link_to b.title, "/books" + "/" + titlefix, id: "#{titlefix}" + "nav" %></li>-->
+					<li><%= link_to b.title, b %>
+				<% end %>
 			<% end %>
 		  	<li><%= link_to 'More', other_writing_path, id: "morenav" %></li>
 			<li><%= link_to 'About', about_the_author_path, id: "aboutnav" %></li>
