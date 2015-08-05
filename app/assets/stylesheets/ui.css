@@ -36,7 +36,8 @@ ul.moreWritingButtons li {
 
 .blogContent {padding:0px 25.5px;}
 
-.pictureTop {padding:0;margin-top:100px;}
+.pictureTop {padding:0;margin-top:25px;}
+.bottom {margin-bottom:24px;}
 .contact {text-transform:italic;font-size:14px;line-height:18px;}
 .avatar {margin-bottom:-17px;}
 .padd {padding-right:51px;}

@@ -1,27 +1,11 @@
 <div class="col-md-12">
-	<div class="row">
-		<ul class="moreWritingButtons">
-			<li class="col-md-3">
-				<%= link_to image_tag('facebook.png'), @about.facebook, :target => '_blank', :class => "more" %><br/>
-			</li>
-			<li class="col-md-3">
-				<%= link_to image_tag('twitter.png'), @about.twitter, :target => '_blank', :class => "more" %>
-			</li>
-			<li class="col-md-3">
-				<%= link_to image_tag('linkedin.png'), @about.linkedin, :target => '_blank', :class => "more" %>
-			</li>
-			<li class="col-md-3">
-				<%= link_to image_tag('goodreads.png'), "http://www.goodreads.com/author/show/6507631.Dominic_H_King", :target => '_blank', :class => "more" %>
-			</li>
-		</ul>
-	</div>
 	<div class="strapline2"><h1 class="strap">About the author</h1></div>
 	<div id="divider">&#160;</div>
 	<div class="row">
 	
 		<div class="col-md-12">
 
-			<div class="col-md-9">
+			<div class="col-md-6">
 				<h2>About the author</h2>
 				<p><%= simple_format(@about.text, :class => "justify padd") %></p><br/>
 			</div>
@@ -31,6 +15,24 @@
 
 				<h2>Contact:</h2>
 		    	<p class="justify contact"><%= simple_format(@about.getintouchtext) %></p>
+			</div>
+			
+			
+			<div class="col-md-3 pictureTop">
+				<ul class="moreWritingButtons">
+					<li class="col-md-6 col-md-offset-4 bottom">
+						<%= link_to image_tag('facebook.png'), @about.facebook, :target => '_blank', :class => "more" %><br/>
+					</li>
+					<li class="col-md-6 col-md-offset-4 bottom">
+						<%= link_to image_tag('twitter.png'), @about.twitter, :target => '_blank', :class => "more" %>
+					</li>
+					<li class="col-md-6 col-md-offset-4 bottom">
+						<%= link_to image_tag('linkedin.png'), @about.linkedin, :target => '_blank', :class => "more" %>
+					</li>
+					<li class="col-md-6 col-md-offset-4 bottom">
+						<%= link_to image_tag('goodreads.png'), "http://www.goodreads.com/author/show/6507631.Dominic_H_King", :target => '_blank', :class => "more" %>
+					</li>
+				</ul>
 			</div>
 
 		</div>
