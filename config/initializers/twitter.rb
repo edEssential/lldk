@@ -1,3 +1,5 @@
+require 'twitter'
+
 Twitter.configure do |config|
   config.consumer_key = 'z5HBMyZ5uMFYvirsLHsLzg'
   config.consumer_secret = 'sYlE2V82dyGzb7I8gJtdVmYAmDcgcQYBjJVi3sAaH4'

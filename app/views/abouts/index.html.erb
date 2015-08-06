@@ -5,35 +5,26 @@
 	
 		<div class="col-md-12">
 
-			<div class="col-md-6">
+			<div class="col-md-7">
 				<h2>About the author</h2>
 				<p><%= simple_format(@about.text, :class => "justify padd") %></p><br/>
-			</div>
-
-			<div class="col-md-3 pictureTop">
-			    <%= image_tag(@about.avatar, :class => "avatar") %><br/><br/>
-
+				<%= image_tag(@about.avatar, :class => "avatar padd") %><br/><br/>
 				<h2>Contact:</h2>
-		    	<p class="justify contact"><%= simple_format(@about.getintouchtext) %></p>
+			    <p class="justify contact"><%= simple_format(@about.getintouchtext, :class => "padd") %></p>
+			</div>
+			
+			<div class="col-md-5">
+				<ul class="social">
+					<li><%= link_to image_tag('twitter.png', :class => 'socialPicture') %></li>
+					<li><%= link_to image_tag('facebook.png', :class => 'socialPicture') %></li>
+					<li><%= link_to image_tag('linkedin.png', :class => 'socialPicture') %></li>
+					<li><%= link_to image_tag('goodreads.png', :class => 'socialPicture') %></li>
+				</ul><br/>
+				<a class="twitter-timeline" href="https://twitter.com/DominicHKing" data-widget-id="628960248884260864">Loading tweets</a>
+				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 			</div>
 			
 			
-			<div class="col-md-3 pictureTop">
-				<ul class="moreWritingButtons">
-					<li class="col-md-6 col-md-offset-4 bottom">
-						<%= link_to image_tag('facebook.png'), @about.facebook, :target => '_blank', :class => "more" %><br/>
-					</li>
-					<li class="col-md-6 col-md-offset-4 bottom">
-						<%= link_to image_tag('twitter.png'), @about.twitter, :target => '_blank', :class => "more" %>
-					</li>
-					<li class="col-md-6 col-md-offset-4 bottom">
-						<%= link_to image_tag('linkedin.png'), @about.linkedin, :target => '_blank', :class => "more" %>
-					</li>
-					<li class="col-md-6 col-md-offset-4 bottom">
-						<%= link_to image_tag('goodreads.png'), "http://www.goodreads.com/author/show/6507631.Dominic_H_King", :target => '_blank', :class => "more" %>
-					</li>
-				</ul>
-			</div>
 
 		</div>
 	</div>

@@ -36,8 +36,37 @@ ul.moreWritingButtons li {
 
 .blogContent {padding:0px 25.5px;}
 
-.pictureTop {padding:0;margin-top:25px;}
-.bottom {margin-bottom:24px;}
+.pictureTop {padding:0;margin-top:65px;}
+.socialPicture {width:20%;margin-top:10px;}
+.social li {display:inline;}
+.social li:nth-child(2) {margin-right:5%;margin-left:5%}
+.social li:nth-child(3) {margin-right:5%;}
+blockquote.twitter-tweet {
+  display: inline-block;
+  padding: 16px;
+  margin: 10px 0;
+  max-width: 468px;
+  border: #ddd 1px solid;
+  border-top-color: #eee;
+  border-bottom-color: #bbb;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.15);
+  font: bold 14px/18px Helvetica, Arial, sans-serif;
+  color: #000;
+}
+ 
+blockquote.twitter-tweet p {
+  font: normal 18px/24px Georgia, "Times New Roman", Palatino, serif;
+  margin: 0 5px 10px 0;
+}
+ 
+blockquote.twitter-tweet a[href^="https://twitter.com"] {
+  font-weight: normal;
+  color: #666;
+  font-size: 12px;
+}
+
+.bottom {margin-bottom:66px;}
 .contact {text-transform:italic;font-size:14px;line-height:18px;}
 .avatar {margin-bottom:-17px;}
 .padd {padding-right:51px;}
