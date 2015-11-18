@@ -20,9 +20,9 @@
 				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 			</div>
 			<div class="col-md-3 topper2">
-				<%= image_tag(@about.avatar, :class => "avatar padd") %><br/><br/>
-				<h2>Contact:</h2>
-			    <p class="justify contact"><%= simple_format(@about.getintouchtext, :class => "padd") %></p>
+				<%= image_tag(@about.avatar, :class => "avatar padd2") %><br/><br/>
+				<h2 class="marg">Contact:</h2>
+			    <p class="justify contact"><%= simple_format(@about.getintouchtext, :class => "padd2") %></p>
 			</div>
 			
 			

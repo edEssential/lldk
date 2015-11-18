@@ -70,6 +70,8 @@ blockquote.twitter-tweet a[href^="https://twitter.com"] {
 .contact {text-transform:italic;font-size:14px;line-height:18px;}
 .avatar {margin-bottom:-17px;}
 .padd {padding-right:51px;}
+.padd2 {padding-left:51px;}
+.marg {margin-left:51px;}
 
 .footerText {font-family: 'Raleway', 'sans-serif';font-size:13px;color:#a4a4a4;margin-top:-20px;}
 .footerText a {color:#a4a4a4;}
