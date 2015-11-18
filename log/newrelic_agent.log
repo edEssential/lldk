@@ -1546,3 +1546,22 @@
 [08/05/15 17:27:42 +0100 unknown-b8-8d-12-3a-8b-1c-2.home (1284)] INFO : Installing Rails3 Error instrumentation
 [08/05/15 17:27:42 +0100 unknown-b8-8d-12-3a-8b-1c-2.home (1284)] INFO : Finished instrumentation
 [08/05/15 17:27:42 +0100 unknown-b8-8d-12-3a-8b-1c-2.home (1284)] INFO : Doing deferred dependency-detection before Rack startup
+[11/18/15 13:47:36 +0000 unknown-b8-8d-12-3a-8b-1c.home (2795)] INFO : Starting the New Relic agent in "development" environment.
+[11/18/15 13:47:36 +0000 unknown-b8-8d-12-3a-8b-1c.home (2795)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[11/18/15 13:47:36 +0000 unknown-b8-8d-12-3a-8b-1c.home (2795)] INFO : Reading configuration from config/newrelic.yml
+[11/18/15 13:47:36 +0000 unknown-b8-8d-12-3a-8b-1c.home (2795)] INFO : New Relic Agent Developer Mode enabled.
+[11/18/15 13:47:36 +0000 unknown-b8-8d-12-3a-8b-1c.home (2795)] INFO : Enabling the Request Sampler.
+[11/18/15 13:47:36 +0000 unknown-b8-8d-12-3a-8b-1c.home (2795)] INFO : Enabling the Request Sampler.
+[11/18/15 13:47:36 +0000 unknown-b8-8d-12-3a-8b-1c.home (2795)] INFO : Environment: development
+[11/18/15 13:47:36 +0000 unknown-b8-8d-12-3a-8b-1c.home (2795)] INFO : Dispatcher: webrick
+[11/18/15 13:47:36 +0000 unknown-b8-8d-12-3a-8b-1c.home (2795)] INFO : Application: My Application
+[11/18/15 13:47:36 +0000 unknown-b8-8d-12-3a-8b-1c.home (2795)] WARN : Agent configured not to send data in this environment.
+[11/18/15 13:47:36 +0000 unknown-b8-8d-12-3a-8b-1c.home (2795)] INFO : Installing ActiveRecord instrumentation
+[11/18/15 13:47:36 +0000 unknown-b8-8d-12-3a-8b-1c.home (2795)] INFO : Installing Curb instrumentation
+[11/18/15 13:47:36 +0000 unknown-b8-8d-12-3a-8b-1c.home (2795)] INFO : Installing Net instrumentation
+[11/18/15 13:47:36 +0000 unknown-b8-8d-12-3a-8b-1c.home (2795)] INFO : Installing deferred Rack instrumentation
+[11/18/15 13:47:36 +0000 unknown-b8-8d-12-3a-8b-1c.home (2795)] INFO : Installing Rails 3 Controller instrumentation
+[11/18/15 13:47:37 +0000 unknown-b8-8d-12-3a-8b-1c.home (2795)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[11/18/15 13:47:37 +0000 unknown-b8-8d-12-3a-8b-1c.home (2795)] INFO : Installing Rails3 Error instrumentation
+[11/18/15 13:47:37 +0000 unknown-b8-8d-12-3a-8b-1c.home (2795)] INFO : Finished instrumentation
+[11/18/15 13:47:37 +0000 unknown-b8-8d-12-3a-8b-1c.home (2795)] INFO : Doing deferred dependency-detection before Rack startup
